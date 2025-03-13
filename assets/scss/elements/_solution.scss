@@ -4,8 +4,8 @@
 
 .single-solution-style-one {
     padding: 48px;
-    border-right: 1px solid #454545;
-    border-top: 1px solid #454545;
+    border-right: 1px solid var(--border-color);
+    border-top: 1px solid var(--border-color);
     position: relative;
     transition: .3s;
 
@@ -60,11 +60,11 @@
     }
 
     &.border-left {
-        border-left: 1px solid #454545;
+        border-left: 1px solid var(--border-color);
     }
 
     &.border-bottom-1 {
-        border-bottom: 1px solid #454545;
+        border-bottom: 1px solid var(--border-color);
     }
 
     .title {

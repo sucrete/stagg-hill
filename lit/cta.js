@@ -13,27 +13,47 @@ export class CTA extends LitElement {
             <div class="col-gl-12">
               <div class="cta-one-wrapper">
                 <div class="left-area">
-                  <h3 class="title">
-                    Have 2 or More Players?
-                  </h3>
+                  <h3 class="title">Download Our App</h3>
                   <p>
-                    Click here to book online and save.
+                    Access GPS, scorecard, special offers, tournament
+                    information, and more.
                   </p>
-                  <a
-                    href="book-tee-time.html"
-                    class="rts-btn btn-primary cta-button no-underline"
-                    
-                  >
-                    Book tee time
+                  <div class="row align-items-center">
+                    <div class="oss row">
+                      <img
+                        class="os mac"
+                        src="./assets/images/logo/apple.svg"
+                        alt=""
+                      />
+                      <img
+                        class="os android"
+                        src="./assets/images/logo/android.svg"
+                        alt=""
+                      />
+                    </div>
+                    <a
+                      href="https://manager.gallusgolf.com/DownloadApp/1169/Stagg-Hill-Golf-Club"
+                      target="_blank"
+                      class="rts-btn btn-primary cta-button no-underline"
+                    >
+                      Download
+                      <img
+                        class="injectable"
+                        src="assets/images/service/icons/13.svg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="right-overlay"></div>
+                  <div class="app-box d-flex flex flex-column">
                     <img
-                      class="injectable"
-                      src="assets/images/service/icons/13.svg"
+                      class="stagg-app-logo"
+                      src="./assets/images/logo/stagg-app-logo.png"
                       alt=""
                     />
-                  </a>
-                </div>
-                <div class="right" >
-                 <div class="right-overlay"></div>
+                  </div>
                 </div>
               </div>
             </div>

@@ -109,7 +109,7 @@ export class Footer extends LitElement {
                       <span class="grey-text">
                         <span class="hyphen">-</span>
                         <br class="break" />
-                        Kearney, MO</span
+                        Manhattan, KS</span
                       >
                     </div>
                     <!--~ Top Row -->

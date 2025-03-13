@@ -544,9 +544,10 @@
 
 .rts-btn.btn-primary {
   &.cta-button {
-    color:white;
+    color: white;
+    border: none;
     &:hover {
-color: var(--color-primary)
+      color: var(--color-primary);
     }
   }
   svg {
@@ -554,7 +555,7 @@ color: var(--color-primary)
 
     path {
       stroke: #fff;
-      transition: stroke .3s ease;
+      transition: stroke 0.3s ease;
     }
   }
 

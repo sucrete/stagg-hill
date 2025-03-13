@@ -14,17 +14,70 @@
 }
 
 section.sponsors-section {
-  background: #f5f9ed;
+  background: #f2f2f2;
+  padding-bottom: 17rem;
   .container {
     .row {
       .title-center-2 {
         .title {
           color: var(--color-primary);
+          font-size: 52px;
         }
       }
       [class*="col"] {
         .single-solution-style-one {
           min-height: 247px;
+          padding: 0;
+          a {
+            position: relative;
+            display: block;
+            height: 100%;
+            width: 100%;
+            transform-origin: 50% 50%;
+            transition: 0.25s all ease;
+            .logo {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              width: 140px;
+              height: auto;
+              transform: translate(-50%, -50%);
+              &.bottle-caps {
+                width: 120px;
+              }
+              &.burnett {
+                width: 204px;
+              }
+              &.cc {
+                width: 230px;
+              }
+              &.dia {
+                width: 210px;
+              }
+              &.dr-plumbing {
+                top: 44%;
+                width: 169px;
+              }
+              &.hi-tech {
+                width: 169px;
+              }
+              &.mcgraws {
+                width: 169px;
+              }
+              &.steel-and-pipe {
+                width: 198px;
+              }
+              &.willies {
+                width: 128px;
+              }
+            }
+          }
+          &:hover {
+            background: rgba(255, 255, 255, 0.47);
+            a {
+              transform: scale(1.1);
+            }
+          }
         }
       }
     }
