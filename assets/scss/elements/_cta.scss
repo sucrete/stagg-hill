@@ -31,7 +31,7 @@ section.cta {
 
       .left-area {
         max-width: 700px;
-        padding: 109px 0px 118px 106px;
+        padding: 109px 0px 137px 106px;
 
         .title {
           font-size: 48px;
@@ -56,24 +56,50 @@ section.cta {
             font-size: 16px;
           }
         }
-        .oss {
-          align-items: center;
-          justify-content: center;
-          padding-top: 5px;
+        .row {
+          margin-left: 0;
+          // .oss {
+          //   align-items: center;
+          //   justify-content: stretch;
+          //   width: unset;
+          //   padding-right: 2rem;
+          //   background: var(--color-primary);
+          //   margin-right: 5px;
+          //   height: 100%;
+          //   display: none;
+          //   .os-wrap {
+          //     width: unset;
+          //     padding: 0;
+          //     .os {
+          //       width: 37px;
+          //       height: auto;
+          //       // opacity: 0.3;
+          //       &.mac {
+          //         // margin-right: 0.5rem;
+          //       }
+          //       &.android {
+          //         // margin-left: 0.5rem;
 
-          .os {
-            width: 37px;
-            height: auto;
-            opacity: 0.3;
-            &.android {
-              width: 39px;
+          //       }
+          //     }
+          //     &:first-of-type {
+          //       padding-right: 10px;
+          //     }
+          //     &:last-of-type {
+          //       padding-left: 10px;border-left: 1px solid var(--border-color);
+          //     }
+          //   }
+          // }
+          .rts-btn {
+            &.btn-primary:hover::after {
+              opacity: 1;
+              transform: scaleX(2.2) scaleY(2.2);
             }
-          }
-        }
-        .rts-btn {
-          img {
-            filter: brightness(0) saturate(100%) invert(100%) sepia(0%)
-              saturate(7495%) hue-rotate(205deg) brightness(112%) contrast(101%);
+            img {
+              filter: brightness(0) saturate(100%) invert(100%) sepia(0%)
+                saturate(7495%) hue-rotate(205deg) brightness(112%)
+                contrast(101%);
+            }
           }
         }
       }
@@ -88,15 +114,14 @@ section.cta {
         z-index: 2;
         .app-box {
           position: absolute;
-          padding: 5rem;
-        
+          padding: 4.5rem;
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
           z-index: 12;
           background: rgba(255, 255, 255, 0.25);
           backdrop-filter: blur(16px);
-          border-radius: 3px;
+          border-radius: 44px;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
             rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
           border: 1px solid rgba(255, 255, 255, 0.2);
@@ -110,7 +135,6 @@ section.cta {
               rgba(0, 0, 0, 0.07) 0px 16px 32px,
               rgba(0, 0, 0, 0.07) 0px 32px 64px;
           }
-         
         }
         .right-overlay {
           position: absolute;

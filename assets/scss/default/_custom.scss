@@ -41,7 +41,9 @@ section.sponsors-section {
               left: 50%;
               width: 140px;
               height: auto;
+              transition: 0.2s all ease;
               transform: translate(-50%, -50%);
+              filter: grayscale(0.2);
               &.bottle-caps {
                 width: 120px;
               }
@@ -76,6 +78,9 @@ section.sponsors-section {
             background: rgba(255, 255, 255, 0.47);
             a {
               transform: scale(1.1);
+              .logo {
+                filter: grayscale(0);
+              }
             }
           }
         }
@@ -211,9 +216,39 @@ section.sponsors-section {
   }
 }
 
+// Notices section on home page
+section.homepage-notices {
+padding-bottom: 17rem;
+.container {
+  .row {
+    .single-blog-area-start {
+      a {
+        text-decoration: none;
+        .image-area {
+          background-color: yellow;
+          width: 100%;
+          height: 350px;
+          overflow: hidden;
+          display: grid;
+          place-items: center;
+          img {
+            // min-width: 105%;
+            min-width: 110%;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+}
+
 section.hours-table {
   background: #fafafa;
-  padding-bottom: 12rem;
+  padding-top: 15rem;
+  padding-bottom: 15rem;
   .container {
     .the-table-itself {
       background: white;
@@ -223,105 +258,56 @@ section.hours-table {
       .hours-table-brow {
         border-bottom: 1.5px solid rgba(0, 0, 0, 0.05);
         padding: 1rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        // justify-content: space-between;
         .table-title-wrapper {
-          display: flex;
-          padding: 2rem;
-          padding-right: 0px;
+          padding: 3rem;
+          padding-bottom: 2.5rem;
           align-items: start;
           margin-right: -15px;
-          .clock-icon {
-            width: 28px;
-            height: auto;
-            margin-right: 1rem;
+          .icon-box {
+            // padding: 10px;
+            background: rgb(249, 249, 249);
+            border-radius: 99px;
+            border: 1px solid rgb(231, 231, 231);
+            display: grid;
+            place-items: center;
+            width: 50px;
+            height: 50px;
+            margin-bottom: 2rem;
+            .golf-icon {
+              width: 25px;
+              height: auto;
+              // margin-right: 1rem;
+            }
           }
-          h5 {
+
+          h3 {
             font-size: 30px;
             margin-bottom: 0px;
             line-height: 86%;
           }
         }
-        .definition-wrapper {
-          // background: var(--color-offset);
-          // background: #f3f7f4;
-          background: #f0f5f1;
-          border-radius: 5px;
-          padding: 1.45rem 2.25rem 2rem 2rem;
-          // border-left: none !important;
-          // max-height: 105px;
-          .word {
-            font-family: "IKOB Italic";
-            font-size: 21px;
-            padding-bottom: 2px;
-            color: var(--color-offset);
-            // color: white;
-            .pronunciation {
-              font-family: var(--font-primary);
-              font-size: 15px;
-              color: rgb(175, 175, 175);
-              // color: #01a95b;
-            }
-          }
-          .definition {
-            line-height: 130%;
-            font-size: 15px;
-            color: var(--color-offset);
-          }
-        }
       }
 
       .some-tables {
-        [class*="col"] {
-          padding: 3rem;
-          padding-top: 2.25rem;
-          padding-bottom: 2.75rem;
-          &:not(:first-of-type) {
-            border-left: 1.5px solid rgba(0, 0, 0, 0.05);
-          }
-          &:first-of-type {
-            padding-left: 3.5rem;
-          }
-          &:last-of-type {
-            padding-right: 4.25rem;
-          }
-          .hours-title {
-            font-size: 24px;
-            margin-bottom: 0.65rem;
-          }
-          .hours-row {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            line-height: 170%;
-            .gap {
-              position: relative;
-              flex: 1 1 auto;
-              border-bottom: 1.25px dashed rgba(0, 0, 0, 0.136);
-              top: -7px;
-              margin: 0 10px;
+        padding: 4rem;
+        padding-top: 2.5rem;
+        padding-right: 6rem;
+        ol {
+          margin-inline-start: 20px;
+          margin-bottom: 0;
+          li {
+            padding-left: 20px;
+            counter-increment: step-counter;
+            &::marker {
+              font-family: 'Alte Haas Bold';
             }
-          }
-          &.pool {
-            position: relative;
-            .closed-sign {
-              z-index: 77;
-              opacity: 1;
-              width: 120px;
-              height: auto;
-              position: absolute;
-              top: 55%;
-              left: 50%;
-              transform: rotate(-3deg) translate(-50%, -50%);
-              // filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.4));
-              filter: drop-shadow(0px 9px 17px rgba(50, 50, 93, 0.15))
-                drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.2));
-            }
-            &.closed {
-              .hours-title,
-              .hours-row {
-                opacity: 0.7;
+            ul {
+              li {
+                margin: 0px;
+                &:first-of-type {
+                  margin-top: 5px;
+                }
               }
             }
           }
@@ -701,8 +687,9 @@ table {
     justify-content: center;
     margin-top: 0rem;
     p {
-      font-size: 19px;
+      font-size: 16px;
       line-height: 150%;
+      margin-bottom: 20px;
     }
     .definition-box {
       padding: 40px;

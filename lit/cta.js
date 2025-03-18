@@ -19,24 +19,12 @@ export class CTA extends LitElement {
                     information, and more.
                   </p>
                   <div class="row align-items-center">
-                    <div class="oss row">
-                      <img
-                        class="os mac"
-                        src="./assets/images/logo/apple.svg"
-                        alt=""
-                      />
-                      <img
-                        class="os android"
-                        src="./assets/images/logo/android.svg"
-                        alt=""
-                      />
-                    </div>
                     <a
                       href="https://manager.gallusgolf.com/DownloadApp/1169/Stagg-Hill-Golf-Club"
                       target="_blank"
                       class="rts-btn btn-primary cta-button no-underline"
                     >
-                      Download
+                      Download for iOS or Android
                       <img
                         class="injectable"
                         src="assets/images/service/icons/13.svg"
