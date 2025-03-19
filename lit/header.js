@@ -16,6 +16,7 @@ export class Header extends LitElement {
                   src="assets/images/logo/stagg-logo.svg"
                   class="stagg-logo logo-large"
                   alt="logo"
+                  onload="SVGInject(this)"
                 />
                 <img
                   src="assets/images/logo/stagg-logo.svg"
@@ -29,23 +30,23 @@ export class Header extends LitElement {
                     <li class="has-dropdown ">
                       <a class="nav-link" href="#">
                         Fees
-                        <i class="fa-duotone fa-regular fa-chevron-down"></i
-                      ></a>
+                        <i class="fa-duotone fa-regular fa-chevron-down"></i>
+                      </a>
                       <ul class="submenu parent-nav with-border">
                         <li>
-                          <a href="blog-list.html"
+                          <a href="greens-fees.html"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
-                            >Daily Fees</a
+                            >Greens Fees</a
                           >
                         </li>
                         <li>
-                          <a href="blog-grid.html"
+                          <a href="membership-fees.html"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Membership Fees</a
                           >
                         </li>
                         <li>
-                          <a href="blog-grid.html"
+                          <a href="sunflower-trail.html"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Sunflower Trail</a
                           >
@@ -54,7 +55,7 @@ export class Header extends LitElement {
                     </li>
 
                     <li>
-                      <a class="nav-link" href="contact.html">Pro Shop</a>
+                      <a class="nav-link" href="pro-shop.html">Pro Shop</a>
                     </li>
 
                     <li class="has-dropdown ">
@@ -64,25 +65,25 @@ export class Header extends LitElement {
                       ></a>
                       <ul class="submenu parent-nav with-border">
                         <li>
-                          <a href="blog-list.html"
+                          <a href="mens-league.html"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Men's League</a
                           >
                         </li>
                         <li>
-                          <a href="blog-grid.html"
+                          <a href="womens-league.html"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Women's League</a
                           >
                         </li>
                         <li>
-                          <a href="blog-grid.html"
+                          <a href="ladies-evening-league.html"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Ladies Evening League</a
                           >
                         </li>
                         <li>
-                          <a href="blog-grid.html"
+                          <a href="couples-league.html"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Couples League</a
                           >
@@ -97,25 +98,25 @@ export class Header extends LitElement {
                       ></a>
                       <ul class="submenu parent-nav with-border">
                         <li>
-                          <a href="blog-list.html"
+                          <a href="calendar.html"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Calendar</a
                           >
                         </li>
                         <li>
-                          <a href="blog-grid.html"
+                          <a href="open-tournaments.html"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Open Tournaments</a
                           >
                         </li>
                         <li>
-                          <a href="blog-grid.html"
+                          <a href="members-only-events.html"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Members Only Events</a
                           >
                         </li>
                         <li>
-                          <a href="blog-grid.html"
+                          <a href="host-a-tournament.html"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Host a Tournament</a
                           >
@@ -124,7 +125,7 @@ export class Header extends LitElement {
                     </li>
 
                     <li>
-                      <a class="nav-link" href="contact.html">Instruction</a>
+                      <a class="nav-link" href="instruction.html">Instruction</a>
                     </li>
 
                     <li class="has-dropdown ">
@@ -134,25 +135,25 @@ export class Header extends LitElement {
                       ></a>
                       <ul class="submenu parent-nav with-border">
                         <li>
-                          <a href="blog-list.html"
+                          <a href="contact.html"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Contact</a
                           >
                         </li>
                         <li>
-                          <a href="blog-grid.html"
+                          <a href="meet-the-staff.html"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Meet the Staff</a
                           >
                         </li>
                         <li>
-                          <a href="blog-grid.html"
+                          <a href="join-our-team.html"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Join Our Team</a
                           >
                         </li>
                         <li>
-                          <a href="blog-grid.html"
+                          <a href="donation-request.html"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Donation Requests</a
                           >
@@ -163,7 +164,10 @@ export class Header extends LitElement {
                 </nav>
               </div>
               <div class="button-area-right-header">
-                <a href="contact.html" class="rts-btn btn-border header-btn">
+                <a
+                  href="book-tee-time.html"
+                  class="rts-btn btn-border header-btn"
+                >
                   Book Tee Time
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

@@ -95,8 +95,7 @@ header .rts-btn {
               display: none;
             }
           }
-          .nav-area {
-          }
+          
           .button-area-right-header {
             .header-btn {
               padding: 6px 15px;
@@ -145,6 +144,41 @@ header .rts-btn {
       hsla(0, 0%, 100%, 0) 100%
     );
   }
+  &.style-white {
+    .container {
+      .row {
+        [class*='col'] {
+          .header-wrapper-1 {
+            .logo-area {
+              .logo-large {
+                path {
+                  fill: white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .nav-area {
+      nav {
+        ul {
+          li {
+            a {
+              color: white;
+            }
+            .submenu {
+              li {
+                a {
+                  color: var(--color-primary)
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // header style one after scrolling
@@ -166,7 +200,17 @@ header .rts-btn {
               padding-top: 10px;
             }
           }
-
+          .nav-area {
+            nav {
+              ul {
+                li {
+                  a {
+                    color: var(--color-primary);
+                  }
+                }
+              }
+            }
+          }
           .button-area-right-header {
             .header-btn {
               padding: 5px 14px;

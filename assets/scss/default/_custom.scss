@@ -706,7 +706,8 @@ table {
     tr {
       th {
         padding-bottom: 20px;
-        font-family: "Aeonik Medium";
+        font-family: "Alte Haas";
+        -webkit-text-stroke: 0.3px;
         text-transform: capitalize;
         text-align: center;
       }
@@ -733,14 +734,15 @@ table {
 
       th {
         vertical-align: middle;
-        padding-left: 20px;
+        padding-left: 23px;
         .th-wrap {
           margin-top: auto;
           margin-bottom: auto;
           display: flex;
           flex-direction: row;
           align-items: center;
-          font-family: "Aeonik Medium";
+          font-family: "Alte Haas";
+          -webkit-text-stroke: 0.3px;
           text-transform: capitalize;
         }
         .note {
@@ -1412,7 +1414,7 @@ section.perks {
 
 //~ Rates/Greens Fees
 .rates-page-body {
-  padding-top: 0rem;
+  padding-top: 17rem;
   padding-bottom: 5rem;
   background-color: #fafafa;
   position: relative;
