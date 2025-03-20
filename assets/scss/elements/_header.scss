@@ -95,7 +95,7 @@ header .rts-btn {
               display: none;
             }
           }
-          
+
           .button-area-right-header {
             .header-btn {
               padding: 6px 15px;
@@ -147,7 +147,7 @@ header .rts-btn {
   &.style-white {
     .container {
       .row {
-        [class*='col'] {
+        [class*="col"] {
           .header-wrapper-1 {
             .logo-area {
               .logo-large {
@@ -156,21 +156,21 @@ header .rts-btn {
                 }
               }
             }
-          }
-        }
-      }
-    }
-    .nav-area {
-      nav {
-        ul {
-          li {
-            a {
-              color: white;
-            }
-            .submenu {
-              li {
-                a {
-                  color: var(--color-primary)
+            .nav-area {
+              nav {
+                ul {
+                  li {
+                    a {
+                      color: white;
+                    }
+                    .submenu {
+                      li {
+                        a {
+                          color: var(--color-primary);
+                        }
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -207,6 +207,11 @@ header .rts-btn {
                   a {
                     color: var(--color-primary);
                   }
+                  &.menu-item-open {
+                    & > a {
+                      color: #005c4bc8 !important;
+                    }
+                  }
                 }
               }
             }
@@ -226,6 +231,27 @@ header .rts-btn {
   .gradient-bg {
     display: unset;
   }
+  // &.style-white {
+  //   .container {
+  //     .row {
+  //       [class*="col"] {
+  //         .header-wrapper-1 {
+  //           .nav-area {
+  //             nav {
+  //               ul {
+  //                 li.has-dropdown.menu-item-open {
+  //                   .nav-link {
+  //                     color: #005c4ba6;
+  //                   }
+  //                 }
+  //               }
+  //             }
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 .header-style-one.style-two.header--sticky {

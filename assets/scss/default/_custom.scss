@@ -4,7 +4,49 @@
   background-color: #d1d1d1;
   opacity: 1;
 }
+.pillock {
+  padding: 4px 16px;
+  display: flex;
+  gap: 10px;
+  max-width: max-content;
+  color: #262626;
+  border-radius: 32px;
+  border: 1px solid rgb(181, 181, 181);
+  text-decoration: none;
+  transition: all 0.15s ease;
+  .membership-application-icon {
+    width: 14px;
+    height: auto;
+    path {
+      fill: #d09d3a;
+    }
+  }
+  &:hover {
+    background-color: white;
+    border-color: #006452b4;
+  }
+}
 
+
+.addendum {
+  // padding: 28px 35px 30px 26px;
+  // border-radius: 10px;
+  // background-color: #ededed;
+  padding-left: 3px;
+  .two-paragraphs {
+    border-left: 1.5px solid rgb(224 224 224);
+    padding-left: 24px;
+
+    p {
+      margin-bottom: 15px;
+      line-height: 143%;
+      color: #878787;
+      &:last-of-type {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
 .explainer-icon {
   width: 14px;
   height: auto;
@@ -283,7 +325,7 @@ section.homepage-notices {
                 color: #262626;
                 margin-bottom: 1rem;
                 div {
-                  width: fit-content
+                  width: fit-content;
                 }
                 .spanner {
                   flex: 1;
@@ -706,6 +748,7 @@ table {
     tr {
       th {
         padding-bottom: 20px;
+        letter-spacing: 0.1px;
         font-family: "Alte Haas";
         -webkit-text-stroke: 0.3px;
         text-transform: capitalize;
@@ -737,6 +780,7 @@ table {
         padding-left: 23px;
         .th-wrap {
           margin-top: auto;
+          letter-spacing: 0.1px;
           margin-bottom: auto;
           display: flex;
           flex-direction: row;
