@@ -46,7 +46,7 @@ export class Header extends LitElement {
                           >
                         </li>
                         <li>
-                          <a href="sunflower-trail.html"
+                          <a href="membership-fees.html#sunflower-trail"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Sunflower Trail</a
                           >
