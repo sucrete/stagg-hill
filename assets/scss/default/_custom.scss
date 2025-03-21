@@ -309,7 +309,7 @@ section.homepage-notices {
               h6 {
                 font-size: 20px;
                 margin-bottom: 12px;
-                letter-spacing: .2px;
+                letter-spacing: 0.2px;
               }
               p {
                 font-size: 17px;
@@ -1661,7 +1661,6 @@ section.pro-shop-body {
     background: aliceblue;
     padding: 5rem 0;
     .container {
-    
       .row {
         .brand {
           max-width: 150px;
@@ -1671,11 +1670,14 @@ section.pro-shop-body {
     }
   }
   & > .container {
-    padding-top: 10rem;
-    padding-bottom: 12rem;
+    padding-top: 15rem;
+    padding-bottom: 17rem;
     hr {
       height: 1.25px;
       // background-color: rgb(161 161 161);
+      &.fj-hr {
+        background-color: #c8c8c8;
+      }
     }
     .row {
       [class*="col"] {
@@ -1704,9 +1706,32 @@ section.pro-shop-body {
       }
     }
     font-size: 17px;
+    .img-box {
+      background: white;
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+      height: 226px;
+      img {
+        width: 80%;
+        height: auto;
+       
+      }
+    }
+    .product {
+      font-family: 'Sono';
+      text-transform: uppercase;
+      font-size: 14px;
+      padding-top: 7px;
+      padding-left: 5px;
+      color: grey;
+    }
   }
   &.foot-joy {
+    background: rgb(248, 248, 248);
     .container {
+      padding-top: 15rem;
+      padding-bottom: 19rem;
       .row {
         .foot-joy-logo {
           width: 70px;
