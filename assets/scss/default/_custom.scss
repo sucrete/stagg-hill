@@ -25,8 +25,8 @@
   }
   &:hover {
     transform: translateY(-1px);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    box-shadow: rgba(50, 50, 93, 0.15) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.2) 0px 1px 3px -1px;
   }
 }
 
@@ -1597,7 +1597,7 @@ section.perks {
   }
 }
 
-//~ Sunflower Trail
+// Sunflower Trail section
 .sunflower-trail-page-body {
   padding-top: 17rem;
   padding-bottom: 17rem;
@@ -1635,7 +1635,7 @@ section.perks {
           background-color: rgb(189 189 189);
         }
         .sunflower-list {
-          padding-left: 2px;
+          padding-left: 1px;
 
           li {
             // padding-left: 20px;
@@ -1654,75 +1654,50 @@ section.perks {
   }
 }
 
-//~ Pool
-.pool-rules {
-  padding-top: 16rem;
-  padding-bottom: 5rem;
-  .container {
-    .row {
-      .rules-introduction {
-        width: 100%;
-        max-width: 900px;
-        margin: 0 auto;
-        padding-bottom: 5rem;
-        h2 {
-          text-align: center;
-          padding-bottom: 2rem;
-        }
-        h6 {
-          font-size: 20px;
-          &:not(:first-of-type) {
-            margin-top: 3rem;
-          }
-        }
-        p {
-          margin-bottom: 20px;
-        }
-      }
-
-      [class*="col"] {
-        .accordion-container-one {
-          width: 100%;
-          max-width: 900px;
-          .accordion {
-            .accordion-item {
-              border-radius: 10px;
-              overflow: hidden;
-              border: none;
-              border-top: none !important;
-              h3 {
-                font-family: var(--font-primary);
-                font-size: 19px;
-                .accordion-button {
-                  &[aria-expanded="true"]:after {
-                    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-                  }
-                }
-              }
-              .accordion-collapse {
-                .accordion-body {
-                  padding-top: 0px;
-                  padding-bottom: 3rem;
-                  & > ol {
-                    margin-top: 0px;
-                    &.exception {
-                      margin-top: 16px;
-                    }
-                    & > li:first-of-type {
-                      margin-top: 0px;
-                    }
-                  }
-                  .sublist {
-                    list-style-type: lower-alpha;
-                    margin-bottom: 16px;
-                  }
-                }
-              }
-            }
-          }
+//~ Pro Shop
+section.pro-shop-body {
+  .band-of-brands {
+    background: aliceblue;
+    padding: 5rem 0;
+    .container {
+      .row {
+        .brand {
+          max-width: 150px;
+          height: auto;
         }
       }
     }
+  }
+  & > .container {
+    padding-top: 10rem;
+    padding-bottom: 12rem;
+    .row {
+      [class*="col"] {
+        .shop-note {
+          font-size: 27px;
+          line-height: 140%;
+        }
+      }
+    }
+  }
+  .note-box {
+    .note-brow {
+      padding-bottom: 2rem;
+      .note-icon {
+        width: 25px;
+        height: auto;
+        &.trade {
+          width: 19px;
+        }
+        &.putting-green {
+          width: 28px;
+        }
+        &.wedge {
+          width: 26px;
+        }
+      }
+    }
+    font-size: 17px;
   }
 }
 
