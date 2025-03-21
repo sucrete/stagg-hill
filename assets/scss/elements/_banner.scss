@@ -678,6 +678,16 @@ $subpage-height: 550px;
       text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
     }
   }
+  &.mens-league-banner {
+    background-image: url(../images/bunch-of-gents.jpg);
+    .overlay {
+      background-image: $darker-background-gradient;
+      opacity: .8;
+    }
+    .title {
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
+    }
+  }
 
   @media #{$sm-layout} {
     height: $subpage-height;

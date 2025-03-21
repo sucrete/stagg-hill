@@ -1659,29 +1659,35 @@ section.perks {
 section.pro-shop-body {
   .band-of-brands {
     background: aliceblue;
-    padding: 5rem 0;
+    padding: 4rem 0;
     .container {
       .row {
         .brand {
-          max-width: 150px;
+          max-width: 125px;
           height: auto;
         }
       }
     }
   }
   & > .container {
-    padding-top: 15rem;
-    padding-bottom: 17rem;
+    padding-top: 16rem;
+    padding-bottom: 14rem;
     hr {
       height: 1.25px;
       // background-color: rgb(161 161 161);
       &.fj-hr {
-        background-color: #c8c8c8;
+        background-color: #9c9c9c;
       }
     }
     .row {
+      &.lined-row {
+        border-top: 1.25px solid rgb(230, 230, 230);
+        padding-top: 3rem;
+      }
       [class*="col"] {
         .shop-note {
+          font-family: 'IKOB Italic';
+          // padding-top: 3rem;
           font-size: 27px;
           line-height: 140%;
         }
@@ -1689,7 +1695,9 @@ section.pro-shop-body {
     }
   }
   .note-box {
+    padding-bottom: 1rem;
     .note-brow {
+      padding-top: 10px;
       padding-bottom: 2rem;
       .note-icon {
         width: 25px;
@@ -1731,7 +1739,7 @@ section.pro-shop-body {
     background: rgb(248, 248, 248);
     .container {
       padding-top: 15rem;
-      padding-bottom: 19rem;
+      padding-bottom: 16rem;
       .row {
         .foot-joy-logo {
           width: 70px;
