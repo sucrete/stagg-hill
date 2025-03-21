@@ -309,9 +309,10 @@ section.homepage-notices {
               h6 {
                 font-size: 20px;
                 margin-bottom: 12px;
+                letter-spacing: .2px;
               }
               p {
-                font-size: 16px;
+                font-size: 17px;
                 line-height: 150%;
                 margin-bottom: 20px;
                 .highlighted {
@@ -1660,6 +1661,7 @@ section.pro-shop-body {
     background: aliceblue;
     padding: 5rem 0;
     .container {
+    
       .row {
         .brand {
           max-width: 150px;
@@ -1671,6 +1673,10 @@ section.pro-shop-body {
   & > .container {
     padding-top: 10rem;
     padding-bottom: 12rem;
+    hr {
+      height: 1.25px;
+      // background-color: rgb(161 161 161);
+    }
     .row {
       [class*="col"] {
         .shop-note {
@@ -1698,6 +1704,16 @@ section.pro-shop-body {
       }
     }
     font-size: 17px;
+  }
+  &.foot-joy {
+    .container {
+      .row {
+        .foot-joy-logo {
+          width: 70px;
+          margin-bottom: 2rem;
+        }
+      }
+    }
   }
 }
 
