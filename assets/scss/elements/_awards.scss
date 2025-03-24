@@ -47,8 +47,9 @@
 }
 
 .container-consulting {
-  max-width: 900px;
-  margin: auto;
+  padding-top: 5rem;
+  max-width: 1200px;
+  //   margin: auto;
 
   @media #{$sm-layout} {
     padding: 0 15px;
@@ -57,7 +58,68 @@
 
 .consulting-step {
   position: relative;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 
+  //   background-color: yellow;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2rem;
+    height: 5rem;
+    z-index: 77;
+    // background-color: tomato;
+    background-image: linear-gradient(
+      to bottom,
+      hsl(0, 0%, 100%) 0%,
+      hsla(0, 0%, 100%, 0.996) 7.9%,
+      hsla(0, 0%, 100%, 0.985) 13.8%,
+      hsla(0, 0%, 100%, 0.966) 18.1%,
+      hsla(0, 0%, 100%, 0.939) 21.3%,
+      hsla(0, 0%, 100%, 0.903) 23.7%,
+      hsla(0, 0%, 100%, 0.858) 25.8%,
+      hsla(0, 0%, 100%, 0.804) 28.1%,
+      hsla(0, 0%, 100%, 0.741) 30.9%,
+      hsla(0, 0%, 100%, 0.667) 34.6%,
+      hsla(0, 0%, 100%, 0.584) 39.6%,
+      hsla(0, 0%, 100%, 0.489) 46.5%,
+      hsla(0, 0%, 100%, 0.384) 55.5%,
+      hsla(0, 0%, 100%, 0.268) 67.2%,
+      hsla(0, 0%, 100%, 0.14) 81.9%,
+      hsla(0, 0%, 100%, 0) 100%
+    );
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 2rem;
+    height: 5rem;
+    z-index: 77;
+    // background-color: tomato;
+    background-image: linear-gradient(
+      to top,
+      hsl(0, 0%, 100%) 0%,
+      hsla(0, 0%, 100%, 0.996) 7.9%,
+      hsla(0, 0%, 100%, 0.985) 13.8%,
+      hsla(0, 0%, 100%, 0.966) 18.1%,
+      hsla(0, 0%, 100%, 0.939) 21.3%,
+      hsla(0, 0%, 100%, 0.903) 23.7%,
+      hsla(0, 0%, 100%, 0.858) 25.8%,
+      hsla(0, 0%, 100%, 0.804) 28.1%,
+      hsla(0, 0%, 100%, 0.741) 30.9%,
+      hsla(0, 0%, 100%, 0.667) 34.6%,
+      hsla(0, 0%, 100%, 0.584) 39.6%,
+      hsla(0, 0%, 100%, 0.489) 46.5%,
+      hsla(0, 0%, 100%, 0.384) 55.5%,
+      hsla(0, 0%, 100%, 0.268) 67.2%,
+      hsla(0, 0%, 100%, 0.14) 81.9%,
+      hsla(0, 0%, 100%, 0) 100%
+    );
+  }
   .timeline-line {
     position: absolute;
     z-index: 0;
@@ -71,19 +133,36 @@
       left: 0;
     }
   }
+  .single-consulting-one {
+    cursor: default;
+    .right-area {
+      p {
+        font-size: 18px;
+        letter-spacing: 0.2px;
+      }
+
+      .date {
+        color: var(--color-primary);
+        // letter-spacing: 0.1px;
+        transition: all 0.25s ease;
+      }
+    }
+  }
 }
 
 .single-consulting-one {
   display: flex;
   align-items: center;
-  gap: 150px;
-  justify-content: space-between;
+  gap: 100px;
   position: relative;
-  margin-bottom: 60px;
-
+  margin-bottom: 28px;
+  padding-left: 6rem;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
   .timeline-dot {
     position: absolute;
-    left: .2%;
+    left: 0.146%;
 
     @media #{$sm-layout} {
       left: 0;
@@ -102,8 +181,8 @@
       border: 5px solid #e8f4eb;
       background: #fff;
       z-index: 0;
-      width: 20px;
-      height: 20px;
+      width: 15px;
+      height: 15px;
       content: "";
       position: absolute;
       top: 50%;
@@ -131,6 +210,13 @@
   }
 
   &:hover {
+    .right-area {
+      .date {
+        -webkit-text-stroke: 0.3px;
+        color: var(--color-primary);
+        // font-family: "IKOB Italic";
+      }
+    }
     .timeline-dot {
       &::after {
         border-color: var(--color-primary);

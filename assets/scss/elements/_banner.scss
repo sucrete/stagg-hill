@@ -688,6 +688,26 @@ $subpage-height: 550px;
       text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
     }
   }
+  &.womens-league-banner {
+    background-image: url(../images/womens-league.jpg);
+    .overlay {
+      background-image: $darker-background-gradient;
+      opacity: .8;
+    }
+    .title {
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
+    }
+  }
+  &.ladies-evening-league-banner {
+    background-image: url(../images/womens-league.jpg);
+    .overlay {
+      background-image: $darker-background-gradient;
+      opacity: .8;
+    }
+    .title {
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
+    }
+  }
 
   @media #{$sm-layout} {
     height: $subpage-height;

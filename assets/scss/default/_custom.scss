@@ -15,7 +15,7 @@
   text-decoration: none;
   transition: all 0.15s ease;
   background-color: white;
-
+  cursor: pointer;
   .membership-application-icon {
     width: 14px;
     height: auto;
@@ -916,7 +916,7 @@ table {
 }
 
 .highlighted {
-  background: lightyellow;
+  background: #ffffaa;
 }
 
 //* ===================================================
@@ -1686,7 +1686,7 @@ section.pro-shop-body {
       }
       [class*="col"] {
         .shop-note {
-          font-family: 'IKOB Italic';
+          font-family: "IKOB Italic";
           // padding-top: 3rem;
           font-size: 27px;
           line-height: 140%;
@@ -1723,11 +1723,10 @@ section.pro-shop-body {
       img {
         width: 80%;
         height: auto;
-       
       }
     }
     .product {
-      font-family: 'Sono';
+      font-family: "Sono";
       text-transform: uppercase;
       font-size: 14px;
       padding-top: 7px;
@@ -1745,6 +1744,84 @@ section.pro-shop-body {
           width: 70px;
           margin-bottom: 2rem;
         }
+      }
+    }
+  }
+}
+
+//~ Leagues
+.league-page-body {
+  padding-top: 17rem;
+  padding-bottom: 17rem;
+  .hr-group {
+    position: relative;
+    overflow: visible;
+    margin-bottom: 7rem;
+    margin-top: 3rem;
+    hr {
+      background-color: #b8b8b8;
+    }
+    &:after {
+      position: absolute;
+      height: 50px;
+      width: 50px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 9;
+      padding: 10px;
+      background-size: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #ffffff;
+      content: "";
+      background-image: url(../assets/images/icons/trophy.svg);
+    }
+  }
+
+  h3 {
+    font-size: 48px;
+    margin-bottom: 4rem;
+  }
+  .league-breakdown {
+    columns: 2;
+    column-gap: 5rem;
+    padding-bottom: 10rem;
+    hr {
+      margin-top: 3rem;
+      background-color: rgba(123, 123, 123, 0.724);
+    }
+    ul {
+      padding-left: 2rem;
+      
+    }
+    p {
+      margin-bottom: 15px;
+      font-size: 18px;
+      line-height: 150%;
+      .fun {
+        position: relative;
+        height: 20px;
+        top: -4px;
+        margin-left: 4px;
+        width: auto;
+        &-1 {
+          path {
+            fill: #f457d3;
+          }
+        }
+        &-2 {
+          margin: 0;
+          path {
+            fill: #60cf43;
+          }
+        }
+
+        
+      }
+      .pillock {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
       }
     }
   }
