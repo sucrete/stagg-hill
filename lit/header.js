@@ -115,12 +115,12 @@ export class Header extends LitElement {
                             >Members Only Events</a
                           >
                         </li>
-                        <li>
+                        <!-- <li>
                           <a href="host-a-tournament.html"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Host a Tournament</a
                           >
-                        </li>
+                        </li> -->
                       </ul>
                     </li>
 

@@ -12157,14 +12157,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(1) {
   z-index: 10;
-  transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(-3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(1):before {
   content: "1";
 }
 .slyde:nth-child(1).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
+  transform: rotate(-3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12179,14 +12179,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(2) {
   z-index: 9;
-  transform: rotate(-1deg) translate(-50%, -50%);
+  transform: rotate(0deg) translate(-50%, -50%);
 }
 .slyde:nth-child(2):before {
   content: "2";
 }
 .slyde:nth-child(2).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-1deg) translate(-50%, -15rem);
+  transform: rotate(0deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12245,14 +12245,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(5) {
   z-index: 6;
-  transform: rotate(3deg) translate(-50%, -50%);
+  transform: rotate(-3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(5):before {
   content: "5";
 }
 .slyde:nth-child(5).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(3deg) translate(-50%, -15rem);
+  transform: rotate(-3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12267,78 +12267,12 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(6) {
   z-index: 5;
-  transform: rotate(-4deg) translate(-50%, -50%);
+  transform: rotate(3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(6):before {
   content: "6";
 }
 .slyde:nth-child(6).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-4deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.active {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.active article {
-  opacity: 1;
-}
-
-.slyde:nth-child(7) {
-  z-index: 4;
-  transform: rotate(-2deg) translate(-50%, -50%);
-}
-.slyde:nth-child(7):before {
-  content: "7";
-}
-.slyde:nth-child(7).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-2deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.active {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.active article {
-  opacity: 1;
-}
-
-.slyde:nth-child(8) {
-  z-index: 3;
-  transform: rotate(-4deg) translate(-50%, -50%);
-}
-.slyde:nth-child(8):before {
-  content: "8";
-}
-.slyde:nth-child(8).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-4deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.active {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.active article {
-  opacity: 1;
-}
-
-.slyde:nth-child(9) {
-  z-index: 2;
-  transform: rotate(3deg) translate(-50%, -50%);
-}
-.slyde:nth-child(9):before {
-  content: "9";
-}
-.slyde:nth-child(9).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
   transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
@@ -12353,16 +12287,82 @@ Copyright (c) 2015 Daniel Eden
   opacity: 1;
 }
 
+.slyde:nth-child(7) {
+  z-index: 4;
+  transform: rotate(-4deg) translate(-50%, -50%);
+}
+.slyde:nth-child(7):before {
+  content: "7";
+}
+.slyde:nth-child(7).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(-4deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.active {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.active article {
+  opacity: 1;
+}
+
+.slyde:nth-child(8) {
+  z-index: 3;
+  transform: rotate(3deg) translate(-50%, -50%);
+}
+.slyde:nth-child(8):before {
+  content: "8";
+}
+.slyde:nth-child(8).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(3deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.active {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.active article {
+  opacity: 1;
+}
+
+.slyde:nth-child(9) {
+  z-index: 2;
+  transform: rotate(-1deg) translate(-50%, -50%);
+}
+.slyde:nth-child(9):before {
+  content: "9";
+}
+.slyde:nth-child(9).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(-1deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.active {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.active article {
+  opacity: 1;
+}
+
 .slyde:nth-child(10) {
   z-index: 1;
-  transform: rotate(-4deg) translate(-50%, -50%);
+  transform: rotate(-3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(10):before {
   content: "10";
 }
 .slyde:nth-child(10).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-4deg) translate(-50%, -15rem);
+  transform: rotate(-3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -13999,6 +13999,24 @@ li.has-dropdown:hover .submenu li a {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
 }
 .banner-subpage.calendar-banner .title {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
+}
+.banner-subpage.open-tournaments-banner {
+  background-image: url(../images/train-of-golfers.jpg);
+}
+.banner-subpage.open-tournaments-banner .overlay {
+  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
+}
+.banner-subpage.open-tournaments-banner .title {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
+}
+.banner-subpage.members-only-events-banner {
+  background-image: url(../images/group-of-friends.jpg);
+}
+.banner-subpage.members-only-events-banner .overlay {
+  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
+}
+.banner-subpage.members-only-events-banner .title {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
 }
 @media only screen and (max-width: 767px) {
@@ -19236,7 +19254,7 @@ section.cta.blonde .rts-cts-area {
   border-radius: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  transition: 0.3s;
+  transition: 0.5s;
 }
 @media only screen and (max-width: 767px) {
   .single-consulting-one .right-area {
@@ -19667,7 +19685,7 @@ section.cta.blonde .rts-cts-area {
   border-radius: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  transition: 0.3s;
+  transition: 0.5s;
 }
 @media only screen and (max-width: 767px) {
   .single-consulting-one .right-area {
@@ -21058,13 +21076,18 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   mask: linear-gradient(to top, rgba(0, 0, 0, 0) 87.5%, rgb(0, 0, 0) 100%);
 }
 
+.page-body {
+  padding-top: 17rem;
+  padding-bottom: 12rem;
+}
+
 .my-hr {
   background-color: #d1d1d1;
   opacity: 1;
 }
 
 .pillock {
-  padding: 4px 16px;
+  padding: 4px 18px 4px 16px;
   display: flex;
   gap: 10px;
   max-width: max-content;
@@ -21084,7 +21107,6 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   fill: #d09d3a;
 }
 .pillock:hover {
-  transform: translateY(-1px);
   box-shadow: rgba(50, 50, 93, 0.15) 0px 2px 5px -1px, rgba(0, 0, 0, 0.2) 0px 1px 3px -1px;
 }
 
@@ -21181,6 +21203,14 @@ section.sponsors-section .container .row [class*=col] .single-solution-style-one
 }
 section.sponsors-section .container .row [class*=col] .single-solution-style-one:hover a .logo {
   filter: grayscale(0);
+}
+section.sponsors-section-on-open-tournaments-page {
+  background: #fafafa;
+  padding-top: 15rem;
+  padding-bottom: 12rem;
+}
+section.sponsors-section-on-open-tournaments-page .container .row [class*=col] .single-solution-style-one:hover {
+  background: white;
 }
 
 .my-btn {
@@ -21985,54 +22015,6 @@ table.de-emphasize {
   left: -5px;
 }
 
-.scorecard-page-body {
-  padding: 14rem 0 5rem 0;
-}
-.scorecard-page-body a img {
-  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.04)) drop-shadow(0 2px 2px rgba(0, 0, 0, 0.05)) drop-shadow(0 4px 4px rgba(0, 0, 0, 0.06)) drop-shadow(0 8px 8px rgba(0, 0, 0, 0.07)) drop-shadow(0 16px 16px rgba(0, 0, 0, 0.08)) drop-shadow(0 32px 32px rgba(0, 0, 0, 0.09));
-}
-
-.holes-in-one-page-body {
-  padding: 14rem 0;
-  text-align: center;
-}
-.holes-in-one-page-body h3 {
-  font-size: 72px;
-  color: rgb(178, 178, 178);
-}
-.holes-in-one-page-body .hr-group {
-  position: relative;
-  width: 300px;
-  margin: 5rem auto 6rem auto;
-}
-.holes-in-one-page-body .hr-group .image-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -60%);
-  z-index: 7;
-}
-.holes-in-one-page-body .hr-group .image-container:after {
-  content: "";
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-53.5%, -50%);
-  background: #fff;
-  z-index: 6;
-}
-.holes-in-one-page-body .hr-group .image-container .hole-in-one-icon {
-  width: 30px;
-  height: auto;
-  position: relative;
-  z-index: 8;
-}
-.holes-in-one-page-body p {
-  font-size: 28px;
-}
-
 .calendar-section .title-bar {
   padding-top: 10rem;
   padding-bottom: 3rem;
@@ -22264,6 +22246,63 @@ section.perks .container .row [class*=col] .single-solution-style-one:hover {
   padding-top: 7rem;
 }
 
+.members-only-events-page-body {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+.members-only-events-page-body .event-wrapper {
+  padding: 15rem 0;
+}
+.members-only-events-page-body .event-wrapper .career-banner-wrapper p:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+.members-only-events-page-body .event-wrapper .career-banner-wrapper .event-date {
+  font-size: 21px;
+  color: var(--color-secondary);
+  -webkit-text-stroke: 0.5px;
+  letter-spacing: 0.5px;
+  margin-bottom: 1.5rem;
+}
+.members-only-events-page-body .event-wrapper .career-banner-wrapper .title {
+  font-size: 45px;
+  margin-left: -3px;
+}
+.members-only-events-page-body .event-wrapper .event-image-main {
+  height: 600px;
+}
+
+.sponsorship-cta {
+  background: aliceblue;
+  padding: 10rem 0 12rem;
+}
+.sponsorship-cta .container .handshake-sticker {
+  width: 105px;
+  height: auto;
+  margin-bottom: 2rem;
+}
+.sponsorship-cta .container h3 {
+  color: black;
+  font-size: 45px;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 110%;
+}
+.sponsorship-cta .container h3 .italicized {
+  font-family: "IKOB Italic";
+}
+.sponsorship-cta .container .rts-btn {
+  margin-top: 5rem;
+  background: #deeefa;
+  color: black;
+  border: none;
+  padding: 17px 21px;
+  letter-spacing: 0.2px;
+}
+.sponsorship-cta .container .rts-btn:after {
+  background: #c9e4f8;
+  width: 250px;
+}
+
 .rates-page-body {
   padding-top: 17rem;
   padding-bottom: 5rem;
@@ -22400,10 +22439,10 @@ section.perks .container .row [class*=col] .single-solution-style-one:hover {
   max-width: 900px;
 }
 .sunflower-trail-page-body .container .row .sunflower-trail-wrapper h3 {
-  font-size: 50px;
+  font-size: 40px;
 }
 .sunflower-trail-page-body .container .row .sunflower-trail-wrapper h3 .sunflower-icon {
-  width: 53px;
+  width: 42px;
   height: auto;
   margin-right: 20px;
   margin-top: -9px;
@@ -22413,7 +22452,7 @@ section.perks .container .row [class*=col] .single-solution-style-one:hover {
   fill: rgb(225, 180, 18);
 }
 .sunflower-trail-page-body .container .row .sunflower-trail-wrapper .sft-intro {
-  font-size: 19px;
+  font-size: 23px;
   line-height: 140%;
   padding-bottom: 5rem;
   font-family: "IKOB Italic";
@@ -22589,16 +22628,65 @@ section.pro-shop-body.foot-joy .container .row .foot-joy-logo {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-.league-page-body .schedule-note {
+
+.schedule-note {
   font-size: 18px;
   color: grey;
-  width: 600px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
 .calendar-page-body {
   padding-top: 17rem;
   padding-bottom: 12rem;
+}
+
+.open-tournaments-page-body {
+  padding-top: 10rem;
+  padding-bottom: 20rem;
+}
+.open-tournaments-page-body .container .container-consulting {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.open-tournaments-page-body .container .container-consulting .consulting-step {
+  margin-top: 10rem;
+}
+.open-tournaments-page-body .container .container-consulting .consulting-step .single-consulting-one:not(:last-of-type) {
+  margin-bottom: 7rem;
+}
+.open-tournaments-page-body .container .container-consulting .consulting-step .single-consulting-one .right-area h4 {
+  margin-bottom: 1rem;
+}
+.open-tournaments-page-body .container .container-consulting .consulting-step .single-consulting-one .right-area p {
+  margin-bottom: 1.5rem;
+}
+.open-tournaments-page-body .container .container-consulting .consulting-step .single-consulting-one .right-area .pillock {
+  border-color: rgba(167, 177, 175, 0.58);
+}
+.open-tournaments-page-body .container .container-consulting .consulting-step .single-consulting-one .right-area .pillock .pillock-icon {
+  width: 14px;
+  height: auto;
+}
+.open-tournaments-page-body .container .container-consulting .consulting-step .single-consulting-one .right-area .pillock .pillock-icon path {
+  fill: #cf9d39;
+}
+.open-tournaments-page-body .container .container-consulting .consulting-step .single-consulting-one .right-area .pillock .pillock-icon.register {
+  width: 12px;
+}
+.open-tournaments-page-body .container .container-consulting .consulting-step .single-consulting-one .right-area .pillock:hover {
+  border-color: rgba(0, 100, 82, 0.7058823529);
+}
+.open-tournaments-page-body .container .container-consulting .consulting-step .single-consulting-one .timeline-dot {
+  left: 0.2%;
+}
+.open-tournaments-page-body .container .container-consulting .consulting-step .single-consulting-one .timeline-dot:after {
+  width: 20px;
+  height: 20px;
+}
+.open-tournaments-page-body .container .container-consulting .consulting-step .single-consulting-one.expired .right-area h4,
+.open-tournaments-page-body .container .container-consulting .consulting-step .single-consulting-one.expired .right-area p {
+  opacity: 0.7;
 }
 
 footer {

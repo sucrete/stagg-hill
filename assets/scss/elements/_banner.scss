@@ -710,7 +710,7 @@ $subpage-height: 550px;
   }
   &.couples-league-banner {
     background-image: url(../images/couple-2.jpg);
-    .overlay {
+    .overlay { 
       background-image: $darker-background-gradient;
       opacity: .8;
     }
@@ -720,6 +720,24 @@ $subpage-height: 550px;
   }
   &.calendar-banner {
     background-image: url(../images/caravan-of-carts.jpg);
+    .overlay {
+      background-image: $darker-background-gradient;
+    }
+    .title {
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
+    }
+  }
+  &.open-tournaments-banner {
+    background-image: url(../images/train-of-golfers.jpg);
+    .overlay {
+      background-image: $darker-background-gradient;
+    }
+    .title {
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
+    }
+  }
+  &.members-only-events-banner {
+    background-image: url(../images/group-of-friends.jpg);
     .overlay {
       background-image: $darker-background-gradient;
     }

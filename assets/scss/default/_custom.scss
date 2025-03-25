@@ -1,11 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap");
 
+.page-body {
+  padding-top: 17rem;
+  padding-bottom: 12rem;
+}
+
 .my-hr {
   background-color: #d1d1d1;
   opacity: 1;
 }
 .pillock {
-  padding: 4px 16px;
+  padding: 4px 18px 4px 16px;
   display: flex;
   gap: 10px;
   max-width: max-content;
@@ -24,7 +29,7 @@
     }
   }
   &:hover {
-    transform: translateY(-1px);
+    // transform: translateY(-1px);
     box-shadow: rgba(50, 50, 93, 0.15) 0px 2px 5px -1px,
       rgba(0, 0, 0, 0.2) 0px 1px 3px -1px;
   }
@@ -134,7 +139,24 @@ section.sponsors-section {
       }
     }
   }
+  &-on-open-tournaments-page {
+    background: #fafafa;
+    padding-top: 15rem;
+    padding-bottom: 12rem;
+    .container {
+      .row {
+        [class*="col"] {
+          .single-solution-style-one {
+            &:hover {
+              background: white;
+            }
+          }
+        }
+      }
+    }
+  }
 }
+
 .my-btn {
   color: white !important;
   font-family: "Aeonik", sans-serif !important;
@@ -1146,66 +1168,6 @@ table {
   }
 }
 
-//~ Scorecard
-.scorecard-page-body {
-  padding: 14rem 0 5rem 0;
-  a {
-    img {
-      filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.04))
-        drop-shadow(0 2px 2px rgba(0, 0, 0, 0.05))
-        drop-shadow(0 4px 4px rgba(0, 0, 0, 0.06))
-        drop-shadow(0 8px 8px rgba(0, 0, 0, 0.07))
-        drop-shadow(0 16px 16px rgba(0, 0, 0, 0.08))
-        drop-shadow(0 32px 32px rgba(0, 0, 0, 0.09));
-    }
-  }
-}
-
-//~ Holes-in-One
-.holes-in-one-page-body {
-  padding: 14rem 0;
-  text-align: center;
-  h3 {
-    font-size: 72px;
-    color: rgb(178, 178, 178);
-    // color: #949494
-    // color: var(--color-accent);
-  }
-  .hr-group {
-    position: relative;
-    width: 300px;
-    margin: 5rem auto 6rem auto;
-
-    .image-container {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -60%);
-      z-index: 7;
-      &:after {
-        content: "";
-        width: 50px;
-        height: 50px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-53.5%, -50%);
-        background: #fff;
-        z-index: 6;
-      }
-      .hole-in-one-icon {
-        width: 30px;
-        height: auto;
-        position: relative;
-        z-index: 8;
-      }
-    }
-  }
-  p {
-    font-size: 28px;
-  }
-}
-
 //~ Events (Calendar)
 .calendar-section {
   .title-bar {
@@ -1461,6 +1423,74 @@ section.perks {
   }
 }
 
+//~ Member's Only Events
+.members-only-events-page-body {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  .event-wrapper {
+    padding: 15rem 0;
+    // & > .row {
+    //   gap: 3rem;
+    // }
+    .career-banner-wrapper {
+      p {
+        &:not(:last-of-type) {
+          margin-bottom: 2rem;
+        }
+      }
+      .event-date {
+        font-size: 21px;
+        color: var(--color-secondary);
+        -webkit-text-stroke: 0.5px;
+        letter-spacing: 0.5px;
+        margin-bottom: 1.5rem;
+      }
+      .title {
+        font-size: 45px;
+        margin-left: -3px;
+      }
+    }
+    .event-image-main {
+      height: 600px;
+    }
+  }
+}
+
+.sponsorship-cta {
+  background: aliceblue;
+  padding: 10rem 0 12rem;
+  .container {
+    .handshake-sticker {
+      width: 105px;
+      height: auto;
+      margin-bottom: 2rem;
+    }
+    h3 {
+      color: black;
+      font-size: 45px;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 110%;
+      .italicized {
+        font-family: "IKOB Italic";
+      }
+    }
+    .rts-btn {
+      margin-top: 5rem;
+      background: #deeefa;
+      color: black;
+      border: none;
+      padding: 17px 21px;
+      letter-spacing: 0.2px;
+
+      &:after {
+        background: #c9e4f8;
+        width: 250px;
+      }
+    }
+  }
+}
+
 //~ Rates/Greens Fees
 .rates-page-body {
   padding-top: 17rem;
@@ -1609,9 +1639,9 @@ section.perks {
       .sunflower-trail-wrapper {
         max-width: 900px;
         h3 {
-          font-size: 50px;
+          font-size: 40px;
           .sunflower-icon {
-            width: 53px;
+            width: 42px;
             height: auto;
             margin-right: 20px;
             margin-top: -9px;
@@ -1622,7 +1652,7 @@ section.perks {
           }
         }
         .sft-intro {
-          font-size: 19px;
+          font-size: 23px;
           line-height: 140%;
           padding-bottom: 5rem;
           font-family: "IKOB Italic";
@@ -1793,7 +1823,6 @@ section.pro-shop-body {
     }
     ul {
       padding-left: 2rem;
-      
     }
     p {
       margin-bottom: 15px;
@@ -1816,8 +1845,6 @@ section.pro-shop-body {
             fill: #60cf43;
           }
         }
-
-        
       }
       .pillock {
         margin-top: 1rem;
@@ -1825,18 +1852,78 @@ section.pro-shop-body {
       }
     }
   }
-  .schedule-note {
-    font-size: 18px;
-    color: grey;
-    width: 600px;
-    margin: 0 auto;
-  }
 }
-
+.schedule-note {
+  font-size: 18px;
+  color: grey;
+  max-width: 600px;
+  margin: 0 auto;
+}
 //~ Calendar
 .calendar-page-body {
   padding-top: 17rem;
   padding-bottom: 12rem;
+}
+
+//~ Open Tournaments
+.open-tournaments-page-body {
+  padding-top: 10rem;
+  padding-bottom: 20rem;
+  .container {
+    .container-consulting {
+      max-width: 900px;
+      margin: 0 auto;
+      .consulting-step {
+        margin-top: 10rem;
+        .single-consulting-one {
+          &:not(:last-of-type) {
+            margin-bottom: 7rem;
+          }
+          .right-area {
+            h4 {
+              margin-bottom: 1rem;
+            }
+            p {
+              margin-bottom: 1.5rem;
+            }
+            .pillock {
+              // color: #4e8279;
+              border-color: rgb(167 177 175 / 58%);
+              .pillock-icon {
+                width: 14px;
+                height: auto;
+                path {
+                  fill: #cf9d39;
+                }
+                &.register {
+                  width: 12px;
+                }
+              }
+              &:hover {
+                // color: #006452;
+                border-color: rgba(0, 100, 82, 0.7058823529);
+              }
+            }
+          }
+          .timeline-dot {
+            left: 0.2%;
+            &:after {
+              width: 20px;
+              height: 20px;
+            }
+          }
+          &.expired {
+            .right-area {
+              h4,
+              p {
+                opacity: 0.7;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 //* ===================================================
