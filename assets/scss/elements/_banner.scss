@@ -708,6 +708,25 @@ $subpage-height: 550px;
       text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
     }
   }
+  &.couples-league-banner {
+    background-image: url(../images/couple-2.jpg);
+    .overlay {
+      background-image: $darker-background-gradient;
+      opacity: .8;
+    }
+    .title {
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
+    }
+  }
+  &.calendar-banner {
+    background-image: url(../images/caravan-of-carts.jpg);
+    .overlay {
+      background-image: $darker-background-gradient;
+    }
+    .title {
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
+    }
+  }
 
   @media #{$sm-layout} {
     height: $subpage-height;
