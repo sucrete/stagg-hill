@@ -12179,14 +12179,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(2) {
   z-index: 9;
-  transform: rotate(3deg) translate(-50%, -50%);
+  transform: rotate(2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(2):before {
   content: "2";
 }
 .slyde:nth-child(2).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(3deg) translate(-50%, -15rem);
+  transform: rotate(2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12201,14 +12201,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(3) {
   z-index: 8;
-  transform: rotate(1deg) translate(-50%, -50%);
+  transform: rotate(-1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(3):before {
   content: "3";
 }
 .slyde:nth-child(3).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(1deg) translate(-50%, -15rem);
+  transform: rotate(-1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12223,14 +12223,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(4) {
   z-index: 7;
-  transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(-2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(4):before {
   content: "4";
 }
 .slyde:nth-child(4).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
+  transform: rotate(-2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12245,14 +12245,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(5) {
   z-index: 6;
-  transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(-2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(5):before {
   content: "5";
 }
 .slyde:nth-child(5).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
+  transform: rotate(-2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12267,14 +12267,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(6) {
   z-index: 5;
-  transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(-2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(6):before {
   content: "6";
 }
 .slyde:nth-child(6).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
+  transform: rotate(-2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12289,14 +12289,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(7) {
   z-index: 4;
-  transform: rotate(3deg) translate(-50%, -50%);
+  transform: rotate(-4deg) translate(-50%, -50%);
 }
 .slyde:nth-child(7):before {
   content: "7";
 }
 .slyde:nth-child(7).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(3deg) translate(-50%, -15rem);
+  transform: rotate(-4deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12311,14 +12311,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(8) {
   z-index: 3;
-  transform: rotate(3deg) translate(-50%, -50%);
+  transform: rotate(2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(8):before {
   content: "8";
 }
 .slyde:nth-child(8).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(3deg) translate(-50%, -15rem);
+  transform: rotate(2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12333,14 +12333,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(9) {
   z-index: 2;
-  transform: rotate(-3deg) translate(-50%, -50%);
+  transform: rotate(2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(9):before {
   content: "9";
 }
 .slyde:nth-child(9).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-3deg) translate(-50%, -15rem);
+  transform: rotate(2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -22253,6 +22253,15 @@ section.perks .container .row [class*=col] .single-solution-style-one:hover {
 .members-only-events-page-body .event-wrapper {
   padding: 17rem 0;
 }
+.members-only-events-page-body .event-wrapper .career-banner-wrapper .member-guests-logo {
+  width: 110px;
+  height: auto;
+  margin-bottom: 2rem;
+}
+.members-only-events-page-body .event-wrapper .career-banner-wrapper .IKOB-Italic {
+  font-family: "IKOB Italic";
+  font-size: 19px;
+}
 .members-only-events-page-body .event-wrapper .career-banner-wrapper p:not(:last-of-type) {
   margin-bottom: 2rem;
 }
@@ -22318,22 +22327,37 @@ section.perks .container .row [class*=col] .single-solution-style-one:hover {
   width: 250px;
   filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.06)) drop-shadow(0 2px 2px rgba(0, 0, 0, 0.07)) drop-shadow(0 4px 4px rgba(0, 0, 0, 0.08)) drop-shadow(0 8px 8px rgba(0, 0, 0, 0.09)) drop-shadow(0 16px 16px rgba(0, 0, 0, 0.1)) drop-shadow(0 32px 32px rgba(0, 0, 0, 0.11));
 }
+.members-only-events-page-body .event-wrapper .thumbnail-top .event-image-box.club-championship {
+  bottom: 7rem;
+  left: 2rem;
+  padding: 18px 25px 10px 25px;
+  background: #69bcc1;
+}
+.members-only-events-page-body .event-wrapper .thumbnail-top .event-image-box.club-championship .club-championship-logo {
+  width: 225px;
+}
 .members-only-events-page-body .event-wrapper.match-play-event-wrapper {
   background: rgb(241, 241, 241);
 }
 .members-only-events-page-body .event-wrapper.match-play-event-wrapper .event-image-main {
   height: 700px;
 }
-.members-only-events-page-body .event-wrapper.fourth-wrapper {
-  background: #f7f7f7;
-}
 .members-only-events-page-body .event-wrapper.fourth-wrapper .event-image-main {
+  height: 700px;
+}
+.members-only-events-page-body .event-wrapper.member-guest-event-wrapper {
+  background: rgb(241, 241, 241);
+}
+.members-only-events-page-body .event-wrapper.member-guest-event-wrapper .event-image-main {
+  height: 700px;
+}
+.members-only-events-page-body .event-wrapper.club-championship-wrapper .event-image-main {
   height: 700px;
 }
 
 .sponsorship-cta {
   background: aliceblue;
-  padding: 10rem 0 12rem;
+  padding: 10rem 0rem;
 }
 .sponsorship-cta .container .handshake-sticker {
   width: 100px;

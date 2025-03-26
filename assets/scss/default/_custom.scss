@@ -1433,6 +1433,15 @@ section.perks {
     //   gap: 3rem;
     // }
     .career-banner-wrapper {
+      .member-guests-logo {
+        width: 110px;
+        height: auto;
+        margin-bottom: 2rem;
+      }
+      .IKOB-Italic {
+        font-family: "IKOB Italic";
+        font-size: 19px;
+      }
       p {
         &:not(:last-of-type) {
           margin-bottom: 2rem;
@@ -1507,6 +1516,15 @@ section.perks {
               drop-shadow(0 32px 32px rgba(0, 0, 0, 0.11));
           }
         }
+        &.club-championship {
+          bottom: 7rem;
+          left: 2rem;
+          padding: 18px 25px 10px 25px;
+          background: #69bcc1;
+          .club-championship-logo {
+            width: 225px;
+          }
+        }
       }
     }
     &.match-play-event-wrapper {
@@ -1516,7 +1534,17 @@ section.perks {
       }
     }
     &.fourth-wrapper {
-      background: #f7f7f7;
+      .event-image-main {
+        height: 700px;
+      }
+    }
+    &.member-guest-event-wrapper {
+      background: rgb(241 241 241);
+      .event-image-main {
+        height: 700px;
+      }
+    }
+    &.club-championship-wrapper {
       .event-image-main {
         height: 700px;
       }
@@ -1526,7 +1554,7 @@ section.perks {
 
 .sponsorship-cta {
   background: aliceblue;
-  padding: 10rem 0 12rem;
+  padding: 10rem 0rem;
   .container {
     .handshake-sticker {
       width: 100px;
