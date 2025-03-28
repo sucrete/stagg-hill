@@ -50,6 +50,7 @@
   --color-offset: #006452;
   --color-secondary: #d09d3a;
   --color-accent: #05816b;
+  --light-green: #00be94;
   --border-color: #005b4b21;
   --grey-screen: rgba(0, 0, 0, 0.108);
   --light-grey: #f4f4f4;
@@ -12157,14 +12158,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(1) {
   z-index: 10;
-  transform: rotate(2deg) translate(-50%, -50%);
+  transform: rotate(3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(1):before {
   content: "1";
 }
 .slyde:nth-child(1).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(2deg) translate(-50%, -15rem);
+  transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12179,14 +12180,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(2) {
   z-index: 9;
-  transform: rotate(2deg) translate(-50%, -50%);
+  transform: rotate(0deg) translate(-50%, -50%);
 }
 .slyde:nth-child(2):before {
   content: "2";
 }
 .slyde:nth-child(2).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(2deg) translate(-50%, -15rem);
+  transform: rotate(0deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12223,14 +12224,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(4) {
   z-index: 7;
-  transform: rotate(-2deg) translate(-50%, -50%);
+  transform: rotate(-1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(4):before {
   content: "4";
 }
 .slyde:nth-child(4).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-2deg) translate(-50%, -15rem);
+  transform: rotate(-1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12245,14 +12246,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(5) {
   z-index: 6;
-  transform: rotate(-2deg) translate(-50%, -50%);
+  transform: rotate(3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(5):before {
   content: "5";
 }
 .slyde:nth-child(5).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-2deg) translate(-50%, -15rem);
+  transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12267,14 +12268,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(6) {
   z-index: 5;
-  transform: rotate(-2deg) translate(-50%, -50%);
+  transform: rotate(-3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(6):before {
   content: "6";
 }
 .slyde:nth-child(6).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-2deg) translate(-50%, -15rem);
+  transform: rotate(-3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12289,14 +12290,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(7) {
   z-index: 4;
-  transform: rotate(-4deg) translate(-50%, -50%);
+  transform: rotate(2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(7):before {
   content: "7";
 }
 .slyde:nth-child(7).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-4deg) translate(-50%, -15rem);
+  transform: rotate(2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12311,14 +12312,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(8) {
   z-index: 3;
-  transform: rotate(2deg) translate(-50%, -50%);
+  transform: rotate(-3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(8):before {
   content: "8";
 }
 .slyde:nth-child(8).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(2deg) translate(-50%, -15rem);
+  transform: rotate(-3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12333,14 +12334,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(9) {
   z-index: 2;
-  transform: rotate(2deg) translate(-50%, -50%);
+  transform: rotate(3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(9):before {
   content: "9";
 }
 .slyde:nth-child(9).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(2deg) translate(-50%, -15rem);
+  transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12355,14 +12356,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(10) {
   z-index: 1;
-  transform: rotate(2deg) translate(-50%, -50%);
+  transform: rotate(-1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(10):before {
   content: "10";
 }
 .slyde:nth-child(10).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(2deg) translate(-50%, -15rem);
+  transform: rotate(-1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -13897,13 +13898,6 @@ li.has-dropdown:hover .submenu li a {
 .banner-subpage.book-tee-time-banner .overlay {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.72) 0%, hsla(0, 0%, 0%, 0.585) 4.2%, hsla(0, 0%, 0%, 0.469) 7.4%, hsla(0, 0%, 0%, 0.369) 10%, hsla(0, 0%, 0%, 0.284) 12.2%, hsla(0, 0%, 0%, 0.213) 14.4%, hsla(0, 0%, 0%, 0.156) 16.8%, hsla(0, 0%, 0%, 0.109) 19.7%, hsla(0, 0%, 0%, 0.073) 23.5%, hsla(0, 0%, 0%, 0.046) 28.5%, hsla(0, 0%, 0%, 0.027) 35%, hsla(0, 0%, 0%, 0.014) 43.2%, hsla(0, 0%, 0%, 0.006) 53.5%, hsla(0, 0%, 0%, 0.002) 66.2%, hsla(0, 0%, 0%, 0) 81.6%, hsla(0, 0%, 0%, 0) 100%);
 }
-.banner-subpage.about-banner {
-  background-image: url(../images/marimack-tournament-start.jpg);
-}
-.banner-subpage.about-banner .overlay {
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.4) 0%, hsla(0, 0%, 0%, 0.397) 4.6%, hsla(0, 0%, 0%, 0.387) 8.4%, hsla(0, 0%, 0%, 0.373) 11.7%, hsla(0, 0%, 0%, 0.354) 14.8%, hsla(0, 0%, 0%, 0.333) 17.9%, hsla(0, 0%, 0%, 0.308) 21.2%, hsla(0, 0%, 0%, 0.283) 25%, hsla(0, 0%, 0%, 0.257) 29.5%, hsla(0, 0%, 0%, 0.232) 34.8%, hsla(0, 0%, 0%, 0.207) 41.4%, hsla(0, 0%, 0%, 0.186) 49.4%, hsla(0, 0%, 0%, 0.167) 59%, hsla(0, 0%, 0%, 0.153) 70.5%, hsla(0, 0%, 0%, 0.143) 84.1%, hsla(0, 0%, 0%, 0.14) 100%);
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.72) 0%, hsla(0, 0%, 0%, 0.585) 4.2%, hsla(0, 0%, 0%, 0.469) 7.4%, hsla(0, 0%, 0%, 0.369) 10%, hsla(0, 0%, 0%, 0.284) 12.2%, hsla(0, 0%, 0%, 0.213) 14.4%, hsla(0, 0%, 0%, 0.156) 16.8%, hsla(0, 0%, 0%, 0.109) 19.7%, hsla(0, 0%, 0%, 0.073) 23.5%, hsla(0, 0%, 0%, 0.046) 28.5%, hsla(0, 0%, 0%, 0.027) 35%, hsla(0, 0%, 0%, 0.014) 43.2%, hsla(0, 0%, 0%, 0.006) 53.5%, hsla(0, 0%, 0%, 0.002) 66.2%, hsla(0, 0%, 0%, 0) 81.6%, hsla(0, 0%, 0%, 0) 100%);
-}
 .banner-subpage.events-banner {
   background-image: url(../images/marimack-bunch-of-carts.jpg);
 }
@@ -14017,6 +14011,24 @@ li.has-dropdown:hover .submenu li a {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
 }
 .banner-subpage.members-only-events-banner .title {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
+}
+.banner-subpage.instruction-banner {
+  background-image: url(../images/golf-instructor.jpg);
+}
+.banner-subpage.instruction-banner .overlay {
+  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
+}
+.banner-subpage.instruction-banner .title {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
+}
+.banner-subpage.contact-banner {
+  background-image: url(../images/player-in-view.jpg);
+}
+.banner-subpage.contact-banner .overlay {
+  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
+}
+.banner-subpage.contact-banner .title {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
 }
 @media only screen and (max-width: 767px) {
@@ -21326,6 +21338,7 @@ section.homepage-notices .container .row .single-blog-area-start {
   height: 100%;
   display: flex;
   flex-direction: column;
+  transition: all 0.15s ease;
 }
 section.homepage-notices .container .row .single-blog-area-start a {
   text-decoration: none;
@@ -21425,6 +21438,9 @@ section.homepage-notices .container .row .single-blog-area-start a:hover .inner-
 }
 section.homepage-notices .container .row .single-blog-area-start a:hover .inner-content-area .link-bar svg path {
   stroke: var(--color-primary);
+}
+section.homepage-notices .container .row .single-blog-area-start:hover {
+  box-shadow: rgba(118, 118, 118, 0.04) 0px 0px 0px 1px, rgba(69, 69, 69, 0.04) 0px 1px 1px -0.5px, rgba(64, 64, 64, 0.04) 0px 3px 3px -1.5px, rgba(63, 63, 63, 0.04) 0px 6px 6px -3px, rgba(117, 117, 117, 0.04) 0px 12px 12px -6px, rgba(124, 124, 124, 0.04) 0px 24px 24px -12px;
 }
 
 section.hours-table {
@@ -21851,168 +21867,6 @@ table.de-emphasize {
 }
 .booking-container .id-card-card:hover {
   border: 1px solid var(--color-primary);
-}
-
-.contact-section {
-  padding: 14rem 0 16rem;
-}
-.contact-section .container > .row {
-  --bs-gutter-x: 20px;
-}
-.contact-section .location-card-body {
-  background: rgb(244, 244, 244);
-  margin-top: -7px;
-  padding: 3.5rem;
-}
-.contact-section .location-card-body .addy {
-  color: rgb(163, 163, 163);
-  padding-bottom: 0.5rem;
-  margin-top: -10px;
-}
-.contact-section .location-card-body h5 {
-  margin-bottom: 0;
-}
-.contact-section .contact-row {
-  display: flex;
-  flex-direction: row;
-  padding: 0px !important;
-  justify-content: space-around;
-  gap: 20px;
-}
-.contact-section .contact-row .contact-link {
-  padding: 3rem;
-  transition: all 0.3s ease;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-  flex: 1 1 50%;
-  background: rgb(244, 244, 244);
-  box-shadow: 0px 0px 0px rgba(24, 16, 16, 0);
-}
-.contact-section .contact-row .contact-link .icon {
-  padding-right: 14px;
-}
-.contact-section .contact-row .contact-link .icon-blast {
-  position: relative;
-  top: -3px;
-}
-.contact-section .contact-row .contact-link .icon svg {
-  height: 25px;
-  width: auto;
-}
-.contact-section .contact-row .contact-link .icon svg path {
-  transition: all 0.3s ease;
-  fill: var(--color-accent);
-}
-.contact-section .contact-row .contact-link .icon svg.phone {
-  height: 19px;
-}
-.contact-section .contact-row .contact-link p {
-  display: inline;
-  margin-bottom: 0;
-  font-size: 19px;
-  color: #4f4f4f;
-  font-weight: 500;
-}
-.contact-section .contact-row .contact-link:hover {
-  background: var(--color-offset);
-  transform: translateY(-5px);
-  box-shadow: 0px 9px 22px -7px rgba(24, 16, 16, 0.3019607843);
-}
-.contact-section .contact-row .contact-link:hover .icon svg path {
-  fill: white;
-}
-.contact-section .contact-row .contact-link:hover p {
-  color: white;
-}
-.contact-section .contact-row .contact-link:hover .arrow .the-arrow path {
-  stroke: white;
-}
-.contact-section .contact-box {
-  margin-top: 20px;
-  padding: 4.25rem 5rem 5rem 5rem;
-  background: rgb(244, 244, 244);
-}
-.contact-section .contact-box form {
-  margin-top: 0px;
-}
-.contact-section .contact-box form input,
-.contact-section .contact-box form textarea {
-  color: var(--color-primary);
-}
-.contact-section .contact-box form textarea {
-  height: 70px;
-  margin-bottom: 2rem;
-}
-.contact-section .map-col {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-.contact-section .map-col .media {
-  flex: 1 1 459px;
-}
-.contact-section .map-col .media iframe {
-  height: 100%;
-}
-.contact-section .map-col .location-card-body {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-
-.rental-section {
-  background-color: #f4f4f4;
-  padding-top: 10rem;
-  padding-bottom: 14rem;
-}
-.rental-section .container {
-  height: 100%;
-}
-.rental-section .container .row {
-  gap: 9rem;
-  height: 100%;
-}
-.rental-section .container .row [class*=col] h2 {
-  margin-bottom: 2rem;
-}
-.rental-section .container .row [class*=col] .highlighted {
-  color: var(--body-text);
-  background: lightyellow;
-}
-.rental-section .container .row [class*=col] p {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-.rental-section .container .row [class*=col] .tag-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-.rental-section .container .row [class*=col] .tag-wrapper .single-tag {
-  display: block;
-  padding: 8px 19px 10px 18px;
-  color: white;
-  background: var(--color-offset);
-  border-radius: 22px;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-.rental-section .container .row [class*=col] .tag-wrapper .single-tag:hover {
-  color: rgba(255, 255, 255, 0.825);
-  transform: translateY(-2px);
-}
-.rental-section .container .row .left-column {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-.rental-section-host-your-event .container .row [class*=col] h2 {
-  position: relative;
-  left: -5px;
 }
 
 .calendar-section .title-bar {
@@ -22771,6 +22625,164 @@ section.pro-shop-body.foot-joy .container .row .foot-joy-logo {
 .open-tournaments-page-body .container .container-consulting .consulting-step .single-consulting-one.expired .right-area h4,
 .open-tournaments-page-body .container .container-consulting .consulting-step .single-consulting-one.expired .right-area p {
   opacity: 0.7;
+}
+
+.instruction-page-body {
+  padding-top: 14rem;
+  padding-bottom: 18rem;
+  background: rgb(248, 248, 248);
+}
+.instruction-page-body > .container {
+  padding-bottom: 1rem;
+}
+.instruction-page-body > .container hr {
+  height: 1.25px;
+}
+.instruction-page-body > .container .pga-member-logo-box {
+  padding-right: 1rem;
+  padding-left: 3rem;
+  margin-left: -3rem;
+  margin-bottom: -2.5rem;
+  display: inline-block;
+  background: #f8f8f8;
+}
+.instruction-page-body > .container .pga-member-logo-box .pga-member-logo {
+  width: 90px;
+}
+.instruction-page-body > .container .pga-member-logo-box .pga-member-logo:after {
+  content: "";
+  width: 150px;
+}
+.instruction-page-body > .container .row.lined-row {
+  border-top: 1.25px solid rgb(230, 230, 230);
+  padding-top: 7rem;
+}
+.instruction-page-body > .container .row [class*=col] h3 {
+  padding-top: 3rem;
+  font-size: 37px;
+}
+.instruction-page-body > .container .row [class*=col] .shop-note {
+  font-family: "IKOB Italic";
+  margin-bottom: 10px;
+  font-size: 27px;
+  line-height: 140%;
+}
+.instruction-page-body > .container .row [class*=col] ul {
+  list-style-type: none;
+  padding-left: 3px;
+}
+.instruction-page-body > .container .row [class*=col] ul li a {
+  text-decoration: underline;
+}
+.instruction-page-body > .container .row [class*=col] ul li a img {
+  width: 15px;
+  height: auto;
+  margin-right: 30px;
+}
+.instruction-page-body > .container .row [class*=col] ul li a:hover {
+  text-decoration: none;
+}
+.instruction-page-body .note-box {
+  padding: 3rem;
+  padding-bottom: 4rem;
+  background: #fff;
+  height: 100%;
+  border-radius: 10px;
+  font-size: 17px;
+}
+.instruction-page-body .note-box .note-brow {
+  padding-bottom: 2rem;
+}
+.instruction-page-body .note-box .note-brow .note-icon {
+  width: auto;
+  height: 20px;
+}
+.instruction-page-body .note-box .note-brow .note-icon path {
+  fill: rgba(0, 0, 0, 0.208);
+  fill: var(--color-secondary);
+}
+.instruction-page-body .note-box .note-title {
+  font-family: "IKOB";
+  font-size: 21px;
+  padding-bottom: 0.5rem;
+}
+.instruction-page-body .note-box .price {
+  color: rgb(139, 139, 139);
+}
+.instruction-page-body .note-box .price > span {
+  -webkit-text-stroke: 0.4px;
+  letter-spacing: 0.3px;
+}
+.instruction-page-body .note-box .img-box {
+  background: white;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  height: 226px;
+}
+.instruction-page-body .note-box .img-box img {
+  width: 80%;
+  height: auto;
+}
+
+.instruction-notices {
+  background: rgb(255, 255, 255);
+  padding-top: 17rem;
+}
+
+.contact-page-body {
+  padding-top: 5rem;
+}
+.contact-page-body .rts-location-contact-area .container .row .single-location-area-contact .icon {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  width: 55px;
+  height: 55px;
+  border-radius: 99px;
+  border: 1px solid rgb(244, 244, 244);
+  background: rgb(250, 250, 250);
+}
+.contact-page-body .rts-location-contact-area .container .row .single-location-area-contact .icon .injectable {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 27px;
+  transform: translate(-50%, -50%);
+}
+.contact-page-body .rts-location-contact-area .container .row .single-location-area-contact .icon .injectable path {
+  fill: var(--color-secondary);
+}
+.contact-page-body .rts-location-contact-area .container .row .single-location-area-contact .icon .injectable.phone {
+  width: 28px;
+}
+.contact-page-body .rts-location-contact-area .container .row .single-location-area-contact p {
+  font-family: "IKOB";
+  margin-bottom: 5px;
+}
+.contact-page-body .rts-location-contact-area .container .row .single-location-area-contact > span {
+  display: inline-block;
+  line-height: 138%;
+}
+.contact-page-body .rts-location-contact-area .container .row .single-location-area-contact a {
+  text-decoration: none;
+}
+.contact-page-body .rts-google-map-area .google-map-wrapper {
+  max-height: 450px;
+}
+.contact-page-body .rts-google-map-area .directions-addendum {
+  padding: 4rem;
+  padding-bottom: 5rem;
+  background: rgb(250, 250, 250);
+}
+.contact-page-body .rts-google-map-area .directions-addendum h3 {
+  margin-bottom: 1rem;
+  font-size: 21px;
+  color: #262626;
+}
+.contact-page-body .rts-google-map-area .directions-addendum p {
+  color: grey;
 }
 
 footer {

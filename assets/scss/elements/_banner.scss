@@ -623,13 +623,6 @@ $subpage-height: 550px;
       background-image: $to-transparent-bg-gradient;
     }
   }
-  &.about-banner {
-    background-image: url(../images/marimack-tournament-start.jpg);
-    .overlay {
-      background-image: $dark-background-gradient;
-      background-image: $to-transparent-bg-gradient;
-    }
-  }
   &.events-banner {
     background-image: url(../images/marimack-bunch-of-carts.jpg);
     .overlay {
@@ -738,6 +731,24 @@ $subpage-height: 550px;
   }
   &.members-only-events-banner {
     background-image: url(../images/group-of-friends.jpg);
+    .overlay {
+      background-image: $darker-background-gradient;
+    }
+    .title {
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
+    }
+  }
+  &.instruction-banner {
+    background-image: url(../images/golf-instructor.jpg);
+    .overlay {
+      background-image: $darker-background-gradient;
+    }
+    .title {
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
+    }
+  }
+  &.contact-banner {
+    background-image: url(../images/player-in-view.jpg);
     .overlay {
       background-image: $darker-background-gradient;
     }
