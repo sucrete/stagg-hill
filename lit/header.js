@@ -147,13 +147,13 @@ export class Header extends LitElement {
                           >
                         </li>
                         <li>
-                          <a href="join-our-team.html"
+                          <a href="meet-the-staff.html#join-the-team"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Join Our Team</a
                           >
                         </li>
                         <li>
-                          <a href="donation-request.html"
+                          <a href="contact.html#donation-request"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Donation Requests</a
                           >

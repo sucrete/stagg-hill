@@ -1594,6 +1594,27 @@ section.perks {
       }
     }
   }
+  &#donation-request {
+    background: #f6f6f6;
+    .container {
+      p {
+        max-width: 800px;
+        margin: 0 auto;
+        padding-top: 2.25rem;
+        letter-spacing: 0.1px;
+        line-height: 150%;
+        font-size: 17px;
+        color: grey;
+      }
+      a.rts-btn {
+        margin-top: 3rem;
+        background: #e1e1e1;
+        &:after {
+          background: #d5d5d5;
+        }
+      }
+    }
+  }
 }
 
 //~ Rates/Greens Fees
@@ -2034,37 +2055,27 @@ section.pro-shop-body {
 
 //~ Instruction
 .instruction-page-body {
-  padding-top: 14rem;
+  padding-top: 17rem;
   padding-bottom: 18rem;
-  background: rgb(248, 248, 248);
+  background: #fafafa;
   & > .container {
     padding-bottom: 1rem;
     hr {
       height: 1.25px;
     }
-    .pga-member-logo-box {
-      padding-right: 1rem;
-      padding-left: 3rem;
-      margin-left: -3rem;
-      margin-bottom: -2.5rem;
-      display: inline-block;
-      background: #f8f8f8;
-      .pga-member-logo {
-        width: 90px;
-        &:after {
-          content: "";
-          width: 150px;
-        }
-      }
-    }
+
     .row {
       &.lined-row {
         border-top: 1.25px solid rgb(230, 230, 230);
         padding-top: 7rem;
       }
       [class*="col"] {
+        .pga-member-logo {
+          width: 80px;
+          height: auto;
+        }
         h3 {
-          padding-top: 3rem;
+          padding-top: 2rem;
           font-size: 37px;
         }
         .shop-note {
@@ -2112,18 +2123,17 @@ section.pro-shop-body {
       }
     }
     .note-title {
-      font-family: "IKOB";
       font-size: 21px;
       padding-bottom: 0.5rem;
-      // color: var(--color-primary)
+      -webkit-text-stroke: 0.1px;
     }
     .price {
       color: rgb(139, 139, 139);
-      // font-size: 16px;
-      & > span {
-        -webkit-text-stroke: 0.4px;
-        letter-spacing: 0.3px;
-      }
+      font-family: "Sono";
+      font-size: 14px;
+      text-transform: uppercase;
+      -webkit-text-stroke: 0.1px;
+      letter-spacing: 0.4px;
     }
     font-size: 17px;
     .img-box {
@@ -2148,6 +2158,7 @@ section.pro-shop-body {
 //~ Contact
 .contact-page-body {
   padding-top: 5rem;
+  padding-bottom: 17rem;
   .rts-location-contact-area {
     .container {
       .row {
@@ -2175,12 +2186,18 @@ section.pro-shop-body {
                 fill: var(--color-secondary);
               }
               &.phone {
-                width: 28px;
+                width: 29px;
+              }
+              &.envelope {
+                width: 25px;
               }
             }
           }
           p {
             font-family: "IKOB";
+            font-size: 21px;
+            -webkit-text-stroke: 0.3px;
+            letter-spacing: 0.2px;
             margin-bottom: 5px;
           }
           & > span {
@@ -2189,6 +2206,11 @@ section.pro-shop-body {
           }
           a {
             text-decoration: none;
+            &:hover,
+            &:active,
+            &:focus {
+              color: #262626;
+            }
           }
         }
       }
@@ -2209,6 +2231,144 @@ section.pro-shop-body {
       }
       p {
         color: grey;
+      }
+    }
+  }
+}
+
+//~ Meet the Staff
+.meet-the-staff-page-body {
+  padding-top: 12rem;
+  padding-bottom: 17rem;
+  .rts-location-contact-area {
+    .container {
+      .row {
+        .single-location-area-contact {
+          position: relative;
+          .pga-memb-logo {
+            position: absolute;
+            width: 85px;
+            top: -2rem;
+            right: 5rem;
+            filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.04))
+              drop-shadow(0 2px 2px rgba(0, 0, 0, 0.05))
+              drop-shadow(0 4px 4px rgba(0, 0, 0, 0.06))
+              drop-shadow(0 8px 8px rgba(0, 0, 0, 0.07))
+              drop-shadow(0 16px 16px rgba(0, 0, 0, 0.08))
+              drop-shadow(0 32px 32px rgba(0, 0, 0, 0.09));
+          }
+          .staff-photo {
+            width: 250px;
+            border-radius: 50%;
+            padding: 5px;
+            border: 2px solid rgb(239 233 215);
+            margin-bottom: 3.5rem;
+            &.george {
+              border-color: rgb(234, 234, 234);
+            }
+          }
+          p {
+            font-family: "IKOB";
+            color: var(--color-primary);
+            font-size: 29px;
+            -webkit-text-stroke: 0.3px;
+            letter-spacing: 0.2px;
+            margin-bottom: 10px;
+          }
+          .dividing-line {
+            margin: 0 auto;
+            height: 1px;
+            width: 100px;
+            background-color: #dcdcdc;
+            margin-top: 2rem;
+            margin-bottom: 1.25rem;
+          }
+          .title {
+            color: var(--color-primary);
+            font-size: 21px;
+            -webkit-text-stroke: 0.3px;
+            letter-spacing: 0.2px;
+            line-height: 130%;
+          }
+          .contact-details {
+            padding-top: 2rem;
+            a {
+              display: block;
+              img {
+                margin-right: 15px;
+                width: 14px;
+              }
+            }
+          }
+          & > span {
+            display: inline-block;
+            line-height: 138%;
+          }
+          a {
+            &:hover,
+            &:active,
+            &:focus {
+              color: #262626;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.board {
+  background: #f7f7f7;
+  $accent: rgb(218, 218, 218);
+  padding-bottom: 17rem;
+  .container {
+    .row {
+      border-top: 1.5px solid lighten($accent, 7%);
+      padding-top: 1rem;
+      h3 {
+        font-family: "IKOB";
+        font-size: 42px;
+        color: #262626;
+      }
+      ul {
+        margin-top: 1rem;
+        list-style-type: none;
+        li {
+          padding-left: 2.5rem;
+          padding-bottom: 1rem;
+          font-size: 19px;
+          letter-spacing: 0.5px;
+          &::marker {
+            color: $accent;
+          }
+          &:first-of-type {
+            margin-top: 0;
+          }
+        }
+      }
+      p {
+        margin-bottom: 2rem;
+      }
+    }
+    &.chair-container {
+      margin-top: 14rem;
+    }
+  }
+}
+
+.join-the-team {
+  background: white;
+  .container {
+    .row {
+      .completed-applications {
+        color: grey;
+        padding-top: 2rem;
+        max-width: 500px;
+      }
+      .right-bit {
+        p {
+          font-size: 18px;
+          letter-spacing: .3px;
+        }
       }
     }
   }

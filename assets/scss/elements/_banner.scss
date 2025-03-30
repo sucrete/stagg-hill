@@ -756,6 +756,15 @@ $subpage-height: 550px;
       text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
     }
   }
+  &.meet-the-staff-banner {
+    background-image: url(../images/golfer-with-perspective.jpg);
+    .overlay {
+      background-image: $darker-background-gradient;
+    }
+    .title {
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
+    }
+  }
 
   @media #{$sm-layout} {
     height: $subpage-height;
