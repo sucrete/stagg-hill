@@ -2311,6 +2311,102 @@ section.pro-shop-body {
               color: #262626;
             }
           }
+          $collapsed-height: 100px;
+          .collapsible-wrapper {
+            .text-center {
+              // color: #555555;
+              line-height: 170%;
+            }
+            padding-top: 3rem;
+            .collapse {
+              position: relative;
+              &:not(.show) {
+                display: block;
+                height: $collapsed-height;
+                overflow: hidden;
+              }
+              .grad {
+                transition: all 1s ease;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 1;
+                background-image: linear-gradient(
+                  to bottom,
+                  hsla(0, 0%, 100%, 0) 0%,
+                  hsla(0, 0%, 100%, 0.052) 10.1%,
+                  hsla(0, 0%, 100%, 0.108) 18.3%,
+                  hsla(0, 0%, 100%, 0.167) 24.9%,
+                  hsla(0, 0%, 100%, 0.23) 30.2%,
+                  hsla(0, 0%, 100%, 0.295) 34.6%,
+                  hsla(0, 0%, 100%, 0.362) 38.4%,
+                  hsla(0, 0%, 100%, 0.431) 41.9%,
+                  hsla(0, 0%, 100%, 0.502) 45.4%,
+                  hsla(0, 0%, 100%, 0.573) 49.4%,
+                  hsla(0, 0%, 100%, 0.645) 54.1%,
+                  hsla(0, 0%, 100%, 0.717) 59.8%,
+                  hsla(0, 0%, 100%, 0.789) 66.9%,
+                  hsla(0, 0%, 100%, 0.861) 75.8%,
+                  hsla(0, 0%, 100%, 0.931) 86.7%,
+                  hsl(0, 0%, 100%) 100%
+                );
+              }
+
+              &.show {
+                .grad {
+                  opacity: 0;
+                }
+              }
+            }
+            .collapsing {
+              height: $collapsed-height;
+              .grad {
+                opacity: 0;
+              }
+            }
+            p {
+              .chad-btn {
+                font-size: 14px;
+                font-family: "Alte Haas";
+                width: fit-content;
+                display: inline-block;
+                margin: 0 auto;
+                border-radius: 99px;
+                padding: 4px 12px;
+                letter-spacing: 0.5px;
+                color: rgb(158, 158, 158);
+                border: none;
+                transition: all 0.15s ease;
+                .fa-duotone {
+                  margin-left: 0.5rem;
+                  top: -1px;
+                  opacity: 0.3;
+                  font-size: 12px;
+                  line-height: 90%;
+                  transition: all 0.15s ease;
+                  &:after {
+                    content: "\f078";
+                  }
+                }
+                &[aria-expanded="true"] {
+                  opacity: 0;
+                  pointer-events: none;
+                  transition: all 0.4s ease;
+                  .fa-duotone {
+                    transform: rotate(180deg);
+                  }
+                }
+                &:hover {
+                  color: #545454;
+                  .fa-duotone {
+                    opacity: 0.5;
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -2367,7 +2463,7 @@ section.pro-shop-body {
       .right-bit {
         p {
           font-size: 18px;
-          letter-spacing: .3px;
+          letter-spacing: 0.3px;
         }
       }
     }
