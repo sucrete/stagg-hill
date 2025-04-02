@@ -223,6 +223,7 @@ section.cta {
           .title {
             font-size: 35px;
             line-height: 120%;
+            @include mobile-h3;
           }
           p {
             margin-bottom: 2rem;

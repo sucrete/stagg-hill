@@ -2158,6 +2158,7 @@ section.pro-shop-body {
   padding-top: 5rem;
   padding-bottom: 17rem;
   .rts-location-contact-area {
+    padding-top: 7rem;
     .container {
       .row {
         .single-location-area-contact {
@@ -2971,6 +2972,62 @@ footer {
       }
     }
   }
+  section {
+    &.members-only-events-page-body {
+      .event-wrapper {
+        .career-banner-wrapper {
+          .title {
+          }
+        }
+        .thumbnail-top {
+          .event-image-box {
+            position: relative;
+            left: -2px;
+            bottom: 0;
+            top: unset;
+            right: unset;
+            border-radius: 21px;
+            &.match-play {
+              top: unset;
+              left: -2px;
+              bottom: 2rem;
+            }
+            &.masters {
+              padding: 1.75rem 2.75rem 1.95rem 2.75rem;
+              .masters-logo {
+                width: 70px;
+              }
+            }
+            &.match-play {
+              padding: 0 12px 1px 12px;
+              left: -2px;
+              .match-play-logo {
+                width: 150px;
+              }
+            }
+            &.fourth {
+              left: -2px;
+              padding: 0;
+              left: 0;
+              bottom: 2rem;
+              .fourth-flags {
+                left: 0;
+                width: 150px;
+              }
+            }
+            &.club-championship {
+              left: -2px;
+              bottom: 2rem;
+              padding: 12px 18px 8px 18px;
+              .club-championship-logo {
+                width: 175px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -3017,7 +3074,7 @@ footer {
     }
   }
   section.sponsors-section .container .row .title-center-2 .title {
-    font-size: 37px;
+    @include mobile-h3;
     margin-bottom: 15px;
   }
   section.sponsors-section
@@ -3087,7 +3144,7 @@ footer {
             font-size: 15px;
             word-wrap: break-word;
             overflow-wrap: break-word;
-            
+
             line-height: 130%;
           }
         }
@@ -3101,7 +3158,7 @@ footer {
         padding-bottom: 9rem;
         .row {
           .foot-joy-left {
-            margin-top: .5rem;
+            margin-top: 0.5rem;
           }
         }
       }
@@ -3120,17 +3177,225 @@ footer {
         p {
           font-size: 16px;
         }
-        
       }
       .container-consulting {
         h2 {
           @include mobile-h3;
         }
-        .single-consulting-one {
-          padding-left: 1rem;
-          .timeline-dot {
-            left: 0.47%;
+        .consulting-step {
+          margin-top: 0;
+          .single-consulting-one {
+            padding-left: 1rem;
+            .timeline-dot {
+              left: 0.47%;
+            }
           }
+        }
+      }
+    }
+  }
+  section {
+    &.open-tournaments-page-body {
+      .container {
+        .container-consulting {
+          .row {
+            .title-center-style-two {
+              h2 {
+                @include mobile-h3;
+              }
+            }
+            [class*="col"] {
+              .consulting-step {
+                margin-top: 0;
+                .single-consulting-one {
+                  padding-left: 1rem;
+                  margin-bottom: 5rem;
+                  .timeline-dot {
+                    left: 0.5%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  section {
+    &.sponsors-section-on-open-tournaments-page {
+      .schedule-note {
+        width: 80%;
+        font-size: 16px;
+        line-height: 120%;
+        text-align: center;
+        border-top: 1px solid rgb(222, 222, 222);
+        margin-top: 2rem;
+        padding-top: 1.75rem;
+      }
+    }
+  }
+  section {
+    &.members-only-events-page-body {
+      padding-top: 0;
+      .event-wrapper {
+        padding: 7rem 0;
+        &.member-guest-event-wrapper {
+          padding-top: 5rem;
+        }
+        .career-banner-wrapper {
+          .title {
+            @include mobile-h3;
+          }
+          p {
+            line-height: 150%;
+          }
+        }
+      }
+    }
+  }
+  .sponsorship-cta {
+    .container {
+      h3 {
+        @include mobile-h3;
+      }
+    }
+  }
+
+  section {
+    &.instruction-page-body {
+      & > .container {
+        .row {
+          &.lined-row {
+            border: none;
+            h3 {
+              @include mobile-h3;
+            }
+            .shop-note {
+              line-height: 110%;
+            }
+          }
+        }
+      }
+    }
+  }
+  section {
+    &.contact-page-body {
+      .container {
+        .rts-location-contact-area {
+          padding-top: 2rem;
+          .container {
+            .row {
+              [class*="col"] {
+                margin-top: 7rem;
+              }
+            }
+          }
+        }
+      }
+      .rts-google-map-area {
+        .container {
+          .row {
+            [class*="col"] {
+              .directions-addendum {
+                padding: 4rem 2.5rem 4rem 2.5rem;
+                p {
+                  line-height: 149%;
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  section {
+    &#donation-request {
+      .container {
+        .row {
+          p {
+            line-height: 149%;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  section {
+    &.meet-the-staff-page-body {
+      .container {
+        .rts-location-contact-area {
+          padding-top: 3rem;
+          .container {
+            .row {
+              [class*="col-"] {
+                margin-top: 5rem;
+                .single-location-area-contact {
+                  .pga-memb-logo {
+                    width: 72px;
+                    top: -1.5rem;
+                    right: 6rem;
+                  }
+                  .staff-photo {
+                    width: 50%;
+                    margin-bottom: 2rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  section {
+    &.board.mobile-padding {
+      // padding-top: 14rem;
+      .container {
+        .row {
+          border-top: none;
+          
+          [class*="col-"] {
+            h3 {
+              @include mobile-h3;
+              border-top: 1.5px solid #ececec;
+              padding-top: 3rem;
+              margin-bottom: 0;
+            }
+            .completed-applications {
+              font-size: 16px;
+              line-height: 26px;
+            }
+            ul {
+              &.board-list {
+                padding-left: 0;
+                margin-top: 0;
+                li {
+                  padding-left: 3px;
+                  font-size: 16px;
+                  padding-bottom: 0;
+                  line-height: 135%;
+                  letter-spacing: 0.25px;
+                }
+              }
+            }
+            a {
+              margin-top: 2rem;
+            }
+            &:nth-of-type(2) {
+              margin-top: 2rem;
+            }
+          }
+          .right-bit {
+            p {
+              font-size: 16px;
+              line-height: 26px;
+            }
+          }
+        }
+        &.chair-container {
+          margin-top: 5rem;
         }
       }
     }

@@ -1150,3 +1150,12 @@ $subpage-height: 550px;
   top: 0 !important;
   right: 44px !important;
 }
+
+@media screen and (max-width: 768px) {
+  .banner-four-area {
+    &:not(.league-page-body-mens) {
+      background-position: center center;
+    }
+   
+  }
+}
