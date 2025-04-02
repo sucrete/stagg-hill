@@ -254,6 +254,7 @@ export class Footer extends LitElement {
         <!-- rts footer area end -->
       </div>
 
+      <!-- 🟡🟡🟡🟡🟡🟡 MOBILE MENU MARKUP START 🟡🟡🟡🟡🟡🟡 -->
       <div id="side-bar" class="side-bar header-two" dir="ltr">
         <button class="close-icon-menu" aria-label="footer_Button">
           <i class="far fa-times"></i>
@@ -261,40 +262,46 @@ export class Footer extends LitElement {
         <div class="mobile-menu-main">
           <nav class="nav-main mainmenu-nav mt--30">
             <ul class="mainmenu metismenu" id="mobile-menu-active">
-              <li>
-                <a href="rates.html" class="main">Greens Fees</a>
-              </li>
+              
               <li class="has-droupdown">
-                <a href="#" class="main" aria-expanded="false">Events</a>
+                <a href="#" class="main" aria-expanded="false">Fees</a>
                 <ul class="submenu mm-collapse">
-                  <li><a href="events.html">Calendar</a></li>
-                  <li><a href="host-your-event.html">Host Your Event</a></li>
+                  <li><a href="greens-fees.html">Greens Fees</a></li>
+                  <li><a href="membership-fees.html">Membership Fees</a></li>
+                  <li><a href="membership-fees.html#sunflower-trail">Sunflower Trail</a></li>
                 </ul>
               </li>
               <li>
-                <a href="membership.html" class="main">Membership</a>
+                <a href="pro-shop.html" class="main">Pro Shop</a>
               </li>
 
               <li class="has-droupdown">
-                <a href="#" class="main" aria-expanded="false">Pool</a>
+                <a href="#" class="main" aria-expanded="false">Leagues</a>
                 <ul class="submenu mm-collapse">
-                  <li><a href="pool.html">Membership</a></li>
-                  <li><a href="pool.html#rules">Pool Rules</a></li>
+                  <li><a href="mens-league.html">Men's League</a></li>
+                  <li><a href="womens-league.html">Women's League</a></li>
+                  <li><a href="ladies-evening-league.html">Ladies Evening League</a></li>
+                  <li><a href="couples-league.html">Couples League</a></li>
+                </ul>
+              </li>
+              <li class="has-droupdown">
+                <a href="#" class="main" aria-expanded="false">Tournaments</a>
+                <ul class="submenu mm-collapse">
+                  <li><a href="calendar.html">Calendar</a></li>
+                  <li><a href="open-tournaments.html">Open Tournaments</a></li>
+                  <li><a href="members-only-events.html">Members Only Events</a></li>
                 </ul>
               </li>
               <li>
-                <a href="online-store.html" class="main">Online Store</a>
+                <a href="instruction.html" class="main">Instruction</a>
               </li>
               <li class="has-droupdown">
                 <a href="#" class="main" aria-expanded="false">About</a>
                 <ul class="submenu mm-collapse">
-                  <li><a href="about.html">Contact</a></li>
-                  <li>
-                    <a href="about.html#clubhouse-rental">Clubhouse Rental</a>
-                  </li>
-
-                  <li><a href="scorecard.html">Scorecard</a></li>
-                  <li><a href="holes-in-one.html">Holes-in-One!</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="meet-the-staff.html">Meet The Staff</a></li>
+                  <li><a href="meet-the-staff.html#join-our-team">Join Our Team</a></li>
+                  <li><a href="contact.html#donation-requests">Donation Requests</a></li>
                 </ul>
               </li>
               <li>

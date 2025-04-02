@@ -361,29 +361,29 @@ header .rts-btn {
 
   // }
 
-  .banner-inner-wrapper-five {
-    // &::after {
-    //     content: '';
-    //     z-index: -1;
-    //     position: absolute;
-    //     width: 292px;
-    //     height: 292px;
-    //     left: 1313px;
-    //     top: 485px;
-    //     background: linear-gradient(270deg, #FF34DD 25.08%, #FFFFFF 43.64%, #3534FF 66.3%);
-    //     -webkit-filter: blur(200px);
-    //     -moz-filter: blur(200px);
-    //     filter: blur(200px);
+  // .banner-inner-wrapper-five {
+  // &::after {
+  //     content: '';
+  //     z-index: -1;
+  //     position: absolute;
+  //     width: 292px;
+  //     height: 292px;
+  //     left: 1313px;
+  //     top: 485px;
+  //     background: linear-gradient(270deg, #FF34DD 25.08%, #FFFFFF 43.64%, #3534FF 66.3%);
+  //     -webkit-filter: blur(200px);
+  //     -moz-filter: blur(200px);
+  //     filter: blur(200px);
 
-    //     @media #{$laptop-device} {
-    //         display: none;
-    //     }
+  //     @media #{$laptop-device} {
+  //         display: none;
+  //     }
 
-    //     @media #{$smlg-device} {
-    //         display: none;
-    //     }
-    // }
-  }
+  //     @media #{$smlg-device} {
+  //         display: none;
+  //     }
+  // }
+  // }
 }
 
 @-moz-document url-prefix() {
@@ -553,5 +553,80 @@ header .rts-btn {
   }
   &.menu-item-open > a {
     color: #0b2e16b3 !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  header {
+    &.header-style-one.header--sticky {
+      &:not(.sticky) {
+        .menu-btn-toggle {
+          svg {
+            rect {
+              fill: white;
+            }
+          }
+        }
+      }
+      &.sticky {
+        .menu-btn-toggle {
+          svg {
+            rect {
+              fill: var(--color-primary);
+            }
+          }
+        }
+      }
+    }
+    &:not(.style-white) {
+      .menu-btn-toggle {
+        svg {
+          rect {
+            fill: var(--color-primary);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    &.header-style-one.header--sticky {
+      .container {
+        padding-left: 1.5rem;
+        padding-right: 2rem;
+        .row {
+          [class*="col"] {
+            .header-wrapper-1 {
+              padding-top: 1.5rem;
+              .logo-area {
+                .logo-large {
+                  width: 185px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .gradient-bg {
+        top: 59px;
+        height: 55px;
+      }
+      &.sticky {
+        .container {
+          .row {
+            [class*="col"] {
+              .header-wrapper-1 {
+                padding-top: 0.25rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .button-area-right-header .menu-btn-toggle {
+    margin-top: -8px;
   }
 }

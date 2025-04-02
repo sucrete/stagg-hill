@@ -95,7 +95,6 @@ section.sponsors-section {
               height: auto;
               transition: 0.2s all ease;
               transform: translate(-50%, -50%);
-              filter: grayscale(0.2);
               &.bottle-caps {
                 width: 120px;
               }
@@ -130,9 +129,6 @@ section.sponsors-section {
             background: rgba(255, 255, 255, 0.47);
             a {
               transform: scale(1.1);
-              .logo {
-                filter: grayscale(0);
-              }
             }
           }
         }
@@ -427,7 +423,7 @@ section.homepage-notices {
   }
 }
 
-section.hours-table {
+.hours-table {
   background: #fafafa;
   padding-top: 15rem;
   padding-bottom: 15rem;
@@ -486,6 +482,7 @@ section.hours-table {
           li {
             padding-left: 20px;
             counter-increment: step-counter;
+            line-height: 135%;
             &::marker {
               font-family: "Alte Haas Bold";
             }
@@ -1710,6 +1707,7 @@ section.perks {
           h3 {
             font-size: 33px;
             margin-bottom: 1rem;
+            line-height: 111%;
           }
         }
       }
@@ -2851,40 +2849,56 @@ footer {
 //* ===================================================
 
 // padding for screens under 767px wide
-@media (max-width: 992px) {
-  .mobile-padding {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    &.booking-container {
-      .row {
-        padding-top: 0;
-        padding-bottom: 5rem;
-        gap: 30px;
-      }
+@media screen and (max-width: 1199px) {
+  .single-solution-style-one {
+    &.border-bottom-1 {
+      border: none;
     }
-    &.why-choose-us-working-process {
-      padding-top: 12rem;
-      [class*="shape"] {
-        display: none;
+    &.border-left {
+      border: none;
+    }
+  }
+}
+@media (max-width: 992px) {
+  section {
+    &.mobile-padding {
+      padding-top: 7rem;
+      padding-bottom: 7rem;
+      &.booking-container {
+        .row {
+          padding-top: 0;
+          padding-bottom: 5rem;
+          gap: 30px;
+        }
       }
-      .container {
-        // background-color: yellow;
-        & > .row {
-          flex-direction: column-reverse;
-          .pictures-stage {
-            padding-bottom: 4rem;
-          }
-          .why-choose-process-left {
-            .title {
-              font-size: 37px;
-              line-height: 110%;
-              margin-bottom: 15px;
+      &.why-choose-us-working-process {
+        padding-top: 8rem;
+        [class*="shape"] {
+          display: none;
+        }
+        .container {
+          // background-color: yellow;
+          & > .row {
+            flex-direction: column-reverse;
+            .pictures-stage {
+              padding-bottom: 4rem;
+            }
+            .why-choose-process-left {
+              .title {
+                font-size: 37px;
+                line-height: 110%;
+                margin-bottom: 15px;
+              }
             }
           }
         }
       }
     }
+    &.rates-page-body.membership {
+      padding-bottom: 3rem;
+    }
   }
+
   .rental-section {
     .container {
       .row {
@@ -2911,8 +2925,13 @@ footer {
       .the-table-itself {
         overflow: hidden;
         .hours-table-brow {
+          background-size: 49%;
           .table-title-wrapper {
             flex-direction: column;
+            padding: 2rem;
+            .icon-box {
+              margin-bottom: 1rem;
+            }
             .title {
               padding-top: 1rem;
               line-height: 100%;
@@ -2920,15 +2939,9 @@ footer {
           }
         }
         .some-tables {
-          [class*="col"] {
-            // &:last-of-type {
-            //   padding-right: 3rem
-            // }
-            padding: 3.75rem;
-            &:nth-of-type(2),
-            &:nth-of-type(3) {
-              border-top: 1.5px solid rgba(0, 0, 0, 0.05);
-            }
+          padding-right: 4rem;
+          ol {
+            margin-inline-start: 10px;
           }
         }
       }
@@ -2998,6 +3011,125 @@ footer {
                 }
               }
             }
+          }
+        }
+      }
+    }
+  }
+  section.sponsors-section .container .row .title-center-2 .title {
+    font-size: 37px;
+    margin-bottom: 15px;
+  }
+  section.sponsors-section
+    .container
+    .row
+    [class*="col"]
+    .single-solution-style-one {
+    min-height: 117px;
+    .border-left {
+      // border: 1px solid var(--border-color);
+    }
+  }
+
+  section {
+    &.rates-page-body {
+      [class*="table-wrapper"] {
+        hr {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  section {
+    &.rates-page-body {
+      .addendum {
+        .two-paragraphs {
+          padding-left: 27px;
+          padding-top: 10px;
+          padding-bottom: 16px;
+        }
+      }
+    }
+  }
+  .sunflower-trail-page-body {
+    .container {
+      .row {
+        .sunflower-trail-wrapper {
+          h3 {
+            font-size: 33px;
+            svg {
+              display: block;
+              margin-bottom: 2rem;
+            }
+          }
+          .sft-intro {
+            font-size: 21px;
+          }
+        }
+      }
+    }
+  }
+  section.pro-shop-body .band-of-brands .container .row .brand {
+    max-width: 34%;
+  }
+  section.pro-shop-body {
+    & > .container {
+      padding-top: 4rem;
+      .row {
+        &.lined-row {
+          border-top: none;
+        }
+        [class*="col"] {
+          .shop-note {
+            font-size: 21px;
+          }
+          .note-box {
+            font-size: 15px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            
+            line-height: 130%;
+          }
+        }
+      }
+    }
+  }
+  section {
+    &.pro-shop-body.foot-joy {
+      & > .container {
+        padding-top: 9rem;
+        padding-bottom: 9rem;
+        .row {
+          .foot-joy-left {
+            margin-top: .5rem;
+          }
+        }
+      }
+    }
+  }
+  section {
+    &.league-page-body {
+      h3 {
+        font-size: 33px;
+        line-height: 110%;
+        margin-bottom: 1.5rem;
+      }
+      .league-breakdown {
+        columns: unset;
+        padding-bottom: 2rem;
+        p {
+          font-size: 16px;
+        }
+        
+      }
+      .container-consulting {
+        h2 {
+          @include mobile-h3;
+        }
+        .single-consulting-one {
+          padding-left: 1rem;
+          .timeline-dot {
+            left: 0.47%;
           }
         }
       }
@@ -3128,6 +3260,38 @@ footer {
       }
       .single-tag {
         margin-left: 8px;
+      }
+    }
+  }
+
+  section {
+    &.homepage-notices {
+      .container {
+        .row {
+          .single-blog-area-start {
+            a {
+              .image-area {
+                height: 282px;
+              }
+              .inner-content-area {
+                padding-left: 2.5rem;
+                padding-right: 2.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    &.homepage-notices {
+      padding-top: 10rem;
+      padding-bottom: 7rem;
+      .container {
+        .title {
+          margin-bottom: 3rem;
+        }
+      }
+      &.pro-shop-notices {
+        padding-top: 7rem;
       }
     }
   }

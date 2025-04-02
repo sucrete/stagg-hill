@@ -630,3 +630,23 @@ section.cta {
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .rts-cts-area {
+    .container {
+      .row {
+        .cta-one-wrapper {
+          .left-area {
+            p {
+              line-height: 135%;
+              padding-right: 0;
+            }
+            .remove-on-mobile {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -10,7 +10,7 @@
     transition: .3s;
 
     @media #{$smlg-device} {
-        border: none !important;
+        border: none;
         // padding: 15px !important;
     }
 
@@ -182,7 +182,8 @@
         font-size: 48px;
 
         @media #{$large-mobile} {
-            font-size: 34px !important;
+            font-size: 37px !important;
+            margin-bottom: 1rem;
         }
     }
 

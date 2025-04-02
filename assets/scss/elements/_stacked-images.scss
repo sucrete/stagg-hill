@@ -7,7 +7,7 @@
   border: none;
   background-color: rgb(235 235 235);
   color: #b4b4b4;
-  padding: .75rem 1.65rem;
+  padding: 0.75rem 1.65rem;
   letter-spacing: 1px;
   text-transform: capitalize;
   transition: color 1s ease;
@@ -95,6 +95,28 @@ $zLayer: 10, 9, 8, 7, 6, 5, 4, 3, 2, 1;
       article {
         opacity: 1;
       }
+    }
+  }
+}
+//~ =============================
+//~ ========== PHABLET ==========
+//~ =============================
+
+@media screen and (max-width: 992px) {
+  .slyder-container {
+    height: 500px;
+    margin-bottom: 4rem;
+    .slyde {
+      min-width: 600px
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .slyder-container {
+    height: 300px;
+    
+    .slyde {
+      min-width: 398px;
     }
   }
 }
