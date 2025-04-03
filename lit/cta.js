@@ -24,7 +24,13 @@ export class CTA extends LitElement {
                       target="_blank"
                       class="rts-btn btn-primary cta-button no-underline"
                     >
-                      Download <span class="remove-on-mobile">for iOS or Android</span>
+                      <span>
+                        Download
+                        <span class="remove-on-mobile"
+                          >for iOS or Android</span
+                        ></span
+                      >
+
                       <img
                         class="injectable"
                         src="assets/images/service/icons/13.svg"
