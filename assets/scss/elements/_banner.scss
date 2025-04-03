@@ -171,7 +171,7 @@
   text-align: center;
   max-width: 770px;
   margin: auto;
-  
+
   span {
     border: 1px solid #e2e2e2;
     display: block;
@@ -442,28 +442,29 @@
   }
   .overlay {
     position: absolute;
-    height: 100%;
+    height: 60%;
     width: 100%;
+    bottom: 0;
     background-image: linear-gradient(
-      to top,
-      hsla(0, 0%, 0%, 0.29) 0%,
-      hsla(0, 0%, 0%, 0.288) 8.1%,
-      hsla(0, 0%, 0%, 0.283) 15.5%,
-      hsla(0, 0%, 0%, 0.274) 22.5%,
-      hsla(0, 0%, 0%, 0.264) 29%,
-      hsla(0, 0%, 0%, 0.251) 35.3%,
-      hsla(0, 0%, 0%, 0.237) 41.2%,
-      hsla(0, 0%, 0%, 0.222) 47.1%,
-      hsla(0, 0%, 0%, 0.208) 52.9%,
-      hsla(0, 0%, 0%, 0.193) 58.8%,
-      hsla(0, 0%, 0%, 0.179) 64.7%,
-      hsla(0, 0%, 0%, 0.166) 71%,
-      hsla(0, 0%, 0%, 0.156) 77.5%,
-      hsla(0, 0%, 0%, 0.147) 84.5%,
-      hsla(0, 0%, 0%, 0.142) 91.9%,
-      hsla(0, 0%, 0%, 0.14) 100%
+      to bottom,
+      hsla(0, 0%, 0%, 0) 0%,
+      hsla(0, 0%, 0%, 0.013) 8.1%,
+      hsla(0, 0%, 0%, 0.049) 15.5%,
+      hsla(0, 0%, 0%, 0.104) 22.5%,
+      hsla(0, 0%, 0%, 0.175) 29%,
+      hsla(0, 0%, 0%, 0.259) 35.3%,
+      hsla(0, 0%, 0%, 0.352) 41.2%,
+      hsla(0, 0%, 0%, 0.45) 47.1%,
+      hsla(0, 0%, 0%, 0.55) 52.9%,
+      hsla(0, 0%, 0%, 0.648) 58.8%,
+      hsla(0, 0%, 0%, 0.741) 64.7%,
+      hsla(0, 0%, 0%, 0.825) 71%,
+      hsla(0, 0%, 0%, 0.896) 77.5%,
+      hsla(0, 0%, 0%, 0.951) 84.5%,
+      hsla(0, 0%, 0%, 0.987) 91.9%,
+      hsl(0, 0%, 0%) 100%
     );
-
+    opacity: 0.4;
     z-index: 1;
   }
   .banner-four-wrapper {
@@ -578,14 +579,16 @@ $starker-gradient: linear-gradient(
   hsla(0, 0%, 0%, 0.32) 100%
 );
 
-
-
 $subpage-height: 550px;
 .banner-subpage {
   height: $subpage-height;
   min-height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
+  .overlay {
+    height: 100%;
+    opacity: 1;
+  }
   .banner-four-wrapper {
     justify-content: center;
     .title {
@@ -675,7 +678,7 @@ $subpage-height: 550px;
     background-image: url(../images/bunch-of-gents.jpg);
     .overlay {
       background-image: $darker-background-gradient;
-      opacity: .8;
+      opacity: 0.8;
     }
     .title {
       text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
@@ -685,7 +688,7 @@ $subpage-height: 550px;
     background-image: url(../images/womens-league.jpg);
     .overlay {
       background-image: $darker-background-gradient;
-      opacity: .8;
+      opacity: 0.8;
     }
     .title {
       text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
@@ -695,7 +698,7 @@ $subpage-height: 550px;
     background-image: url(../images/womens-league.jpg);
     .overlay {
       background-image: $darker-background-gradient;
-      opacity: .8;
+      opacity: 0.8;
     }
     .title {
       text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
@@ -703,9 +706,9 @@ $subpage-height: 550px;
   }
   &.couples-league-banner {
     background-image: url(../images/couple-2.jpg);
-    .overlay { 
+    .overlay {
       background-image: $darker-background-gradient;
-      opacity: .8;
+      opacity: 0.8;
     }
     .title {
       text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
@@ -1156,6 +1159,5 @@ $subpage-height: 550px;
     &:not(.league-page-body-mens) {
       background-position: center center;
     }
-   
   }
 }

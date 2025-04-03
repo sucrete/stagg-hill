@@ -327,9 +327,9 @@ section.homepage-notices {
                 margin-left: -1px;
               }
               h6 {
-                font-size: 20px;
+                font-size: 23px;
                 margin-bottom: 12px;
-                letter-spacing: 0.2px;
+                // letter-spacing: 0.2px;
               }
               p {
                 font-size: 17px;
@@ -528,8 +528,8 @@ section.homepage-notices {
   color: white;
   padding: 3rem;
   max-width: 500px;
-  font-size: 19px;
-  line-height: 150%;
+  font-size: 18px;
+  line-height: 140%;
   position: relative;
   z-index: 6;
 
@@ -783,8 +783,7 @@ table {
       th {
         padding-bottom: 20px;
         letter-spacing: 0.1px;
-        font-family: "Alte Haas";
-        -webkit-text-stroke: 0.3px;
+        font-family: "Inter Medium";
         text-transform: capitalize;
         text-align: center;
       }
@@ -819,8 +818,7 @@ table {
           display: flex;
           flex-direction: row;
           align-items: center;
-          font-family: "Alte Haas";
-          -webkit-text-stroke: 0.3px;
+          font-family: "Inter Medium";
           text-transform: capitalize;
         }
         .note {
@@ -1801,7 +1799,7 @@ section.perks {
             .b {
               color: #262626;
               letter-spacing: 0.15px;
-              -webkit-text-stroke: 0.4px;
+              font-family: 'Inter Medium';
             }
           }
         }
@@ -2124,7 +2122,10 @@ section.pro-shop-body {
     .note-title {
       font-size: 21px;
       padding-bottom: 0.5rem;
-      -webkit-text-stroke: 0.1px;
+      font-family: 'Inter Medium';
+      letter-spacing: -.3px;
+      line-height: 110%;
+      /* -webkit-text-stroke: 0.1px; */
     }
     .price {
       color: rgb(139, 139, 139);
@@ -2430,9 +2431,15 @@ section.pro-shop-body {
         list-style-type: none;
         li {
           padding-left: 2.5rem;
-          padding-bottom: 1rem;
+          padding-bottom: .25rem;
           font-size: 19px;
           letter-spacing: 0.5px;
+          color: grey;
+          
+          .b {
+            color: #262626;
+            font-family: 'Inter Medium';
+          }
           &::marker {
             color: $accent;
           }

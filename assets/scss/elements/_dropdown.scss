@@ -43,6 +43,7 @@ li.has-dropdown {
         i {
           font-size: 11px;
           transition: all 0.15s ease-out;
+          -webkit-text-stroke: .5px;
         }
 
         &:hover {

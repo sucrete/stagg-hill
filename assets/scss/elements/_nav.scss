@@ -15,10 +15,13 @@
         display: block;
         color: var(--color-primary);
         font-size: 16px;
-        font-family: "Alte Haas";
-        -webkit-text-stroke: .3px;
+        font-family: 'Inter Medium';
+        letter-spacing: -.2px;
         &:hover {
           color: var(--color-primary)
+        }
+        .fa-duotone {
+          -webkit-text-stroke: .5px;
         }
       }
       &.has-dropdown {

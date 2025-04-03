@@ -88,9 +88,9 @@
   --s-extra-bold: 400;
   --s-black: 400;
   --transition: 0.3s;
-  --font-primary: "Alte Haas", sans-serif;
-  --font-medium: "Aeonik Medium", sans-serif;
-  --font-secondary: "Aeonik Medium", sans-serif;
+  --font-primary: "Inter", sans-serif;
+  --font-medium: "Inter Medium", sans-serif;
+  --font-secondary: "Inter Semibold", sans-serif;
   --font-3: "fontawesome";
   --font-size-b1: 16px;
   --font-size-b2: 16px;
@@ -107,12 +107,52 @@
 }
 
 @font-face {
-  font-family: "Aeonik";
-  src: url("../assets/fonts/Aeonik-Regular.otf") format("opentype");
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-  font-family: "Aeonik Medium";
-  src: url("../assets/fonts/Aeonik-Medium.otf") format("opentype");
+  font-family: "Inter Italic";
+  src: url("../assets/fonts/Inter-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Inter Light";
+  src: url("../assets/fonts/Inter-Light.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter Light Italic";
+  src: url("../assets/fonts/Inter-LightItalic.ttf") format("truetype");
+  font-weight: light;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Inter Medium";
+  src: url("../assets/fonts/Inter-Medium.ttf") format("truetype");
+  font-weight: medium;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter Medium Italic";
+  src: url("../assets/fonts/Inter-MediumItalic.ttf") format("truetype");
+  font-weight: medium;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Inter Semibold";
+  src: url("../assets/fonts/Inter-SemiBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter Semibold Italic";
+  src: url("../assets/fonts/Inter-SemiBoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
 }
 @font-face {
   font-family: "IKOB";
@@ -128,33 +168,15 @@
 }
 @font-face {
   font-family: "Alte Haas";
-  src: url("../assets/fonts/alte/altehaasgroteskregular.ttf") format("truetype");
+  src: url("../assets/fonts/Alte/AlteHaasGroteskRegular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Alte Haas Bold";
-  src: url("../assets/fonts/alte/altehaasgroteskbold.ttf") format("truetype");
+  src: url("../assets/fonts/Alte/AlteHaasGroteskBold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
-}
-@font-face {
-  font-family: "Geist Light";
-  src: url("../assets/fonts/geist/geist-light.otf") format("opentype");
-  font-style: normal;
-}
-@font-face {
-  font-family: "Geist";
-  src: url("../assets/fonts/geist/geist-regular.otf") format("opentype");
-  font-weight: normal;
-}
-@font-face {
-  font-family: "Geist Medium";
-  src: url("../assets/fonts/geist/geist-medium.otf") format("opentype");
-}
-@font-face {
-  font-family: "Geist Semibold";
-  src: url("../assets/fonts/geist/geist-semibold.otf") format("opentype");
 }
 * {
   box-sizing: border-box;
@@ -174,7 +196,7 @@ body {
   line-height: var(--line-height-b1);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Alte Haas", sans-serif;
+  font-family: "Inter", sans-serif;
   color: var(--color-body);
   font-weight: var(--p-regular);
   position: relative;
@@ -232,10 +254,6 @@ hr {
   margin-bottom: 20px;
 }
 
-h1,
-h2,
-h3,
-h4,
 h5,
 h6,
 .h1,
@@ -245,9 +263,8 @@ h6,
 .h5,
 .h6 {
   word-break: break-word;
-  font-family: "Alte Haas", sans-serif;
+  font-family: "Inter Medium", sans-serif;
   line-height: 1.4074;
-  -webkit-text-stroke: 0.3px;
   color: var(--color-heading-1);
 }
 
@@ -257,6 +274,7 @@ h3,
 h4 {
   font-family: "IKOB";
   color: var(--color-offset);
+  letter-spacing: -1px;
 }
 
 h1,
@@ -12158,14 +12176,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(1) {
   z-index: 10;
-  transform: rotate(-1deg) translate(-50%, -50%);
+  transform: rotate(-3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(1):before {
   content: "1";
 }
 .slyde:nth-child(1).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-1deg) translate(-50%, -15rem);
+  transform: rotate(-3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12180,14 +12198,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(2) {
   z-index: 9;
-  transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(2):before {
   content: "2";
 }
 .slyde:nth-child(2).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
+  transform: rotate(1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12202,14 +12220,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(3) {
   z-index: 8;
-  transform: rotate(-3deg) translate(-50%, -50%);
+  transform: rotate(-2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(3):before {
   content: "3";
 }
 .slyde:nth-child(3).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-3deg) translate(-50%, -15rem);
+  transform: rotate(-2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12224,78 +12242,12 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(4) {
   z-index: 7;
-  transform: rotate(-3deg) translate(-50%, -50%);
+  transform: rotate(2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(4):before {
   content: "4";
 }
 .slyde:nth-child(4).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-3deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.active {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.active article {
-  opacity: 1;
-}
-
-.slyde:nth-child(5) {
-  z-index: 6;
-  transform: rotate(-3deg) translate(-50%, -50%);
-}
-.slyde:nth-child(5):before {
-  content: "5";
-}
-.slyde:nth-child(5).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-3deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.active {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.active article {
-  opacity: 1;
-}
-
-.slyde:nth-child(6) {
-  z-index: 5;
-  transform: rotate(-1deg) translate(-50%, -50%);
-}
-.slyde:nth-child(6):before {
-  content: "6";
-}
-.slyde:nth-child(6).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-1deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.active {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.active article {
-  opacity: 1;
-}
-
-.slyde:nth-child(7) {
-  z-index: 4;
-  transform: rotate(2deg) translate(-50%, -50%);
-}
-.slyde:nth-child(7):before {
-  content: "7";
-}
-.slyde:nth-child(7).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
   transform: rotate(2deg) translate(-50%, -15rem);
   opacity: 0;
@@ -12310,16 +12262,82 @@ Copyright (c) 2015 Daniel Eden
   opacity: 1;
 }
 
+.slyde:nth-child(5) {
+  z-index: 6;
+  transform: rotate(3deg) translate(-50%, -50%);
+}
+.slyde:nth-child(5):before {
+  content: "5";
+}
+.slyde:nth-child(5).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(3deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.active {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.active article {
+  opacity: 1;
+}
+
+.slyde:nth-child(6) {
+  z-index: 5;
+  transform: rotate(-3deg) translate(-50%, -50%);
+}
+.slyde:nth-child(6):before {
+  content: "6";
+}
+.slyde:nth-child(6).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(-3deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.active {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.active article {
+  opacity: 1;
+}
+
+.slyde:nth-child(7) {
+  z-index: 4;
+  transform: rotate(-3deg) translate(-50%, -50%);
+}
+.slyde:nth-child(7):before {
+  content: "7";
+}
+.slyde:nth-child(7).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(-3deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.active {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.active article {
+  opacity: 1;
+}
+
 .slyde:nth-child(8) {
   z-index: 3;
-  transform: rotate(3deg) translate(-50%, -50%);
+  transform: rotate(-3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(8):before {
   content: "8";
 }
 .slyde:nth-child(8).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(3deg) translate(-50%, -15rem);
+  transform: rotate(-3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12334,14 +12352,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(9) {
   z-index: 2;
-  transform: rotate(3deg) translate(-50%, -50%);
+  transform: rotate(-3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(9):before {
   content: "9";
 }
 .slyde:nth-child(9).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(3deg) translate(-50%, -15rem);
+  transform: rotate(-3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12356,14 +12374,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(10) {
   z-index: 1;
-  transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(-2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(10):before {
   content: "10";
 }
 .slyde:nth-child(10).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
+  transform: rotate(-2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -13013,11 +13031,14 @@ Copyright (c) 2015 Daniel Eden
   display: block;
   color: var(--color-primary);
   font-size: 16px;
-  font-family: "Alte Haas";
-  -webkit-text-stroke: 0.3px;
+  font-family: "Inter Medium";
+  letter-spacing: -0.2px;
 }
 .nav-area ul li a:hover {
   color: var(--color-primary);
+}
+.nav-area ul li a .fa-duotone {
+  -webkit-text-stroke: 0.5px;
 }
 .nav-area ul li.has-dropdown {
   padding-right: 12px;
@@ -13090,6 +13111,7 @@ li.has-dropdown .submenu li a {
 li.has-dropdown .submenu li a i {
   font-size: 11px;
   transition: all 0.15s ease-out;
+  -webkit-text-stroke: 0.5px;
 }
 li.has-dropdown .submenu li a:hover {
   background: transparent;
@@ -13890,9 +13912,11 @@ li.has-dropdown:hover .submenu li a {
 }
 .banner-four-area .overlay {
   position: absolute;
-  height: 100%;
+  height: 60%;
   width: 100%;
-  background-image: linear-gradient(to top, hsla(0, 0%, 0%, 0.29) 0%, hsla(0, 0%, 0%, 0.288) 8.1%, hsla(0, 0%, 0%, 0.283) 15.5%, hsla(0, 0%, 0%, 0.274) 22.5%, hsla(0, 0%, 0%, 0.264) 29%, hsla(0, 0%, 0%, 0.251) 35.3%, hsla(0, 0%, 0%, 0.237) 41.2%, hsla(0, 0%, 0%, 0.222) 47.1%, hsla(0, 0%, 0%, 0.208) 52.9%, hsla(0, 0%, 0%, 0.193) 58.8%, hsla(0, 0%, 0%, 0.179) 64.7%, hsla(0, 0%, 0%, 0.166) 71%, hsla(0, 0%, 0%, 0.156) 77.5%, hsla(0, 0%, 0%, 0.147) 84.5%, hsla(0, 0%, 0%, 0.142) 91.9%, hsla(0, 0%, 0%, 0.14) 100%);
+  bottom: 0;
+  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0.013) 8.1%, hsla(0, 0%, 0%, 0.049) 15.5%, hsla(0, 0%, 0%, 0.104) 22.5%, hsla(0, 0%, 0%, 0.175) 29%, hsla(0, 0%, 0%, 0.259) 35.3%, hsla(0, 0%, 0%, 0.352) 41.2%, hsla(0, 0%, 0%, 0.45) 47.1%, hsla(0, 0%, 0%, 0.55) 52.9%, hsla(0, 0%, 0%, 0.648) 58.8%, hsla(0, 0%, 0%, 0.741) 64.7%, hsla(0, 0%, 0%, 0.825) 71%, hsla(0, 0%, 0%, 0.896) 77.5%, hsla(0, 0%, 0%, 0.951) 84.5%, hsla(0, 0%, 0%, 0.987) 91.9%, hsl(0, 0%, 0%) 100%);
+  opacity: 0.4;
   z-index: 1;
 }
 .banner-four-area .banner-four-wrapper .inner-left {
@@ -13931,6 +13955,10 @@ li.has-dropdown:hover .submenu li a {
   min-height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.banner-subpage .overlay {
+  height: 100%;
+  opacity: 1;
 }
 .banner-subpage .banner-four-wrapper {
   justify-content: center;
@@ -20512,7 +20540,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 }
 .has-dropdown .submenu.with-border li a {
   border-bottom: 1px solid #f7f7f7;
-  font-family: var(--font-primary);
+  font-family: "Inter Medium";
 }
 .has-dropdown .submenu.with-border li:last-child a {
   border: none;
@@ -21446,9 +21474,8 @@ section.homepage-notices .container .row .single-blog-area-start a .inner-conten
   margin-left: -1px;
 }
 section.homepage-notices .container .row .single-blog-area-start a .inner-content-area .top-area h6 {
-  font-size: 20px;
+  font-size: 23px;
   margin-bottom: 12px;
-  letter-spacing: 0.2px;
 }
 section.homepage-notices .container .row .single-blog-area-start a .inner-content-area .top-area p {
   font-size: 17px;
@@ -21610,8 +21637,8 @@ section.homepage-notices .container .row .single-blog-area-start:hover {
   color: white;
   padding: 3rem;
   max-width: 500px;
-  font-size: 19px;
-  line-height: 150%;
+  font-size: 18px;
+  line-height: 140%;
   position: relative;
   z-index: 6;
   --b: 1px; /* thickness of the border */
@@ -21778,8 +21805,7 @@ table * {
 table thead tr th {
   padding-bottom: 20px;
   letter-spacing: 0.1px;
-  font-family: "Alte Haas";
-  -webkit-text-stroke: 0.3px;
+  font-family: "Inter Medium";
   text-transform: capitalize;
   text-align: center;
 }
@@ -21806,8 +21832,7 @@ table tbody tr th .th-wrap {
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-family: "Alte Haas";
-  -webkit-text-stroke: 0.3px;
+  font-family: "Inter Medium";
   text-transform: capitalize;
 }
 table tbody tr th .note {
@@ -22509,7 +22534,7 @@ section.perks .container .row [class*=col] .single-solution-style-one:hover {
 .sunflower-trail-page-body .container .row .sunflower-trail-wrapper .sunflower-list li .b {
   color: #262626;
   letter-spacing: 0.15px;
-  -webkit-text-stroke: 0.4px;
+  font-family: "Inter Medium";
 }
 
 section.pro-shop-body .band-of-brands {
@@ -22788,7 +22813,10 @@ section.pro-shop-body.foot-joy .container .row .foot-joy-logo {
 .instruction-page-body .note-box .note-title {
   font-size: 21px;
   padding-bottom: 0.5rem;
-  -webkit-text-stroke: 0.1px;
+  font-family: "Inter Medium";
+  letter-spacing: -0.3px;
+  line-height: 110%;
+  /* -webkit-text-stroke: 0.1px; */
 }
 .instruction-page-body .note-box .price {
   color: rgb(139, 139, 139);
@@ -23038,9 +23066,14 @@ section.pro-shop-body.foot-joy .container .row .foot-joy-logo {
 }
 .board .container .row ul li {
   padding-left: 2.5rem;
-  padding-bottom: 1rem;
+  padding-bottom: 0.25rem;
   font-size: 19px;
   letter-spacing: 0.5px;
+  color: grey;
+}
+.board .container .row ul li .b {
+  color: #262626;
+  font-family: "Inter Medium";
 }
 .board .container .row ul li::marker {
   color: rgb(218, 218, 218);
