@@ -77,24 +77,32 @@ export class Footer extends LitElement {
                     </div>
 
                     <div class="social-stack">
-                      <a href="" class="social-link link" target="_blank">
+                      <a
+                        href="https://www.facebook.com/StaggHillGolfClub"
+                        class="social-link link"
+                        target="_blank"
+                      >
                         <img
                           src="./assets/images/icons/facebook-logo.svg"
                           alt=""
                         />
                         Facebook
                       </a>
-                      <a href="" class="social-link link" target="_blank">
+                      <a
+                        href="https://www.instagram.com/stagghill_gc/"
+                        class="social-link link"
+                        target="_blank"
+                      >
                         <img
                           src="./assets/images/icons/instagram-logo.svg"
                           alt=""
                         />
                         Instagram
                       </a>
-                      <a href="" class="social-link link" target="_blank">
+                      <!-- <a href="https://x.com/stagghillgolf" class="social-link link" target="_blank">
                         <img src="./assets/images/icons/x-logo.svg" alt="" />
                         X
-                      </a>
+                      </a> -->
                     </div>
                   </div>
                 </div>
@@ -219,7 +227,9 @@ export class Footer extends LitElement {
                 <div class="col-lg-12">
                   <div class="copyright-wrapper">
                     <div class="new-row">
-                      <p>© Stagg Hill Golf Club | ${new Date().getFullYear()}</p>
+                      <p>
+                        © Stagg Hill Golf Club | ${new Date().getFullYear()}
+                      </p>
                     </div>
                     <a
                       class="teequest-link no-underline"
@@ -262,13 +272,16 @@ export class Footer extends LitElement {
         <div class="mobile-menu-main">
           <nav class="nav-main mainmenu-nav mt--30">
             <ul class="mainmenu metismenu" id="mobile-menu-active">
-              
               <li class="has-droupdown">
                 <a href="#" class="main" aria-expanded="false">Fees</a>
                 <ul class="submenu mm-collapse">
                   <li><a href="greens-fees.html">Greens Fees</a></li>
                   <li><a href="membership-fees.html">Membership Fees</a></li>
-                  <li><a href="membership-fees.html#sunflower-trail">Sunflower Trail</a></li>
+                  <li>
+                    <a href="membership-fees.html#sunflower-trail"
+                      >Sunflower Trail</a
+                    >
+                  </li>
                 </ul>
               </li>
               <li>
@@ -280,7 +293,11 @@ export class Footer extends LitElement {
                 <ul class="submenu mm-collapse">
                   <li><a href="mens-league.html">Men's League</a></li>
                   <li><a href="womens-league.html">Women's League</a></li>
-                  <li><a href="ladies-evening-league.html">Ladies Evening League</a></li>
+                  <li>
+                    <a href="ladies-evening-league.html"
+                      >Ladies Evening League</a
+                    >
+                  </li>
                   <li><a href="couples-league.html">Couples League</a></li>
                 </ul>
               </li>
@@ -289,7 +306,9 @@ export class Footer extends LitElement {
                 <ul class="submenu mm-collapse">
                   <li><a href="calendar.html">Calendar</a></li>
                   <li><a href="open-tournaments.html">Open Tournaments</a></li>
-                  <li><a href="members-only-events.html">Members Only Events</a></li>
+                  <li>
+                    <a href="members-only-events.html">Members Only Events</a>
+                  </li>
                 </ul>
               </li>
               <li>
@@ -300,8 +319,16 @@ export class Footer extends LitElement {
                 <ul class="submenu mm-collapse">
                   <li><a href="contact.html">Contact</a></li>
                   <li><a href="meet-the-staff.html">Meet The Staff</a></li>
-                  <li><a href="meet-the-staff.html#join-our-team">Join Our Team</a></li>
-                  <li><a href="contact.html#donation-requests">Donation Requests</a></li>
+                  <li>
+                    <a href="meet-the-staff.html#join-our-team"
+                      >Join Our Team</a
+                    >
+                  </li>
+                  <li>
+                    <a href="contact.html#donation-requests"
+                      >Donation Requests</a
+                    >
+                  </li>
                 </ul>
               </li>
               <li>
