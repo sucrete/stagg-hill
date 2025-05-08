@@ -2257,6 +2257,11 @@ section.pro-shop-body {
               drop-shadow(0 8px 8px rgba(0, 0, 0, 0.07))
               drop-shadow(0 16px 16px rgba(0, 0, 0, 0.08))
               drop-shadow(0 32px 32px rgba(0, 0, 0, 0.09));
+              &.gcsaa {
+                width: 142px;
+                top: 2rem;
+                right: 3rem;
+              }
           }
           .staff-photo {
             width: 250px;
@@ -3169,6 +3174,11 @@ footer {
             margin-top: 0.5rem;
           }
         }
+        .primary-row {
+          .col-6 {
+            margin-top: 1rem;
+          }
+        }
       }
     }
   }
@@ -3344,6 +3354,11 @@ footer {
                     width: 72px;
                     top: -1.5rem;
                     right: 6rem;
+                    &.gcsaa {
+                      width: 95px;
+                      top: 1.5rem;
+                      right: 5.5rem;
+                    }
                   }
                   .staff-photo {
                     width: 50%;
