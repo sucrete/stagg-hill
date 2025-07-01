@@ -4,7 +4,9 @@
   padding-top: 17rem;
   padding-bottom: 12rem;
 }
-
+.modal {
+  background: rgba(0, 0, 0, 0.262745098);
+}
 .my-hr {
   background-color: #d1d1d1;
   opacity: 1;
@@ -288,6 +290,7 @@ section.homepage-notices {
   .container {
     .title {
       margin-bottom: 7rem;
+      font-size: 48px
     }
     .row {
       .single-blog-area-start {
@@ -1175,33 +1178,7 @@ table {
 
 //~ Events (Calendar)
 .calendar-section {
-  .title-bar {
-    padding-top: 10rem;
-    padding-bottom: 3rem;
-    justify-content: space-between;
-    border-bottom: 1.5px solid rgba(0, 0, 0, 0.05);
-    margin-bottom: 5rem;
-    align-items: center;
-    h2 {
-      display: inline-block;
-      width: fit-content;
-    }
-    .single-tag {
-      display: inline-block;
-      width: fit-content;
-      height: fit-content;
-      padding: 8px 19px 10px 18px;
-      color: white;
-      background: var(--color-offset);
-      border-radius: 22px;
-      transition: all 0.3s ease;
-      cursor: pointer;
-      &:hover {
-        color: rgba(255, 255, 255, 0.825);
-        transform: translateY(-2px);
-      }
-    }
-  }
+  padding: 12rem 0 7rem 0;
 }
 
 //~ Membership
@@ -1799,7 +1776,7 @@ section.perks {
             .b {
               color: #262626;
               letter-spacing: 0.15px;
-              font-family: 'Inter Medium';
+              font-family: "Inter Medium";
             }
           }
         }
@@ -1810,6 +1787,7 @@ section.perks {
 
 //~ Pro Shop
 section.pro-shop-body {
+  padding-top: 5rem;
   .band-of-brands {
     background: aliceblue;
     padding: 4rem 0;
@@ -1823,7 +1801,7 @@ section.pro-shop-body {
     }
   }
   & > .container {
-    padding-top: 16rem;
+    padding-top: 10rem;
     padding-bottom: 14rem;
     hr {
       height: 1.25px;
@@ -2122,8 +2100,8 @@ section.pro-shop-body {
     .note-title {
       font-size: 21px;
       padding-bottom: 0.5rem;
-      font-family: 'Inter Medium';
-      letter-spacing: -.3px;
+      font-family: "Inter Medium";
+      letter-spacing: -0.3px;
       line-height: 110%;
       /* -webkit-text-stroke: 0.1px; */
     }
@@ -2257,11 +2235,11 @@ section.pro-shop-body {
               drop-shadow(0 8px 8px rgba(0, 0, 0, 0.07))
               drop-shadow(0 16px 16px rgba(0, 0, 0, 0.08))
               drop-shadow(0 32px 32px rgba(0, 0, 0, 0.09));
-              &.gcsaa {
-                width: 142px;
-                top: 2rem;
-                right: 3rem;
-              }
+            &.gcsaa {
+              width: 142px;
+              top: 2rem;
+              right: 3rem;
+            }
           }
           .staff-photo {
             width: 250px;
@@ -2436,14 +2414,14 @@ section.pro-shop-body {
         list-style-type: none;
         li {
           padding-left: 2.5rem;
-          padding-bottom: .25rem;
+          padding-bottom: 0.25rem;
           font-size: 19px;
           letter-spacing: 0.5px;
           color: grey;
-          
+
           .b {
             color: #262626;
-            font-family: 'Inter Medium';
+            font-family: "Inter Medium";
           }
           &::marker {
             color: $accent;
@@ -3378,7 +3356,7 @@ footer {
       .container {
         .row {
           border-top: none;
-          
+
           [class*="col-"] {
             h3 {
               @include mobile-h3;

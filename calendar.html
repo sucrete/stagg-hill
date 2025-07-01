@@ -44,6 +44,15 @@
 
     <!-- footer Lit component -->
     <script type="module" src="./lit/footer.js"></script>
+
+     <!-- fullCalendar -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.17/index.global.min.js"></script>
+    <!-- fullCalendar initiation -->
+    <script src="assets/js/calendarBuilder.js"></script>
+    <!-- moment.js - time parsing -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.0/moment.min.js"></script>
+    <!-- Sanity data fetch -->
+    <script src="assets/js/fetchData.js"></script>
   </head>
 
   <body>
@@ -78,15 +87,62 @@
     </div>
     <!-- rts banner four end -->
 
-    <div class="rts-solution-area page-body calendar-page-body">
-      <div
-        class="container wow fadeInUp"
-        data-wow-offset="0"
-        data-wow-delay=".9s"
-      >
-        <!-- Insert Calendar Here -->
+    <section class="calendar-section">
+      <div class="container mt-3 mt-lg-10">
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="calModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="exampleModalLabel">Modal title</h3>
+                <button class="close-button-wrapper" data-bs-dismiss="modal">
+                  <div
+                    type="div"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></div>
+                </button>
+              </div>
+
+              <div class="modal-body-wrapper">
+                <div class="date-wrapper">
+                  <img
+                    src="assets/images/icons/calendar-2.svg"
+                    class="date-icon"
+                    alt=""
+                  /><span class="modal-date"></span
+                  ><span class="modal-date-end"></span>
+                </div>
+                <hr />
+                <div class="modal-body"></div>
+              </div>
+              <div class="modal-footer row d-flex flex-column flex-md-row">
+                <a
+                  href=""
+                  class="btn btn-secondary modal-attachment col"
+                  target="_blank"
+                  >view flyer</a
+                >
+                <a
+                  href=""
+                  class="btn btn-secondary modal-link col"
+                  target="_blank"
+                  >register</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="calendar"></div>
       </div>
-    </div>
+    </section>
 
     <!-- cta area start -->
     <section class="cta blonde">
