@@ -12176,56 +12176,12 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(1) {
   z-index: 10;
-  transform: rotate(3deg) translate(-50%, -50%);
+  transform: rotate(-3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(1):before {
   content: "1";
 }
 .slyde:nth-child(1).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(3deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.active {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.active article {
-  opacity: 1;
-}
-
-.slyde:nth-child(2) {
-  z-index: 9;
-  transform: rotate(-1deg) translate(-50%, -50%);
-}
-.slyde:nth-child(2):before {
-  content: "2";
-}
-.slyde:nth-child(2).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-1deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.active {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.active article {
-  opacity: 1;
-}
-
-.slyde:nth-child(3) {
-  z-index: 8;
-  transform: rotate(-3deg) translate(-50%, -50%);
-}
-.slyde:nth-child(3):before {
-  content: "3";
-}
-.slyde:nth-child(3).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
   transform: rotate(-3deg) translate(-50%, -15rem);
   opacity: 0;
@@ -12240,16 +12196,16 @@ Copyright (c) 2015 Daniel Eden
   opacity: 1;
 }
 
-.slyde:nth-child(4) {
-  z-index: 7;
-  transform: rotate(-1deg) translate(-50%, -50%);
+.slyde:nth-child(2) {
+  z-index: 9;
+  transform: rotate(1deg) translate(-50%, -50%);
 }
-.slyde:nth-child(4):before {
-  content: "4";
+.slyde:nth-child(2):before {
+  content: "2";
 }
-.slyde:nth-child(4).leave {
+.slyde:nth-child(2).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-1deg) translate(-50%, -15rem);
+  transform: rotate(1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12262,36 +12218,14 @@ Copyright (c) 2015 Daniel Eden
   opacity: 1;
 }
 
-.slyde:nth-child(5) {
-  z-index: 6;
-  transform: rotate(-4deg) translate(-50%, -50%);
-}
-.slyde:nth-child(5):before {
-  content: "5";
-}
-.slyde:nth-child(5).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-4deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.active {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.active article {
-  opacity: 1;
-}
-
-.slyde:nth-child(6) {
-  z-index: 5;
+.slyde:nth-child(3) {
+  z-index: 8;
   transform: rotate(3deg) translate(-50%, -50%);
 }
-.slyde:nth-child(6):before {
-  content: "6";
+.slyde:nth-child(3):before {
+  content: "3";
 }
-.slyde:nth-child(6).leave {
+.slyde:nth-child(3).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
   transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
@@ -12306,16 +12240,82 @@ Copyright (c) 2015 Daniel Eden
   opacity: 1;
 }
 
+.slyde:nth-child(4) {
+  z-index: 7;
+  transform: rotate(-2deg) translate(-50%, -50%);
+}
+.slyde:nth-child(4):before {
+  content: "4";
+}
+.slyde:nth-child(4).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(-2deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.active {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.active article {
+  opacity: 1;
+}
+
+.slyde:nth-child(5) {
+  z-index: 6;
+  transform: rotate(-1deg) translate(-50%, -50%);
+}
+.slyde:nth-child(5):before {
+  content: "5";
+}
+.slyde:nth-child(5).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(-1deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.active {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.active article {
+  opacity: 1;
+}
+
+.slyde:nth-child(6) {
+  z-index: 5;
+  transform: rotate(1deg) translate(-50%, -50%);
+}
+.slyde:nth-child(6):before {
+  content: "6";
+}
+.slyde:nth-child(6).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(1deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.active {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.active article {
+  opacity: 1;
+}
+
 .slyde:nth-child(7) {
   z-index: 4;
-  transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(-3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(7):before {
   content: "7";
 }
 .slyde:nth-child(7).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
+  transform: rotate(-3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12352,14 +12352,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(9) {
   z-index: 2;
-  transform: rotate(1deg) translate(-50%, -50%);
+  transform: rotate(0deg) translate(-50%, -50%);
 }
 .slyde:nth-child(9):before {
   content: "9";
 }
 .slyde:nth-child(9).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(1deg) translate(-50%, -15rem);
+  transform: rotate(0deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12374,14 +12374,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(10) {
   z-index: 1;
-  transform: rotate(3deg) translate(-50%, -50%);
+  transform: rotate(2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(10):before {
   content: "10";
 }
 .slyde:nth-child(10).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(3deg) translate(-50%, -15rem);
+  transform: rotate(2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -14480,7 +14480,7 @@ li.has-dropdown:hover .submenu li a {
   text-transform: uppercase;
   font-size: 13px;
   letter-spacing: 1px;
-  font-weight: 475;
+  font-weight: 525;
   padding-left: 8px;
   padding-right: 8px;
   text-overflow: ellipsis;
@@ -14602,6 +14602,9 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
   font-weight: 600;
   font-size: 24px;
   letter-spacing: 0.1px;
+  line-height: 128%;
+  width: 92%;
+  padding-bottom: 0.55rem;
 }
 .modal .modal-dialog .modal-content .modal-header .close-button-wrapper {
   background-color: #f9f9f9;
@@ -14610,6 +14613,9 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
   width: 40px;
   position: relative;
   border: none;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
 }
 .modal .modal-dialog .modal-content .modal-header .close-button-wrapper .btn-close {
   padding: 0;
@@ -14625,8 +14631,8 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
   opacity: 1;
 }
 .modal .modal-dialog .modal-content .modal-body-wrapper {
-  line-height: 120%;
-  font-size: 17px;
+  line-height: 140%;
+  font-size: 16px;
   padding: 3rem;
   padding-top: 0;
 }
@@ -14646,30 +14652,35 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
   fill: var(--color-secondary);
 }
 .modal .modal-dialog .modal-content .modal-body-wrapper hr {
-  background-color: #f3f3f3;
-  margin: 1.25rem 0;
+  background-color: #e7e7e7;
+  margin: 1.75rem 0 1.55rem 0;
   opacity: 1;
 }
 .modal .modal-dialog .modal-content .modal-body-wrapper .modal-body {
   padding: 0;
   color: #767364;
   letter-spacing: 0.2px;
+  white-space: pre-line;
 }
 .modal .modal-dialog .modal-content .modal-footer {
   padding: 3rem;
   padding-top: 1rem;
   padding-left: 36px;
   padding-right: 36px;
-  gap: 2px;
+  gap: 5px;
   border-top-color: transparent;
 }
 .modal .modal-dialog .modal-content .modal-footer .btn {
-  font-family: "Inter";
+  font-family: "Sono";
+  font-weight: 475;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 15px;
-  height: 45px;
+  height: 35px;
   border-radius: 1px;
   background-color: var(--color-secondary);
   padding-bottom: 6px;
@@ -14684,7 +14695,7 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
   border: none;
 }
 .modal .modal-dialog .modal-content .modal-footer .btn.modal-attachment {
-  border: 2px solid var(--color-secondary);
+  border: 1.5px solid var(--color-secondary);
   background-color: transparent;
   color: var(--color-secondary);
 }
@@ -14737,8 +14748,9 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
   display: inline;
 }
 .fc-monthList-view .events-list-wrapper .event-list-item hr {
-  background-color: #f3f3f3;
+  background-color: #e7e7e7;
   margin: 1.25rem 0;
+  margin-bottom: 1.1rem;
   opacity: 1;
 }
 .fc-monthList-view .events-list-wrapper .event-list-item .event-list-description {
@@ -14748,7 +14760,7 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
 }
 .fc-monthList-view .events-list-wrapper .event-list-item .event-list-footer {
   padding: 2rem 0 0 0;
-  gap: 3px;
+  gap: 5px;
   border-top-color: transparent;
 }
 .fc-monthList-view .events-list-wrapper .event-list-item .event-list-footer .event-list-flyer-btn,
@@ -14762,15 +14774,14 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 600;
-  height: 45px;
+  height: 35px;
   letter-spacing: 2px;
   text-transform: uppercase;
   border-radius: 1px;
   background-color: var(--color-secondary);
   padding-bottom: 4.5px;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   transition: all 0.25s ease;
   border: none;
 }
@@ -14782,10 +14793,9 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
 .fc-monthList-view .events-list-wrapper .event-list-item .event-list-footer .event-list-link-btn:active,
 .fc-monthList-view .events-list-wrapper .event-list-item .event-list-footer .event-list-link-btn:focus {
   box-shadow: none;
-  border: none;
 }
 .fc-monthList-view .events-list-wrapper .event-list-item .event-list-footer .event-list-flyer-btn {
-  border: 2px solid var(--color-secondary);
+  border: 1.5px solid var(--color-secondary);
   background-color: transparent;
   color: var(--color-secondary);
 }
@@ -14821,6 +14831,53 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
   width: auto;
   margin-right: 15px;
   opacity: 0.23;
+}
+
+.events-list-container {
+  margin-top: -74px;
+}
+.events-list-container .events-list-heading {
+  padding-left: 0.5rem;
+  padding-bottom: 2rem;
+  font-family: "IKOB";
+  font-size: 45px;
+  color: var(--color-primary);
+  margin-bottom: 0;
+}
+.events-list-container #events-list .events-list-wrapper .event-list-item {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.events-list-container #events-list .events-list-wrapper .event-list-item .event-list-title {
+  font-size: 22px;
+  padding-bottom: 0.35rem;
+}
+.events-list-container #events-list .events-list-wrapper .event-list-item .event-list-date-wrapper {
+  font-size: 14px;
+}
+.events-list-container #events-list .events-list-wrapper .event-list-item .event-list-description {
+  line-height: 151%;
+  font-size: 14px;
+}
+.events-list-container #events-list .events-list-wrapper .event-list-item .event-list-footer {
+  padding-bottom: 4px;
+}
+.events-list-container .all-events-link {
+  display: block;
+  text-align: right;
+  padding-left: 0.5rem;
+  padding-top: 0.75rem;
+  padding-right: 1rem;
+  font-family: "Sono";
+  font-weight: 475;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: black;
+  opacity: 0.6;
+}
+.events-list-container .all-events-link:hover {
+  opacity: 1;
 }
 
 section.cta .rts-cts-area {
@@ -17737,7 +17794,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   cursor: default;
 }
 .consulting-step .single-consulting-one .right-area p {
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 0.2px;
 }
 .consulting-step .single-consulting-one .right-area .date {
@@ -18137,6 +18194,7 @@ section.sponsors-section .container .row .title-center-2 .title {
   color: var(--color-primary);
   font-size: 52px;
   margin-bottom: 7rem;
+  text-align: center;
 }
 section.sponsors-section .container .row [class*=col] .single-solution-style-one {
   min-height: 247px;
@@ -18308,7 +18366,8 @@ section.homepage-notices {
   padding-bottom: 17rem;
 }
 section.homepage-notices .container .title {
-  margin-bottom: 7rem;
+  text-align: center;
+  margin-bottom: 5rem;
   font-size: 48px;
 }
 section.homepage-notices .container .row .single-blog-area-start {
@@ -18422,16 +18481,16 @@ section.homepage-notices .container .row .single-blog-area-start:hover {
 
 .hours-table {
   background: #fafafa;
-  padding-top: 15rem;
-  padding-bottom: 15rem;
+  padding-top: 22rem;
+  padding-bottom: 17rem;
 }
 .hours-table .container .the-table-itself {
-  background: white;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  background: rgb(0, 190, 148);
+  box-shadow: rgba(0, 190, 149, 0.718) 0px 13px 27px -5px, rgba(0, 190, 149, 0.811) 0px 8px 16px -8px;
   border-radius: 10px;
 }
 .hours-table .container .the-table-itself .hours-table-brow {
-  border-bottom: 1.5px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1.5px solid #00b78e;
   padding: 1rem;
   background-image: url(/assets/images/svgs/antlers.svg);
   background-repeat: no-repeat;
@@ -18445,9 +18504,8 @@ section.homepage-notices .container .row .single-blog-area-start:hover {
   margin-right: -15px;
 }
 .hours-table .container .the-table-itself .hours-table-brow .table-title-wrapper .icon-box {
-  background: rgb(249, 249, 249);
+  background: #02af85;
   border-radius: 99px;
-  border: 1px solid rgb(238, 238, 238);
   display: grid;
   place-items: center;
   width: 50px;
@@ -18458,7 +18516,11 @@ section.homepage-notices .container .row .single-blog-area-start:hover {
   width: 25px;
   height: auto;
 }
+.hours-table .container .the-table-itself .hours-table-brow .table-title-wrapper .icon-box .golf-icon path {
+  fill: white;
+}
 .hours-table .container .the-table-itself .hours-table-brow .table-title-wrapper h3 {
+  color: white;
   font-size: 30px;
   margin-bottom: 0px;
   line-height: 86%;
@@ -18476,6 +18538,7 @@ section.homepage-notices .container .row .single-blog-area-start:hover {
   padding-left: 20px;
   counter-increment: step-counter;
   line-height: 135%;
+  color: white;
 }
 .hours-table .container .the-table-itself .some-tables ol li::marker {
   font-family: "Alte Haas Bold";
@@ -19389,9 +19452,6 @@ section.perks .container .row [class*=col] .single-solution-style-one:hover {
   font-family: "Inter Medium";
 }
 
-section.pro-shop-body {
-  padding-top: 5rem;
-}
 section.pro-shop-body .band-of-brands {
   background: aliceblue;
   padding: 4rem 0;
@@ -19401,7 +19461,7 @@ section.pro-shop-body .band-of-brands .container .row .brand {
   height: auto;
 }
 section.pro-shop-body > .container {
-  padding-top: 10rem;
+  padding-top: 8rem;
   padding-bottom: 14rem;
 }
 section.pro-shop-body > .container hr {
@@ -19566,10 +19626,10 @@ section.pro-shop-body.foot-joy .container .row .foot-joy-logo {
   margin-top: 10rem;
 }
 .open-tournaments-page-body .container .container-consulting .consulting-step .single-consulting-one:not(:last-of-type) {
-  margin-bottom: 7rem;
+  margin-bottom: 5rem;
 }
 .open-tournaments-page-body .container .container-consulting .consulting-step .single-consulting-one .right-area h4 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.4rem;
 }
 .open-tournaments-page-body .container .container-consulting .consulting-step .single-consulting-one .right-area p {
   margin-bottom: 1.5rem;
@@ -20070,7 +20130,7 @@ footer .weather-card {
   position: relative;
   top: -5px;
   width: fit-content;
-  background-color: #005142;
+  background-color: #005748;
 }
 footer .weather-card .weather-heading {
   color: white;

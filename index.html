@@ -46,6 +46,15 @@
 
     <!-- footer Lit component -->
     <script type="module" src="./lit/footer.js"></script>
+
+    <!-- fullCalendar -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.17/index.global.min.js"></script>
+    <!-- fullCalendar initiation -->
+    <script src="assets/js/listBuilder.js"></script>
+    <!-- moment.js - time parsing -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.0/moment.min.js"></script>
+    <!-- Sanity data fetch -->
+    <script src="assets/js/fetchData.js"></script>
   </head>
 
   <body style="position: relative">
@@ -408,7 +417,15 @@
     <section class="hours-table mobile-padding">
       <div class="container">
         <div class="row g-5">
-          <div class="col-12 col-md-6">Facebook or events feed</div>
+          <div class="col-12 col-md-6">
+            <div class="events-list-container">
+              <h6 class="events-list-heading">Upcoming Events</h6>
+              <div id="events-list"></div>
+              <a href="/calendar.html" class="all-events-link">
+                view all events
+              </a>
+            </div>
+          </div>
           <div class="col-12 col-md-6">
             <div
               class="the-table-itself wow fadeInUp"
@@ -418,7 +435,10 @@
               <div class="hours-table-brow">
                 <div class="table-title-wrapper">
                   <div class="icon-box">
-                    <img class="golf-icon" src="assets/images/icons/golf.svg" />
+                    <img
+                      class="golf-icon injectable"
+                      src="assets/images/icons/golf.svg"
+                    />
                   </div>
 
                   <h3 class="title">Course Policies</h3>

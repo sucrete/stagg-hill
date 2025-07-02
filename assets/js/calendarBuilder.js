@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
                              seg.def.extendedProps.flyer.asset._ref
                          ).url
                        }"
-                  class="btn btn-secondary event-list-flyer-btn col-12 col-md-3"
+                  class="btn btn-secondary event-list-flyer-btn col-12 col-2"
                   target="_blank"
                   >view flyer</a>`
                      : ""
@@ -84,9 +84,13 @@ document.addEventListener("DOMContentLoaded", function () {
                      ? `
                    <a
                   href="${seg.def.extendedProps.linkDeets.linkURL}"
-                  class="btn btn-secondary event-list-link-btn col-12 col-md-3"
+                  class="btn btn-secondary event-list-link-btn col-12 col-2"
                   target="_blank"
-                  >${seg.def.extendedProps.linkDeets.linkText}</a
+                  >${
+                    !seg.def.extendedProps.linkDeets.hasResults
+                      ? seg.def.extendedProps.linkDeets.linkText
+                      : "Results"
+                  }</a
                 >
                   `
                      : ""
@@ -117,6 +121,7 @@ document.addEventListener("DOMContentLoaded", function () {
     //~ initialize Calendar
     var calendar = new FullCalendar.Calendar(cal, {
       plugins: [CustomViewPlugin],
+      firstDay: 1,
       headerToolbar: {
         left: "dayGridMonth,monthList",
         center: "title",
@@ -133,6 +138,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         dayGridMonth: {
           contentHeight: windowWidth < 768 ? 700 : null,
+          
         },
       },
       windowResize: function (dayGridMonth) {
@@ -199,6 +205,11 @@ document.addEventListener("DOMContentLoaded", function () {
           if (info.event.extendedProps?.linkQuestion) {
             modalLink.style = "display:flex";
             modalLink.href = info.event.extendedProps.linkDeets.linkURL;
+            if (info.event.extendedProps?.linkDeets.hasResults) {
+              modalLink.textContent = "Results"
+            } else {
+              modalLink.textContent = info.event.extendedProps.linkDeets.linkText
+            }
           } else {
             // ...otherwise delete the button
             modalLink.style = "display:none";

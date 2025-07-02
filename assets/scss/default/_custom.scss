@@ -76,6 +76,7 @@ section.sponsors-section {
           color: var(--color-primary);
           font-size: 52px;
           margin-bottom: 7rem;
+          text-align: center;
         }
       }
       [class*="col"] {
@@ -289,8 +290,9 @@ section.homepage-notices {
   padding-bottom: 17rem;
   .container {
     .title {
-      margin-bottom: 7rem;
-      font-size: 48px
+      text-align: center;
+      margin-bottom: 5rem;
+      font-size: 48px;
     }
     .row {
       .single-blog-area-start {
@@ -429,17 +431,17 @@ section.homepage-notices {
 
 .hours-table {
   background: #fafafa;
-  padding-top: 15rem;
-  padding-bottom: 15rem;
+  padding-top: 22rem;
+  padding-bottom: 17rem;
   .container {
     .the-table-itself {
-      background: white;
-      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-        rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+      background: rgb(0, 190, 148);
+      box-shadow: rgba(0, 190, 149, 0.718) 0px 13px 27px -5px,
+        rgba(0, 190, 149, 0.811) 0px 8px 16px -8px;
       border-radius: 10px;
 
       .hours-table-brow {
-        border-bottom: 1.5px solid rgba(0, 0, 0, 0.05);
+        border-bottom: 1.5px solid #00b78e;
         padding: 1rem;
         background-image: url(/assets/images/svgs/antlers.svg);
         background-repeat: no-repeat;
@@ -451,24 +453,25 @@ section.homepage-notices {
           align-items: start;
           margin-right: -15px;
           .icon-box {
-            // padding: 10px;
-            background: rgb(249, 249, 249);
+            background: #02af85;
             border-radius: 99px;
-            border: 1px solid rgb(238, 238, 238);
+            // border: 1px solid rgb(0 180 136);
             display: grid;
             place-items: center;
             width: 50px;
             height: 50px;
             margin-bottom: 2rem;
-
             .golf-icon {
               width: 25px;
               height: auto;
-              // margin-right: 1rem;
+              path {
+                fill: white;
+              }
             }
           }
 
           h3 {
+            color: white;
             font-size: 30px;
             margin-bottom: 0px;
             line-height: 86%;
@@ -487,6 +490,7 @@ section.homepage-notices {
             padding-left: 20px;
             counter-increment: step-counter;
             line-height: 135%;
+            color: white;
             &::marker {
               font-family: "Alte Haas Bold";
             }
@@ -1787,7 +1791,7 @@ section.perks {
 
 //~ Pro Shop
 section.pro-shop-body {
-  padding-top: 5rem;
+  // padding-top: 5rem;
   .band-of-brands {
     background: aliceblue;
     padding: 4rem 0;
@@ -1801,7 +1805,7 @@ section.pro-shop-body {
     }
   }
   & > .container {
-    padding-top: 10rem;
+    padding-top: 8rem;
     padding-bottom: 14rem;
     hr {
       height: 1.25px;
@@ -1979,11 +1983,11 @@ section.pro-shop-body {
         margin-top: 10rem;
         .single-consulting-one {
           &:not(:last-of-type) {
-            margin-bottom: 7rem;
+            margin-bottom: 5rem;
           }
           .right-area {
             h4 {
-              margin-bottom: 1rem;
+              margin-bottom: .4rem;
             }
             p {
               margin-bottom: 1.5rem;
@@ -2611,7 +2615,7 @@ footer {
     position: relative;
     top: -5px;
     width: fit-content;
-    background-color: #005142;
+    background-color: #005748;
     .weather-heading {
       color: white;
       font-family: "IKOB";
