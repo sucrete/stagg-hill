@@ -330,6 +330,7 @@ section.homepage-notices {
                 font-size: 32px;
                 margin-bottom: 1.5rem;
                 margin-left: -1px;
+                text-align: left;
               }
               h6 {
                 font-size: 23px;
@@ -2487,7 +2488,7 @@ footer {
           .logo-brick {
             display: flex;
             flex-direction: row;
-            padding-bottom: 4rem;
+            padding-bottom: 3rem;
             align-items: center;
             .logo-col {
               //  flex-basis: 180px;
@@ -2497,6 +2498,11 @@ footer {
                 height: auto;
               }
             }
+          }
+          hr {
+            background-color: var(--color-accent);
+            opacity: 1;
+            margin-bottom: 4rem;
           }
           .footer-form {
             padding-bottom: 3rem;

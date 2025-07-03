@@ -26,13 +26,12 @@ export class Footer extends LitElement {
                     </div>
                     <div class="col"></div>
                   </div>
-
-                  <form action="" class="footer-form">
+                  <hr />
+                  <!-- <form action="" class="footer-form">
                     <div class="single">
                       <p class="mb-4">
                         Join our email list to get exclusive discounts!
                       </p>
-                      <!-- <label for="name">Email</label> -->
                       <div class="that-group">
                         <input
                           type="text"
@@ -46,7 +45,8 @@ export class Footer extends LitElement {
                         </button>
                       </div>
                     </div>
-                  </form>
+                  </form> -->
+
                   <div class="link-group d-flex flex-row flex-start">
                     <div class="contact-stack">
                       <a

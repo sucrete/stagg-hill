@@ -1,5 +1,92 @@
 {
+  "$schema": "www.stagghillgolfclub.com/vercel.json",
   "cleanUrls": true,
   "trailingSlash": false,
-  "redirects": []
+  "redirects": [
+    {
+      "source": "/TeeTimes",
+      "destination": "/book-tee-time.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/Fees",
+      "destination": "/greens-fees.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/Fees/Membership",
+      "destination": "/membership-fees.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/Fees/SunflowerGolfTrail",
+      "destination": "/membership-fees.html#sunflower-trail",
+      "statusCode": 301
+    },
+    {
+      "source": "/ProShop",
+      "destination": "/pro-shop.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/Leagues/Mens",
+      "destination": "/mens-league.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/Leagues/Womens",
+      "destination": "/womens-league.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/Leagues/LadiesEvening",
+      "destination": "/ladies-evening-league.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/Leagues/Couples",
+      "destination": "/couples-league.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/Calendar",
+      "destination": "/calendar.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/Tournaments",
+      "destination": "/open-tournaments.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/Tournaments/Members",
+      "destination": "/members-only-events.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/Fees/Instruction",
+      "destination": "/instruction.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/About",
+      "destination": "/contact.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/About/MeetTheStaff",
+      "destination": "/meet-the-staff.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/About/JoinOurTeam",
+      "destination": "/meet-the-staff.html#join-the-team",
+      "statusCode": 301
+    },
+    {
+      "source": "/About/DonationRequests",
+      "destination": "/contact.html#donation-request",
+      "statusCode": 301
+    }
+  ]
 }
