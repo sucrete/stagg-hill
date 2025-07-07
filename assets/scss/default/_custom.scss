@@ -544,7 +544,7 @@ section.homepage-notices {
   // corners ruleset
   --b: 1px; /* thickness of the border */
   --c: rgb(255, 255, 255); /* color of the border */
-  --w: 20px; /* width of border */
+  --w: 20px; /* length of the lines in the corner */
   border: var(--b) solid #0000; /* space for the border */
   --_g: #0000 90deg, var(--c) 0;
   --_p: var(--w) var(--w) border-box no-repeat;
@@ -1988,7 +1988,7 @@ section.pro-shop-body {
           }
           .right-area {
             h4 {
-              margin-bottom: .4rem;
+              margin-bottom: 0.4rem;
             }
             p {
               margin-bottom: 1.5rem;
@@ -2752,8 +2752,8 @@ footer {
         }
       }
       .card-body {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
         padding-bottom: 2.5rem;
         padding-top: 1rem;
 
@@ -2798,52 +2798,6 @@ footer {
       }
     }
   }
-  @media screen and (max-width: 768px) {
-    .gradient-footer-wrapper {
-      .rts-footer-area {
-        .container {
-          .row {
-            .weather-col {
-              .weather-card {
-                padding: 4rem;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  @media screen and (max-width: 576px) {
-    .gradient-footer-wrapper {
-      .rts-footer-area {
-        .container {
-          & > .row {
-            padding-bottom: 4rem;
-            .logo-column {
-              .logo-brick {
-                padding-bottom: 4rem;
-                .logo-col {
-                }
-              }
-              .footer-form {
-                padding-bottom: 5rem;
-              }
-            }
-            .weather-col {
-              .weather-card {
-                padding: 5rem 3rem;
-                width: 100%;
-                .card-body {
-                  .weather-heading {
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
 }
 
 //* ===================================================
@@ -2874,7 +2828,7 @@ footer {
         }
       }
       &.why-choose-us-working-process {
-        padding-top: 8rem;
+        padding-top: 6rem;
         [class*="shape"] {
           display: none;
         }
@@ -3075,7 +3029,7 @@ footer {
     }
   }
   section.sponsors-section .container .row .title-center-2 .title {
-    @include mobile-h3;
+    font-size: 37px;
     margin-bottom: 15px;
   }
   section.sponsors-section
@@ -3411,6 +3365,58 @@ footer {
       }
     }
   }
+  .gradient-footer-wrapper {
+    .rts-footer-area {
+      .container {
+        .row {
+          .weather-col {
+            .weather-card {
+              padding: 4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .rates-page-body {
+    [class*="table-wrapper"] {
+      .table-preface {
+        [class*="col"] {
+          h3 {
+            font-size: 27px;
+          }
+          p {
+            line-height: 125%;
+            font-size: 15px;
+          }
+        }
+      }
+      table {
+        font-size: 15px;
+        tbody {
+          tr {
+            th {
+              .th-wrap {
+                line-height: 125%;
+              }
+              .note {
+                font-size: 12px;
+                padding-top: 3px;
+              }
+            }
+          }
+        }
+      }
+      .addendum {
+        .two-paragraphs {
+          p {
+            font-size: 15px;
+            line-height: 142%;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -3542,32 +3548,126 @@ footer {
 
   section {
     &.homepage-notices {
+      padding-top: 10rem;
+      padding-bottom: 7rem;
       .container {
+        .title {
+          margin-bottom: 3rem;
+          font-size: 37px;
+          // text-align: left;
+        }
         .row {
-          .single-blog-area-start {
+          [class*='col'] {
+.single-blog-area-start {
+            margin-bottom: 0rem;
             a {
               .image-area {
-                height: 282px;
+                height: 207px;
               }
               .inner-content-area {
-                padding-left: 2.5rem;
-                padding-right: 2.5rem;
+                padding: 3rem 2rem 2rem 2rem;
+                .top-area {
+                  & > *:not(h3, h6),
+                  p {
+                    font-size: 15px;
+                  }
+                  .title {
+                    font-size: 25px;
+                    margin-bottom: 1rem;
+                  }
+                  h6 {
+                    font-size: 21px;
+                    margin-bottom: 3px;
+                  }
+                  hr {
+                    margin-bottom: 14px;
+                  }
+                }
+                .link-bar {
+                  margin-top: 1rem;
+                  font-size: 18px;
+                }
+              }
+            }
+          }
+          }
+          
+        }
+      }
+      &.pro-shop-notices {
+        padding-top: 7rem;
+      }
+    }
+  }
+  footer {
+    .gradient-footer-wrapper {
+      .rts-footer-area {
+        .container {
+          & > .row {
+            padding-bottom: 4rem;
+            .logo-column {
+              .logo-brick {
+                padding-bottom: 2.5rem;
+                .logo-col {
+                  .footer-logo {
+                    width: 210px;
+                  }
+                }
+              }
+              hr {
+                margin-bottom: 3rem;
+              }
+              .link-group {
+                .contact-stack,
+                .social-stack {
+                  a {
+                    font-size: 15px;
+                  }
+                }
+                .contact-stack {
+                  border-right: none;
+                }
+                .social-stack {
+                  padding-top: 1.5rem;
+                  padding-left: 0;
+                }
+              }
+            }
+
+            .weather-col {
+              padding-left: 0;
+              padding-right: 0;
+              .weather-card {
+                padding: 2rem 2rem;
+                // padding-bottom: 1rem;
+                width: 100%;
+                .card-body {
+                  .weather-heading {
+                    font-size: 2.75rem;
+                    line-height: 115%;
+                  }
+                }
+                .today-row {
+                  .today-temp {
+                    .the-temp {
+                      font-size: 4.5rem;
+                    }
+                  }
+                  .today-weather {
+                    text-align: center;
+                  }
+                }
               }
             }
           }
         }
       }
     }
-    &.homepage-notices {
-      padding-top: 10rem;
-      padding-bottom: 7rem;
-      .container {
-        .title {
-          margin-bottom: 3rem;
+    .rts-copyright-area-one {
+      .new-row {
+        p {
+          font-size: 15px;
         }
-      }
-      &.pro-shop-notices {
-        padding-top: 7rem;
       }
     }
   }

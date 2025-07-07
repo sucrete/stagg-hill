@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
                              seg.def.extendedProps.flyer.asset._ref
                          ).url
                        }"
-                  class="btn btn-secondary event-list-flyer-btn col-12 col-2"
+                  class="btn btn-secondary event-list-flyer-btn col-12 col-sm-2"
                   target="_blank"
                   >view flyer</a>`
                      : ""
@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
                      ? `
                    <a
                   href="${seg.def.extendedProps.linkDeets.linkURL}"
-                  class="btn btn-secondary event-list-link-btn col-12 col-2"
+                  class="btn btn-secondary event-list-link-btn col-12 col-sm-2"
                   target="_blank"
                   >${
                     !seg.def.extendedProps.linkDeets.hasResults

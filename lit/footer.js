@@ -47,7 +47,7 @@ export class Footer extends LitElement {
                     </div>
                   </form> -->
 
-                  <div class="link-group d-flex flex-row flex-start">
+                  <div class="link-group d-flex flex-column flex-md-row flex-start">
                     <div class="contact-stack">
                       <a
                         href="tel:7855391041"
@@ -85,8 +85,7 @@ export class Footer extends LitElement {
                         <img
                           src="./assets/images/icons/facebook-logo.svg"
                           alt=""
-                        />
-                        Facebook
+                        />Facebook
                       </a>
                       <a
                         href="https://www.instagram.com/stagghill_gc/"
@@ -96,8 +95,7 @@ export class Footer extends LitElement {
                         <img
                           src="./assets/images/icons/instagram-logo.svg"
                           alt=""
-                        />
-                        Instagram
+                        />Instagram
                       </a>
                       <!-- <a href="https://x.com/stagghillgolf" class="social-link link" target="_blank">
                         <img src="./assets/images/icons/x-logo.svg" alt="" />
