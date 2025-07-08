@@ -47,7 +47,9 @@ export class Footer extends LitElement {
                     </div>
                   </form> -->
 
-                  <div class="link-group d-flex flex-column flex-md-row flex-start">
+                  <div
+                    class="link-group d-flex flex-column flex-md-row flex-start"
+                  >
                     <div class="contact-stack">
                       <a
                         href="tel:7855391041"
@@ -226,7 +228,13 @@ export class Footer extends LitElement {
                   <div class="copyright-wrapper">
                     <div class="new-row">
                       <p>
-                        © Stagg Hill Golf Club | ${new Date().getFullYear()}
+                        <a
+                          class="link-to-studio no-underline"
+                          href="https://stagg-hill-golf-course.sanity.studio/"
+                          target="_blank"
+                        >
+                          © Stagg Hill Golf Club | ${new Date().getFullYear()}
+                        </a>
                       </p>
                     </div>
                     <a
@@ -261,8 +269,6 @@ export class Footer extends LitElement {
         </div>
         <!-- rts footer area end -->
       </div>
-
-    
     `;
   }
 }

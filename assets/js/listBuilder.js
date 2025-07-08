@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     </div>
                      <div class="event-list-footer d-flex flex-column flex-md-row  ${
                        seg.def.extendedProps.linkQuestion ||
-                       seg.def.extendedProps.flyerQuestion
+                       seg.def.extendedProps.flyerQuestion || seg.def.extendedProps.linkDeets?.hasResults
                          ? ""
                          : "no-buttons"
                      }">
@@ -73,13 +73,13 @@ document.addEventListener("DOMContentLoaded", function () {
                      : ""
                  }
                  ${
-                   seg.def.extendedProps?.linkQuestion
+                   seg.def.extendedProps?.linkQuestion || seg.def.extendedProps.linkDeets?.hasResults
                      ? `
                    <a
                   href="${seg.def.extendedProps.linkDeets.linkURL}"
                   class="btn btn-secondary event-list-link-btn col-12 col-md-4"
                   target="_blank"
-                  >${!seg.def.extendedProps.linkDeets.hasResults ? seg.def.extendedProps.linkDeets.linkText : 'Results'}</a
+                  >${!seg.def.extendedProps.linkDeets.hasResults ? seg.def.extendedProps.linkDeets?.linkText : 'Results'}</a
                 >
                   `
                      : ""

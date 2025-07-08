@@ -587,6 +587,19 @@ header .rts-btn {
         }
       }
     }
+    &.home {
+      &.header-style-one.header--sticky {
+        &:not(.sticky) {
+          .menu-btn-toggle {
+            svg {
+              rect {
+                fill: var(--color-primary);
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -602,7 +615,7 @@ header .rts-btn {
               padding-top: 1.5rem;
               .logo-area {
                 .logo-large {
-                  width: 185px;
+                  width: 162px;
                 }
               }
             }
