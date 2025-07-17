@@ -63,7 +63,6 @@
   padding-top: 14rem;
   // background-color: #f4f7f5;
   .container {
-    
     padding: 0 1rem 11rem 2rem;
   }
   & > .container {
@@ -114,7 +113,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 6rem 0 0 0; 
+    padding: 6rem 0 0 0;
+    .new-row {
+      p {
+        .link-to-studio {
+          transition: all 0.25s ease;
+          &:hover,
+          &:active,
+          &:focus {
+            color: rgba(255, 255, 255, 0.65);
+          }
+        }
+      }
+    }
     .teequest-link {
       .fa-gears {
         display: inline-block;

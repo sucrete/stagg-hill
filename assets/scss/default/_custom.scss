@@ -74,9 +74,18 @@ section.sponsors-section {
       .title-center-2 {
         .title {
           color: var(--color-primary);
+          line-height: 114%;
           font-size: 52px;
-          margin-bottom: 7rem;
+          // margin-bottom: 2rem;
           text-align: center;
+          .title-br {
+            @media screen and (max-width: 576px) {
+              display: none;
+            }
+          }
+        }
+        .schedule-note-sponsors-on-ot-page {
+          padding-bottom: 5rem;
         }
       }
       [class*="col"] {
@@ -296,7 +305,8 @@ section.homepage-notices {
     }
     .row {
       .single-blog-area-start {
-        border: 1px solid #d1d1d1;
+        border: 1px solid #d7d7d7;
+        border-radius: 1px;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -340,9 +350,11 @@ section.homepage-notices {
                 // letter-spacing: 0.2px;
               }
               p {
-                font-size: 17px;
-                line-height: 150%;
+                font-size: 16px;
+                line-height: 152%;
                 margin-bottom: 20px;
+                letter-spacing: 0.1px;
+                color: #787878;
                 .highlighted {
                   color: inherit;
                   display: unset;
@@ -387,24 +399,27 @@ section.homepage-notices {
                   }
                 }
                 .special-wrapper {
-                  padding: 2rem;
-                  border: 1.5px solid rgb(240, 240, 240);
+                  padding: 3rem;
+                  background-color: white;
                   .row {
                     [class*="col"] {
+                      .callaway-logo-wrapper {
+                        padding-bottom: 8px;
+                        img {
+                          width: 45px;
+                          height: auto;
+                        }
+                      }
                       h4 {
                         font-family: "Oswald";
                         text-transform: uppercase;
                         color: black;
                         font-weight: 550;
+                        letter-spacing: 0.09px;
                       }
-                      .callaway-logo-wrapper {
-                        img {
-                          width: 30px;
-                          height: auto;
-                        }
-                      }
+
                       .callaway-opus {
-                        width: 100px;
+                        width: 70%;
                       }
                     }
                   }
@@ -561,7 +576,7 @@ section.homepage-notices {
   color: white;
   padding: 3rem;
   max-width: 500px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 140%;
   position: relative;
   z-index: 6;
@@ -1817,11 +1832,13 @@ section.perks {
 
 //~ Pro Shop
 section.pro-shop-body {
-  // padding-top: 5rem;
+  padding-top: 8rem;
   .band-of-brands {
-    background: aliceblue;
-    padding: 4rem 0;
+     background: aliceblue;
     .container {
+      padding: 5rem 0;
+     
+      border-radius: 21px;
       .row {
         .brand {
           max-width: 125px;
@@ -1831,8 +1848,8 @@ section.pro-shop-body {
     }
   }
   & > .container {
-    padding-top: 8rem;
-    padding-bottom: 14rem;
+    padding-top: 7rem;
+    padding-bottom: 16rem;
     hr {
       height: 1.25px;
       // background-color: rgb(161 161 161);
@@ -1842,21 +1859,28 @@ section.pro-shop-body {
     }
     .row {
       &.lined-row {
-        border-top: 1.25px solid rgb(230, 230, 230);
-        padding-top: 3rem;
+        // border-top: 1.25px solid rgb(230, 230, 230);
+        padding-top: 0rem;
       }
       [class*="col"] {
         .shop-note {
           font-family: "IKOB Italic";
-          // padding-top: 3rem;
-          font-size: 27px;
+          font-size: 23px;
           line-height: 140%;
         }
       }
     }
   }
   .note-box {
-    padding-bottom: 1rem;
+    font-size: 16px;
+
+    &-service {
+      background-color: #f8f8f8;
+      border-radius: 21px;
+      padding: 3rem;
+      padding-top: 2.5rem;
+      padding-bottom: 3.25rem;
+    }
     .note-brow {
       padding-top: 10px;
       padding-bottom: 2rem;
@@ -1874,7 +1898,7 @@ section.pro-shop-body {
         }
       }
     }
-    font-size: 17px;
+
     .img-box {
       background: white;
       border-radius: 10px;
@@ -1898,7 +1922,7 @@ section.pro-shop-body {
   &.foot-joy {
     background: rgb(248, 248, 248);
     .container {
-      padding-top: 15rem;
+      padding-top: 11rem;
       padding-bottom: 16rem;
       .row {
         .foot-joy-logo {
