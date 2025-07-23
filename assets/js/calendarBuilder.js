@@ -48,15 +48,53 @@ document.addEventListener("DOMContentLoaded", function () {
             ? ` <div class="events-list-wrapper d-flex flex-column-reverse">
                   ${sortedSegs
                     .map((seg) => {
+                      console.log(
+                        "includes today's date? ",
+                        moment(moment().format("YYYY-MM-DD")).isBetween(
+                          moment(seg.range.start)
+                            .add(1, "days")
+                            .format("YYYY-MM-DD"),
+                          moment(seg.range.end).format("YYYY-MM-DD"),
+                          undefined,
+                          "[]"
+                        )
+                      );
+                      // console.log("today's date: ", moment().format("YYYY-MM-DD"))
+                      // console.log("title: ", seg.def.title)
+                      // console.log(
+                      //   "start: ",
+                      //   moment(seg.range.start)
+                      //     .add(1, "days")
+                      //     .format("YYYY-MM-DD")
+                      // );
+                      // console.log(
+                      //   "end: ",
+                      //   moment(seg.range.end).format("YYYY-MM-DD")
+                      // );
                       return `
-                  <div class="event-list-item">
+                  <div class="event-list-item ${
+                    moment(moment().format("YYYY-MM-DD")).isBetween(
+                      moment(seg.range.start)
+                        .add(1, "days")
+                        .format("YYYY-MM-DD"),
+                      moment(seg.range.end).format("YYYY-MM-DD"),
+                      undefined,
+                      "[]"
+                    )
+                      ? " today"
+                      : ""
+                  }">
                     <div class="event-list-title">${seg.def.title}</div>
                     <div class="event-list-date-wrapper">
                      <img src="assets/images/icons/calendar-2.svg" class="date-icon" alt=""/>
                       <div class="event-list-date-start">
-                        ${moment(seg.range.start)
-                          .add(1, "days")
-                          .format("dddd, MMMM Do")}
+                      
+                        ${
+                          // adding a day because FullCalendar ranges (which are given to all events in FC) are exclusive (example: an event falling on July 23rd is given the range "Tue Jul 22 2025 19:00 (start) - Wed Jul 23 2025 19:00 (end)")
+                          moment(seg.range.start)
+                            .add(1, "days")
+                            .format("dddd, MMMM Do")
+                        }
                       </div>
                       <div class="event-list-date-end">
                         ${

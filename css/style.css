@@ -12176,34 +12176,12 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(1) {
   z-index: 10;
-  transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(1):before {
   content: "1";
 }
 .slyde:nth-child(1).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.active {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.active article {
-  opacity: 1;
-}
-
-.slyde:nth-child(2) {
-  z-index: 9;
-  transform: rotate(3deg) translate(-50%, -50%);
-}
-.slyde:nth-child(2):before {
-  content: "2";
-}
-.slyde:nth-child(2).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
   transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
@@ -12218,14 +12196,14 @@ Copyright (c) 2015 Daniel Eden
   opacity: 1;
 }
 
-.slyde:nth-child(3) {
-  z-index: 8;
+.slyde:nth-child(2) {
+  z-index: 9;
   transform: rotate(-3deg) translate(-50%, -50%);
 }
-.slyde:nth-child(3):before {
-  content: "3";
+.slyde:nth-child(2):before {
+  content: "2";
 }
-.slyde:nth-child(3).leave {
+.slyde:nth-child(2).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
   transform: rotate(-3deg) translate(-50%, -15rem);
   opacity: 0;
@@ -12240,16 +12218,38 @@ Copyright (c) 2015 Daniel Eden
   opacity: 1;
 }
 
+.slyde:nth-child(3) {
+  z-index: 8;
+  transform: rotate(0deg) translate(-50%, -50%);
+}
+.slyde:nth-child(3):before {
+  content: "3";
+}
+.slyde:nth-child(3).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(0deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.active {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.active article {
+  opacity: 1;
+}
+
 .slyde:nth-child(4) {
   z-index: 7;
-  transform: rotate(2deg) translate(-50%, -50%);
+  transform: rotate(3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(4):before {
   content: "4";
 }
 .slyde:nth-child(4).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(2deg) translate(-50%, -15rem);
+  transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12264,14 +12264,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(5) {
   z-index: 6;
-  transform: rotate(1deg) translate(-50%, -50%);
+  transform: rotate(2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(5):before {
   content: "5";
 }
 .slyde:nth-child(5).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(1deg) translate(-50%, -15rem);
+  transform: rotate(2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12308,14 +12308,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(7) {
   z-index: 4;
-  transform: rotate(2deg) translate(-50%, -50%);
+  transform: rotate(3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(7):before {
   content: "7";
 }
 .slyde:nth-child(7).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(2deg) translate(-50%, -15rem);
+  transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12330,14 +12330,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(8) {
   z-index: 3;
-  transform: rotate(-2deg) translate(-50%, -50%);
+  transform: rotate(-4deg) translate(-50%, -50%);
 }
 .slyde:nth-child(8):before {
   content: "8";
 }
 .slyde:nth-child(8).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-2deg) translate(-50%, -15rem);
+  transform: rotate(-4deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12374,14 +12374,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(10) {
   z-index: 1;
-  transform: rotate(1deg) translate(-50%, -50%);
+  transform: rotate(3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(10):before {
   content: "10";
 }
 .slyde:nth-child(10).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(1deg) translate(-50%, -15rem);
+  transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -14733,6 +14733,9 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
   position: relative;
   z-index: 7;
 }
+.fc-monthList-view .events-list-wrapper .event-list-item.today {
+  background-color: #fffbca;
+}
 .fc-monthList-view .events-list-wrapper .event-list-item .event-list-title {
   font-family: "Inter";
   color: rgb(29, 29, 29);
@@ -14759,7 +14762,7 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
   display: inline;
 }
 .fc-monthList-view .events-list-wrapper .event-list-item hr {
-  background-color: #e7e7e7;
+  background-color: rgba(0, 0, 0, 0.0901960784);
   margin: 1.25rem 0;
   margin-bottom: 1.1rem;
   opacity: 1;
@@ -14930,6 +14933,9 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
   section.calendar-section .container #calendar .fc-view-harness .custom-view .no-events-message {
     width: 100%;
     justify-content: center;
+  }
+  .events-list-wrapper .event-list-item .event-list-title {
+    line-height: 130%;
   }
   .events-list-wrapper .event-list-item .event-list-date-wrapper {
     font-size: 15px;
@@ -20588,23 +20594,34 @@ footer .rts-copyright-area-one .new-row p {
   .sunflower-trail-page-body .container .row .sunflower-trail-wrapper .sft-intro {
     font-size: 21px;
   }
-  section.pro-shop-body .band-of-brands .container .row .brand {
-    max-width: 34%;
+  section.pro-shop-body {
+    padding-top: 0rem;
   }
   section.pro-shop-body > .container {
     padding-top: 1rem;
   }
   section.pro-shop-body > .container .row.lined-row {
     border-top: none;
+    padding-top: 2rem;
   }
   section.pro-shop-body > .container .row [class*=col] .shop-note {
-    font-size: 21px;
+    font-size: 19px;
   }
   section.pro-shop-body > .container .row [class*=col] .note-box {
-    font-size: 15px;
+    font-size: 14px;
     word-wrap: break-word;
     overflow-wrap: break-word;
     line-height: 130%;
+    padding: 2rem 2rem 2.5rem 2rem;
+  }
+  section.pro-shop-body > .container .row [class*=col] .note-box .note-brow .note-icon.trade {
+    width: 18px;
+  }
+  section.pro-shop-body > .container .row [class*=col] .note-box .note-brow .note-icon.wedge {
+    width: 24px;
+  }
+  section.pro-shop-body > .container .row [class*=col] .note-box .note-brow .note-icon.putting-green {
+    width: 25px;
   }
   section.pro-shop-body.foot-joy > .container {
     padding-top: 9rem;
@@ -20615,6 +20632,20 @@ footer .rts-copyright-area-one .new-row p {
   }
   section.pro-shop-body.foot-joy > .container .primary-row .col-6 {
     margin-top: 1rem;
+  }
+  section.pro-shop-body.foot-joy > .container .primary-row .col-6 .note-box {
+    padding: 0;
+  }
+  section.pro-shop-body.foot-joy > .container .primary-row .col-6 .note-box .product {
+    font-size: 12px;
+    letter-spacing: 0.2px;
+    padding-top: 0;
+  }
+  section.pro-shop-body .band-of-brands .container {
+    padding: 3rem 0;
+  }
+  section.pro-shop-body .band-of-brands .container .row .brand {
+    max-width: 34%;
   }
   section.league-page-body h3 {
     font-size: 33px;

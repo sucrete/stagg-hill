@@ -176,7 +176,7 @@ $modal-margin: 3rem;
           letter-spacing: 0.1px;
           line-height: 128%;
           width: 75%;
-          padding-bottom: .55rem;
+          padding-bottom: 0.55rem;
         }
         .close-button-wrapper {
           background-color: #f9f9f9;
@@ -293,6 +293,9 @@ $outline-color: #e6e6e6;
       transition: all 0.25s ease;
       position: relative;
       z-index: 7;
+      &.today {
+        background-color: #fffbca;
+      }
       .event-list-title {
         font-family: "Inter";
         color: rgb(29, 29, 29);
@@ -319,7 +322,7 @@ $outline-color: #e6e6e6;
         }
       }
       hr {
-        background-color: $inner-border-color;
+        background-color: #00000017;
         margin: 1.25rem 0;
         margin-bottom: 1.1rem;
         opacity: 1;
@@ -451,7 +454,6 @@ $outline-color: #e6e6e6;
   }
 }
 
-
 //~ =============================
 //~ ====== PHABLET STYLING ======
 //~ =============================
@@ -463,7 +465,7 @@ $outline-color: #e6e6e6;
       padding-bottom: 10rem;
       .container {
         .row {
-          [class*='col'] {
+          [class*="col"] {
             .events-list-container {
               .events-list-heading {
                 font-size: 37px;
@@ -502,7 +504,7 @@ $outline-color: #e6e6e6;
                 .fc-next-button {
                   .fc-icon {
                     position: relative;
-                    top: -.75px;
+                    top: -0.75px;
                   }
                 }
               }
@@ -523,7 +525,7 @@ $outline-color: #e6e6e6;
   .events-list-wrapper {
     .event-list-item {
       .event-list-title {
-
+        line-height: 130%;
       }
       .event-list-date-wrapper {
         font-size: 15px;

@@ -1834,10 +1834,10 @@ section.perks {
 section.pro-shop-body {
   padding-top: 8rem;
   .band-of-brands {
-     background: aliceblue;
+    background: aliceblue;
     .container {
       padding: 5rem 0;
-     
+
       border-radius: 21px;
       .row {
         .brand {
@@ -3153,33 +3153,44 @@ footer {
       }
     }
   }
-  section.pro-shop-body .band-of-brands .container .row .brand {
-    max-width: 34%;
-  }
+
   section.pro-shop-body {
+    padding-top: 0rem;
     & > .container {
       padding-top: 1rem;
       .row {
         &.lined-row {
           border-top: none;
+          padding-top: 2rem;
         }
         [class*="col"] {
           .shop-note {
-            font-size: 21px;
+            font-size: 19px;
           }
           .note-box {
-            font-size: 15px;
+            font-size: 14px;
             word-wrap: break-word;
             overflow-wrap: break-word;
-
             line-height: 130%;
+            padding: 2rem 2rem 2.5rem 2rem;
+            .note-brow {
+              .note-icon {
+                &.trade {
+                  width: 18px;
+                }
+                &.wedge {
+                  width: 24px;
+                }
+                &.putting-green{
+                  width: 25px;
+                }
+              }
+            }
           }
         }
       }
     }
-  }
-  section {
-    &.pro-shop-body.foot-joy {
+    &.foot-joy {
       & > .container {
         padding-top: 9rem;
         padding-bottom: 9rem;
@@ -3191,11 +3202,30 @@ footer {
         .primary-row {
           .col-6 {
             margin-top: 1rem;
+            .note-box {
+              padding: 0;
+              .product {
+                font-size: 12px;
+                letter-spacing: .2px;
+                padding-top: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .band-of-brands {
+      .container {
+        padding: 3rem 0;
+        .row {
+          .brand {
+            max-width: 34%;
           }
         }
       }
     }
   }
+  
   section {
     &.league-page-body {
       h3 {
