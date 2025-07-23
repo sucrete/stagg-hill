@@ -62,7 +62,7 @@ export class Footer extends LitElement {
                         />(785) 539-1041
                       </a>
                       <a
-                        href="https://maps.app.goo.gl/Bzrg9oSfx67wBW1E7"
+                        href="https://maps.app.goo.gl/CGYZoa5fYaRhVFxm9"
                         target="_blank"
                         class="link map-link d-flex flex-row align-items-start no-underline"
                       >
@@ -239,8 +239,6 @@ export class Footer extends LitElement {
                     </div>
                     <a
                       class="teequest-link no-underline"
-                      target="_blank"
-                      href="https://www.teequestsolutions.com"
                     >
                       <svg
                         class="svg-inline--fa fa-gears"

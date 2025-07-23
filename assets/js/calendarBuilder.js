@@ -18,8 +18,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //~ fetch data
   fetchData(calendarQuery).then((data) => {
+    //TODO:Scrub data for multiday end date here, adding a day to end date (because of weirdness with FullCalendar)
+    const allEvents = data.events;
+    console.log("%cOld date: " + allEvents[44].end, "color: aliceblue;");
+    allEvents.forEach((event, index) => {
+      console.log("%cWorking?", "color:coral");
+      console.log(event.end);
+      if (event?.multidayEvent) {
+        event.end = moment(event.end).add(1, "days").format("YYYY-MM-DD");
+      }
+    });
+    console.log("%cNew date: " + allEvents[44].end, "color: green;");
+    // console.log(allEvents);
+
     //~ create custom view
     const { sliceEvents, createPlugin } = FullCalendar;
+
     const CustomViewConfig = {
       classNames: ["custom-view"],
       content: function (props) {
@@ -83,14 +97,10 @@ document.addEventListener("DOMContentLoaded", function () {
                    seg.def.extendedProps?.linkQuestion
                      ? `
                    <a
-                  href="${seg.def.extendedProps.linkDeets.linkURL}"
+                  href="${seg.def.extendedProps?.linkDeets?.linkURL}"
                   class="btn btn-secondary event-list-link-btn col-12 col-sm-2"
                   target="_blank"
-                  >${
-                    !seg.def.extendedProps.linkDeets.hasResults
-                      ? seg.def.extendedProps.linkDeets.linkText
-                      : "Results"
-                  }</a
+                  >${seg.def.extendedProps?.linkDeets?.linkText}</a
                 >
                   `
                      : ""
@@ -114,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     });
     console.log(
-      `%c${JSON.stringify(data, null, 2)}`,
+      `%c${JSON.stringify(allEvents[44], null, 2)}`,
       "color: red; background: black"
     );
 
@@ -138,12 +148,10 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         dayGridMonth: {
           contentHeight: windowWidth < 768 ? 700 : null,
-          
         },
       },
       windowResize: function (dayGridMonth) {
         windowWidth = window.innerWidth;
-        console.log("day grid month");
         if (windowWidth < 768) {
           calendar.setOption("contentHeight", 700);
         } else {
@@ -151,7 +159,10 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       },
       initialView: "dayGridMonth",
-      events: data.events,
+
+      //* WHERE EVENTS ARE CONSUMED BY FULLCALENDAR
+      // events: data.events,
+      events: allEvents,
 
       eventClick: function (info) {
         //~Modal
@@ -205,11 +216,7 @@ document.addEventListener("DOMContentLoaded", function () {
           if (info.event.extendedProps?.linkQuestion) {
             modalLink.style = "display:flex";
             modalLink.href = info.event.extendedProps.linkDeets.linkURL;
-            if (info.event.extendedProps?.linkDeets.hasResults) {
-              modalLink.textContent = "Results"
-            } else {
-              modalLink.textContent = info.event.extendedProps.linkDeets.linkText
-            }
+            modalLink.textContent = info.event.extendedProps.linkDeets.linkText;
           } else {
             // ...otherwise delete the button
             modalLink.style = "display:none";
