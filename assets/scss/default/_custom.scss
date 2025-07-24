@@ -1001,7 +1001,6 @@ table {
 .booking-container {
   .row:first-child {
     justify-content: space-between;
-    padding: 11rem 0 7rem 0;
     .p1 {
       // margin-top: -7px;
       font-size: 26px;
@@ -2883,11 +2882,7 @@ footer {
       padding-top: 7rem;
       padding-bottom: 7rem;
       &.booking-container {
-        .row {
-          padding-top: 0;
-          padding-bottom: 5rem;
-          gap: 30px;
-        }
+        
       }
       &.why-choose-us-working-process {
         padding-bottom: 3rem;
@@ -3671,7 +3666,6 @@ footer {
     }
   }
   .booking-container {
-    padding: 7rem 29px;
     .row {
       [class*="col"] {
         p {

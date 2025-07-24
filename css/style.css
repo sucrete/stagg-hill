@@ -12176,34 +12176,12 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(1) {
   z-index: 10;
-  transform: rotate(3deg) translate(-50%, -50%);
+  transform: rotate(-3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(1):before {
   content: "1";
 }
 .slyde:nth-child(1).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(3deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.active {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.active article {
-  opacity: 1;
-}
-
-.slyde:nth-child(2) {
-  z-index: 9;
-  transform: rotate(-3deg) translate(-50%, -50%);
-}
-.slyde:nth-child(2):before {
-  content: "2";
-}
-.slyde:nth-child(2).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
   transform: rotate(-3deg) translate(-50%, -15rem);
   opacity: 0;
@@ -12218,16 +12196,38 @@ Copyright (c) 2015 Daniel Eden
   opacity: 1;
 }
 
+.slyde:nth-child(2) {
+  z-index: 9;
+  transform: rotate(1deg) translate(-50%, -50%);
+}
+.slyde:nth-child(2):before {
+  content: "2";
+}
+.slyde:nth-child(2).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(1deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.active {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.active article {
+  opacity: 1;
+}
+
 .slyde:nth-child(3) {
   z-index: 8;
-  transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(-3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(3):before {
   content: "3";
 }
 .slyde:nth-child(3).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
+  transform: rotate(-3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12242,14 +12242,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(4) {
   z-index: 7;
-  transform: rotate(3deg) translate(-50%, -50%);
+  transform: rotate(-1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(4):before {
   content: "4";
 }
 .slyde:nth-child(4).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(3deg) translate(-50%, -15rem);
+  transform: rotate(-1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12286,14 +12286,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(6) {
   z-index: 5;
-  transform: rotate(-3deg) translate(-50%, -50%);
+  transform: rotate(-4deg) translate(-50%, -50%);
 }
 .slyde:nth-child(6):before {
   content: "6";
 }
 .slyde:nth-child(6).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-3deg) translate(-50%, -15rem);
+  transform: rotate(-4deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12308,14 +12308,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(7) {
   z-index: 4;
-  transform: rotate(3deg) translate(-50%, -50%);
+  transform: rotate(2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(7):before {
   content: "7";
 }
 .slyde:nth-child(7).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(3deg) translate(-50%, -15rem);
+  transform: rotate(2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12352,14 +12352,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(9) {
   z-index: 2;
-  transform: rotate(-2deg) translate(-50%, -50%);
+  transform: rotate(1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(9):before {
   content: "9";
 }
 .slyde:nth-child(9).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-2deg) translate(-50%, -15rem);
+  transform: rotate(1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12374,14 +12374,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(10) {
   z-index: 1;
-  transform: rotate(3deg) translate(-50%, -50%);
+  transform: rotate(-4deg) translate(-50%, -50%);
 }
 .slyde:nth-child(10):before {
   content: "10";
 }
 .slyde:nth-child(10).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(3deg) translate(-50%, -15rem);
+  transform: rotate(-4deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -13886,7 +13886,7 @@ li.has-dropdown:hover .submenu li a {
     margin-bottom: 2.25rem;
   }
   .banner-four-bg .cornered-container .cornered-box {
-    width: 90%;
+    width: 100%;
     padding: 1.5rem;
     text-align: justify;
     font-size: 15px;
@@ -15572,7 +15572,7 @@ section.cta.blonde .rts-cts-area {
   color: rgba(255, 255, 255, 0.65);
 }
 .rts-copyright-area-one .copyright-wrapper .teequest-link {
-  cursor: pointer;
+  cursor: text;
   transition: all 0.25s ease;
 }
 .rts-copyright-area-one .copyright-wrapper .teequest-link .fa-gears {
@@ -18988,7 +18988,6 @@ table.de-emphasize {
 
 .booking-container .row:first-child {
   justify-content: space-between;
-  padding: 11rem 0 7rem 0;
 }
 .booking-container .row:first-child .p1 {
   font-size: 26px;
@@ -20417,11 +20416,6 @@ footer .rts-copyright-area-one .new-row p {
     padding-top: 7rem;
     padding-bottom: 7rem;
   }
-  section.mobile-padding.booking-container .row {
-    padding-top: 0;
-    padding-bottom: 5rem;
-    gap: 30px;
-  }
   section.mobile-padding.why-choose-us-working-process {
     padding-bottom: 3rem;
   }
@@ -20911,9 +20905,6 @@ footer .rts-copyright-area-one .new-row p {
   .holes-in-one-page-body .container .col p {
     font-size: 17px;
     margin-bottom: 8px;
-  }
-  .booking-container {
-    padding: 7rem 29px;
   }
   .booking-container .row [class*=col] p.p1 {
     font-size: 21px;
