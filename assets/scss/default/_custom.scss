@@ -3222,8 +3222,23 @@ footer {
           padding-top: 2rem;
         }
         [class*="col"] {
-          .shop-note {
-            font-size: 19px;
+          .initial-note {
+            padding: 2rem;
+            padding-bottom: 4rem;
+            .shop-note {
+              font-size: 19px;
+            }
+          }
+          .specials {
+            padding: 2rem;
+            h5 {
+              font-size: 15px;
+            }
+            .deal { 
+              font-size: 30px;
+              margin-bottom: 1rem;
+              line-height: 1.2;
+            }
           }
           .note-box {
             font-size: 14px;
