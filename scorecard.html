@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Scorecard | Stagg Hill Golf Club</title>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -12,7 +14,7 @@
       type="image/x-icon"
       href="assets/images/fav.png"
     />
-    <title>Book Tee Time</title>
+
     <link
       rel="stylesheet preload"
       href="assets/css/vendor/bootstrap.min.css"
@@ -29,20 +31,6 @@
     />
     <link
       rel="stylesheet preload"
-      href="assets/css/plugins/magnifying-popup.css"
-      as="style"
-      media="print"
-      onload="this.media='all'"
-    />
-    <link
-      rel="stylesheet preload"
-      href="assets/css/plugins/swiper.css"
-      as="style"
-      media="print"
-      onload="this.media='all'"
-    />
-    <link
-      rel="stylesheet preload"
       href="assets/css/plugins/metismenu.css"
       as="style"
       media="print"
@@ -53,21 +41,25 @@
     <!-- header Lit component -->
     <script type="module" src="./lit/header.js"></script>
 
+    <!-- CTA Lit component -->
+    <script type="module" src="./lit/cta.js"></script>
+
     <!-- footer Lit component -->
     <script type="module" src="./lit/footer.js"></script>
   </head>
 
   <body>
-    <!-- header four area start -->
+    <!-- header area start -->
     <header class="header-style-one style-two header--sticky style-white">
       <my-header> </my-header>
       <div class="gradient-bg"></div>
     </header>
+    <!-- header area end -->
 
     <!-- rts banner four start -->
     <div
-      class="banner-four-area banner-subpage book-tee-time-banner rts-section-gap jarallax"
-      data-img-position="0% 110%"
+      class="banner-four-area banner-subpage scorecard-banner rts-section-gap jarallax"
+      data-img-position="0% 80%"
     >
       <div class="overlay"></div>
       <div class="container">
@@ -79,7 +71,7 @@
                 data-wow-offset="120"
                 data-wow-delay=".7s"
               >
-                Book Tee Time
+                Scorecard
               </h1>
             </div>
           </div>
@@ -88,13 +80,28 @@
     </div>
     <!-- rts banner four end -->
 
-    <section class="booking-container">
-      <iframe
-        src="https://teetimes.teequest.com/42"
-        style="width: 100%; min-height: 1000px; margin-top: 0px; border: none"
-        frameborder="0"
-      ></iframe>
+    <section class="page-body instruction-page-body scorecard">
+      <div
+        class="container wow fadeInUp"
+        data-wow-offset="120"
+        data-wow-delay=".9s"
+      >
+        <a class="scorecard-image-link" href="images/Stagg-Hill-Scorecard.jpg" target="_blank">
+          <img
+            src="images/Stagg-Hill-Scorecard-cropped.jpg"
+            class=""
+            alt=""
+          />
+        </a>
+      </div>
     </section>
+
+    <!-- cta area start -->
+    <section class="cta blonde">
+      <my-cta></my-cta>
+    </section>
+    <!-- cta area end -->
+
     <footer>
       <my-footer></my-footer>
     </footer>
@@ -226,6 +233,7 @@
     <script defer src="assets/js/plugins/svg-inject.js"></script>
     <script defer src="assets/js/plugins/metismenu.js"></script>
     <script defer src="assets/js/vendor/bootstrap.min.js"></script>
+
     <script defer src="assets/js/main.js"></script>
     <script src="./assets/js/weather.js "></script>
   </body>

@@ -141,6 +141,12 @@ export class Header extends LitElement {
                           >
                         </li>
                         <li>
+                          <a href="scorecard.html"
+                            ><i class="fa-sharp fa-regular fa-chevron-right"></i
+                            >Scorecard</a
+                          >
+                        </li>
+                        <li>
                           <a href="meet-the-staff.html"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Meet the Staff</a

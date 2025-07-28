@@ -37,6 +37,53 @@
   }
 }
 
+.specials {
+  position: relative;
+  padding: 3rem 3.25rem 4rem 3.5rem;
+  background: rgb(250, 250, 250);
+  border-radius: 21px;
+  &.rounded-corners {
+    border-radius: 21px;
+  }
+  h5 {
+    // font-family: "Oswald";
+    // text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    // letter-spacing: -0.5px;
+    color: var(--color-secondary);
+    font-size: 16px;
+    margin-bottom: 9px;
+
+    svg {
+      margin-top: -3px;
+      margin-right: 8px;
+      width: auto;
+      height: 12px;
+      path {
+        fill: var(--color-secondary);
+      }
+    }
+  }
+  .deal {
+    font-family: "Oswald";
+    font-size: 32px;
+    color: var(--color-primary);
+    font-weight: 600;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    line-height: 1;
+    // background: url(../assets/images/service/shiny-2.gif) no-repeat;
+    // background-size: 120%;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    margin-bottom: 0.5rem;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
 .addendum {
   // padding: 28px 35px 30px 26px;
   // border-radius: 10px;
@@ -297,6 +344,7 @@ section.sponsors-section {
 // Notices section on home page
 section.homepage-notices {
   padding-bottom: 17rem;
+  background-color: #f3f3f3;
   .container {
     .title {
       text-align: center;
@@ -333,7 +381,7 @@ section.homepage-notices {
           }
           .inner-content-area {
             padding: 3.5rem;
-            background: rgb(250, 250, 250);
+            background: rgb(255, 255, 255);
             flex-direction: column;
             justify-content: space-between;
             flex-grow: 1;
@@ -347,8 +395,18 @@ section.homepage-notices {
               h6 {
                 font-size: 23px;
                 margin-bottom: 12px;
-                // letter-spacing: 0.2px;
+                img,
+                svg {
+                  height: 20px;
+                  width: auto;
+                  margin-top: -5px;
+                  margin-right: 12px;
+                  path {
+                    fill: rgb(185, 185, 185);
+                  }
+                }
               }
+
               p {
                 font-size: 16px;
                 line-height: 152%;
@@ -360,6 +418,27 @@ section.homepage-notices {
                   display: unset;
                   font-family: inherit;
                 }
+                &.deal {
+                  font-family: "Oswald";
+                  font-size: 32px;
+                  color: var(--color-primary);
+                  font-weight: 600;
+                  letter-spacing: -1px;
+                  text-transform: uppercase;
+                  line-height: 1;
+                  // background: url(../assets/images/service/shiny-2.gif) no-repeat;
+                  // background-size: 120%;
+                  // -webkit-background-clip: text;
+                  // -webkit-text-fill-color: transparent;
+                  margin-bottom: 0.5rem;
+                  &:last-of-type {
+                    margin-bottom: 0;
+                  }
+                }
+              }
+              .fire-icon {
+                width: auto;
+                height: 14px;
               }
               hr {
                 background-color: #c1c1c1;
@@ -367,7 +446,7 @@ section.homepage-notices {
               .row {
                 display: flex;
                 flex-direction: row;
-                color: #262626;
+                color: var(--color-primary);
                 margin-bottom: 0.5rem;
                 div {
                   width: fit-content;
@@ -385,49 +464,9 @@ section.homepage-notices {
                   font-weight: 600;
                 }
               }
-              .specials {
-                h6 {
-                  margin-bottom: 1rem;
-                }
-                p {
-                  margin-bottom: 1rem;
-                  &.p2 {
-                    // font-family: 'Alte Haas Bold';
-                  }
-                  &:last-of-type {
-                    margin-bottom: 3rem;
-                  }
-                }
-                .special-wrapper {
-                  padding: 3rem;
-                  background-color: white;
-                  .row {
-                    [class*="col"] {
-                      .callaway-logo-wrapper {
-                        padding-bottom: 8px;
-                        img {
-                          width: 45px;
-                          height: auto;
-                        }
-                      }
-                      h4 {
-                        font-family: "Oswald";
-                        text-transform: uppercase;
-                        color: black;
-                        font-weight: 550;
-                        letter-spacing: 0.09px;
-                      }
-
-                      .callaway-opus {
-                        width: 70%;
-                      }
-                    }
-                  }
-                }
-              }
             }
             .link-bar {
-              margin-top: 3rem;
+              margin-top: 5rem;
               justify-content: space-between;
               align-items: center;
               font-family: "IKOB Italic";
@@ -1860,6 +1899,9 @@ section.pro-shop-body {
       &.lined-row {
         // border-top: 1.25px solid rgb(230, 230, 230);
         padding-top: 0rem;
+        .height-100 {
+          height: inherit;
+        }
       }
       [class*="col"] {
         .shop-note {
@@ -1869,6 +1911,12 @@ section.pro-shop-body {
         }
       }
     }
+  }
+  .initial-note {
+    padding: 3rem;
+    border-radius: 21px;
+    background: #f8f8f8;
+    height: 100%;
   }
   .note-box {
     font-size: 16px;
@@ -2142,6 +2190,22 @@ section.pro-shop-body {
             }
           }
         }
+      }
+    }
+    .scorecard-image-link {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: block;
+      border-radius: 32px;
+      overflow: hidden;
+      border: 1.5px solid #595959;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+        rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+      transition: all 0.15s ease;
+      &:hover {
+        transform: translateY(-1px);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+          rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
       }
     }
   }
@@ -2882,7 +2946,6 @@ footer {
       padding-top: 7rem;
       padding-bottom: 7rem;
       &.booking-container {
-        
       }
       &.why-choose-us-working-process {
         padding-bottom: 3rem;
@@ -3176,7 +3239,7 @@ footer {
                 &.wedge {
                   width: 24px;
                 }
-                &.putting-green{
+                &.putting-green {
                   width: 25px;
                 }
               }
@@ -3201,7 +3264,7 @@ footer {
               padding: 0;
               .product {
                 font-size: 12px;
-                letter-spacing: .2px;
+                letter-spacing: 0.2px;
                 padding-top: 0;
               }
             }
@@ -3220,7 +3283,7 @@ footer {
       }
     }
   }
-  
+
   section {
     &.league-page-body {
       h3 {
@@ -3350,6 +3413,15 @@ footer {
               line-height: 110%;
               font-size: 20px;
             }
+          }
+        }
+      }
+      &.scorecard {
+        padding: 5rem 0 0 0;
+        .container {
+          .scorecard-image-link {
+            border-radius: 12px;
+            border-width: 1px;
           }
         }
       }

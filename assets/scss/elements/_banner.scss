@@ -774,6 +774,15 @@ $subpage-height: 550px;
       text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
     }
   }
+  &.scorecard-banner {
+    background-image: url(../images/scorecard-banner.jpg);
+    .overlay {
+      background-image: $darker-background-gradient;
+    }
+    .title {
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
+    }
+  }
   &.contact-banner {
     background-image: url(../images/player-in-view.jpg);
     .overlay {
