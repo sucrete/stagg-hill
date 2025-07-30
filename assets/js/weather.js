@@ -1,7 +1,8 @@
 //~ Standard Variables
 // API URL
+const latLong = "39.152,-96.636";
 const apiUrl =
-  "https://api.pirateweather.net/forecast/EqRw5datS5zL99ze3FwQ8Q7PJEtJAC0i/39.152,-96.636?exclude=minutely,hourly,alerts,flags";
+  `https://api.pirateweather.net/forecast/EqRw5datS5zL99ze3FwQ8Q7PJEtJAC0i/${latLong}?exclude=minutely,hourly,alerts,flags`;
 
 // Days of the week
 const days = [
