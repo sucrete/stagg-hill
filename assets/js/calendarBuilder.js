@@ -18,9 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //~ fetch data
   fetchData(calendarQuery).then((data) => {
-    //TODO:Scrub data for multiday end date here, adding a day to end date (because of weirdness with FullCalendar)
+    // Scrub data for multiday end date here, adding a day to end date (because of weirdness with FullCalendar)
     const allEvents = data.events;
-    console.log("%cOld date: " + allEvents[44].end, "color: aliceblue;");
     allEvents.forEach((event, index) => {
       console.log("%cWorking?", "color:coral");
       console.log(event.end);
@@ -28,8 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
         event.end = moment(event.end).add(1, "days").format("YYYY-MM-DD");
       }
     });
-    console.log("%cNew date: " + allEvents[44].end, "color: green;");
-    // console.log(allEvents);
 
     //~ create custom view
     const { sliceEvents, createPlugin } = FullCalendar;
@@ -161,10 +158,7 @@ document.addEventListener("DOMContentLoaded", function () {
         monthList: CustomViewConfig,
       },
     });
-    console.log(
-      `%c${JSON.stringify(allEvents[44], null, 2)}`,
-      "color: red; background: black"
-    );
+    
 
     //~ initialize Calendar
     var calendar = new FullCalendar.Calendar(cal, {
