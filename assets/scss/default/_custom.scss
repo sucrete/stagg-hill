@@ -2483,14 +2483,14 @@ section.pro-shop-body {
             p {
               .chad-btn {
                 font-size: 14px;
-                font-family: "Alte Haas";
+                font-family: "Inter";
                 width: fit-content;
                 display: inline-block;
                 margin: 0 auto;
                 border-radius: 99px;
                 padding: 4px 12px;
                 letter-spacing: 0.5px;
-                color: rgb(158, 158, 158);
+                color: rgb(97 97 97);
                 border: none;
                 transition: all 0.15s ease;
                 .fa-duotone {
@@ -2523,6 +2523,9 @@ section.pro-shop-body {
           }
         }
       }
+    }
+    &:nth-of-type(2) {
+      padding-top: 4rem;
     }
   }
 }

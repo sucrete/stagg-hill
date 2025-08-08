@@ -12170,14 +12170,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(1) {
   z-index: 10;
-  transform: rotate(2deg) translate(-50%, -50%);
+  transform: rotate(-3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(1):before {
   content: "1";
 }
 .slyde:nth-child(1).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(2deg) translate(-50%, -15rem);
+  transform: rotate(-3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12192,14 +12192,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(2) {
   z-index: 9;
-  transform: rotate(3deg) translate(-50%, -50%);
+  transform: rotate(-4deg) translate(-50%, -50%);
 }
 .slyde:nth-child(2):before {
   content: "2";
 }
 .slyde:nth-child(2).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(3deg) translate(-50%, -15rem);
+  transform: rotate(-4deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12236,14 +12236,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(4) {
   z-index: 7;
-  transform: rotate(-2deg) translate(-50%, -50%);
+  transform: rotate(-3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(4):before {
   content: "4";
 }
 .slyde:nth-child(4).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-2deg) translate(-50%, -15rem);
+  transform: rotate(-3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12280,14 +12280,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(6) {
   z-index: 5;
-  transform: rotate(-4deg) translate(-50%, -50%);
+  transform: rotate(2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(6):before {
   content: "6";
 }
 .slyde:nth-child(6).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-4deg) translate(-50%, -15rem);
+  transform: rotate(2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12346,14 +12346,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(9) {
   z-index: 2;
-  transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(-2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(9):before {
   content: "9";
 }
 .slyde:nth-child(9).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
+  transform: rotate(-2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12368,14 +12368,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(10) {
   z-index: 1;
-  transform: rotate(-2deg) translate(-50%, -50%);
+  transform: rotate(3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(10):before {
   content: "10";
 }
 .slyde:nth-child(10).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-2deg) translate(-50%, -15rem);
+  transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20121,14 +20121,14 @@ section.pro-shop-body.foot-joy .container .row .foot-joy-logo {
 }
 .meet-the-staff-page-body .rts-location-contact-area .container .row .single-location-area-contact .collapsible-wrapper p .chad-btn {
   font-size: 14px;
-  font-family: "Alte Haas";
+  font-family: "Inter";
   width: fit-content;
   display: inline-block;
   margin: 0 auto;
   border-radius: 99px;
   padding: 4px 12px;
   letter-spacing: 0.5px;
-  color: rgb(158, 158, 158);
+  color: rgb(97, 97, 97);
   border: none;
   transition: all 0.15s ease;
 }
@@ -20156,6 +20156,9 @@ section.pro-shop-body.foot-joy .container .row .foot-joy-logo {
 }
 .meet-the-staff-page-body .rts-location-contact-area .container .row .single-location-area-contact .collapsible-wrapper p .chad-btn:hover .fa-duotone {
   opacity: 0.5;
+}
+.meet-the-staff-page-body .rts-location-contact-area:nth-of-type(2) {
+  padding-top: 4rem;
 }
 
 .board {
