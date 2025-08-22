@@ -148,6 +148,13 @@
       <my-footer></my-footer>
     </footer>
 
+    <!-- pre loader area start -->
+    <div class="loader-wrapper">
+      <div class="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+
     <!-- progress area start -->
     <div class="progress-wrap">
       <svg
@@ -182,13 +189,37 @@
     <!-- 🟡🟡🟡🟡🟡🟡 MOBILE MENU MARKUP START 🟡🟡🟡🟡🟡🟡 -->
     <div id="side-bar" class="side-bar header-two" dir="ltr">
       <button class="close-icon-menu" aria-label="footer_Button">
-        <i class="far fa-times"></i>
+        <svg
+          class="side-menu-cross"
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          viewBox="0 0 512 512"
+        >
+          <polygon
+            class="st0"
+            points="513.3 44 468 -1.3 256 210.8 44 -1.3 -1.3 44 210.8 256 -1.3 468 44 513.3 256 301.2 468 513.3 513.3 468 301.2 256 513.3 44"
+          />
+        </svg>
       </button>
       <div class="mobile-menu-main">
         <nav class="nav-main mainmenu-nav mt--30">
           <ul class="mainmenu metismenu" id="mobile-menu-active">
             <li class="has-droupdown">
-              <a href="#" class="main" aria-expanded="false">Fees</a>
+              <a href="#" class="main" aria-expanded="false"
+                >Fees
+                <div class="dd-box">
+                  <svg
+                    class="chevron"
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    viewBox="0 0 314.4 314.4"
+                  >
+                    <path
+                      d="M157.2,239.2c-9.9,0-19.3-3.9-26.3-10.9L4.2,101.6l26.3-26.3,126.7,126.7,126.7-126.7,26.3,26.3-126.7,126.7c-7,7-16.4,10.9-26.3,10.9Z"
+                    />
+                  </svg>
+                </div>
+              </a>
               <ul class="submenu mm-collapse">
                 <li><a href="greens-fees.html">Greens Fees</a></li>
                 <li><a href="membership-fees.html">Membership Fees</a></li>
@@ -204,7 +235,20 @@
             </li>
 
             <li class="has-droupdown">
-              <a href="#" class="main" aria-expanded="false">Leagues</a>
+              <a href="#" class="main" aria-expanded="false"
+                >Leagues
+                <div class="dd-box">
+                  <svg
+                    class="chevron"
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    viewBox="0 0 314.4 314.4"
+                  >
+                    <path
+                      d="M157.2,239.2c-9.9,0-19.3-3.9-26.3-10.9L4.2,101.6l26.3-26.3,126.7,126.7,126.7-126.7,26.3,26.3-126.7,126.7c-7,7-16.4,10.9-26.3,10.9Z"
+                    />
+                  </svg></div
+              ></a>
               <ul class="submenu mm-collapse">
                 <li><a href="mens-league.html">Men's League</a></li>
                 <li><a href="womens-league.html">Women's League</a></li>
@@ -215,7 +259,20 @@
               </ul>
             </li>
             <li class="has-droupdown">
-              <a href="#" class="main" aria-expanded="false">Tournaments</a>
+              <a href="#" class="main" aria-expanded="false"
+                >Tournaments
+                <div class="dd-box">
+                  <svg
+                    class="chevron"
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    viewBox="0 0 314.4 314.4"
+                  >
+                    <path
+                      d="M157.2,239.2c-9.9,0-19.3-3.9-26.3-10.9L4.2,101.6l26.3-26.3,126.7,126.7,126.7-126.7,26.3,26.3-126.7,126.7c-7,7-16.4,10.9-26.3,10.9Z"
+                    />
+                  </svg></div
+              ></a>
               <ul class="submenu mm-collapse">
                 <li><a href="calendar.html">Calendar</a></li>
                 <li><a href="open-tournaments.html">Open Tournaments</a></li>
@@ -228,7 +285,20 @@
               <a href="instruction.html" class="main">Instruction</a>
             </li>
             <li class="has-droupdown">
-              <a href="#" class="main" aria-expanded="false">About</a>
+              <a href="#" class="main" aria-expanded="false"
+                >About
+                <div class="dd-box">
+                  <svg
+                    class="chevron"
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    viewBox="0 0 314.4 314.4"
+                  >
+                    <path
+                      d="M157.2,239.2c-9.9,0-19.3-3.9-26.3-10.9L4.2,101.6l26.3-26.3,126.7,126.7,126.7-126.7,26.3,26.3-126.7,126.7c-7,7-16.4,10.9-26.3,10.9Z"
+                    />
+                  </svg></div
+              ></a>
               <ul class="submenu mm-collapse">
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="scorecard.html">Scorecard</a></li>
@@ -269,8 +339,8 @@
           </ul>
         </nav>
       </div>
-      <!-- mobile menu area end -->
     </div>
+    <!-- mobile menu area end -->
 
     <script defer src="assets/js/plugins/jquery.js"></script>
     <script defer src="assets/js/vendor/waw.js"></script>

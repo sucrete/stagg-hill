@@ -329,7 +329,7 @@ $outline-color: #e6e6e6;
       }
       .event-list-description {
         padding: 0;
-        padding-top: .5rem;
+        padding-top: 0.5rem;
         color: #767364;
         letter-spacing: 0.2px;
         white-space: pre-line;
@@ -518,6 +518,16 @@ $outline-color: #e6e6e6;
               .no-events-message {
                 width: 100%;
                 justify-content: center;
+              }
+            }
+            .fc-daygrid {
+              table {
+                thead {
+                  .fc-col-header-cell-cushion {
+                    font-size: 12px;
+                    padding-bottom: 5px;
+                  }
+                }
               }
             }
           }

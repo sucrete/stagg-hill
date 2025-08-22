@@ -214,7 +214,7 @@ section.sponsors-section {
 
 .my-btn {
   color: white !important;
-  font-family: "Aeonik", sans-serif !important;
+  font-family: "Inter", sans-serif !important;
   font-weight: 300 !important;
   height: 42px !important;
   gap: 19px !important;
@@ -2511,7 +2511,7 @@ section.pro-shop-body {
                   width: 12px;
                   height: auto;
                   transform: rotate(180deg) translateY(1.5px);
-                  transition: all .15s ease;
+                  transition: all 0.15s ease;
                   margin-left: 3px;
                   path {
                     fill: rgb(172, 172, 172);
@@ -3824,7 +3824,8 @@ footer {
                   .top-area {
                     & > *:not(h3, h6),
                     p {
-                      font-size: 15px;
+                      font-size: 14px;
+                      line-height: 1.45;
                     }
                     .title {
                       font-size: 25px;
@@ -3843,6 +3844,32 @@ footer {
                     margin-top: 1rem;
                     font-size: 18px;
                   }
+                }
+              }
+              .inner-content-area {
+                padding: 3rem 2rem 2rem 2rem;
+                .top-area {
+                  & > *:not(h3, h6),
+                  p {
+                    font-size: 14px;
+                    line-height: 1.45;
+                  }
+                  .title {
+                    font-size: 25px;
+                    margin-bottom: 1rem;
+                  }
+                  h6 {
+                    font-size: 20px;
+                    margin-bottom: 3px;
+                    line-height: 111%;
+                  }
+                  hr {
+                    margin-bottom: 14px;
+                  }
+                }
+                .link-bar {
+                  margin-top: 1rem;
+                  font-size: 18px;
                 }
               }
             }
