@@ -102,7 +102,6 @@ header .rts-btn {
             .logo-small {
               overflow: visible;
             }
-
           }
 
           .button-area-right-header {
@@ -229,6 +228,7 @@ header .rts-btn {
           .button-area-right-header {
             .header-btn {
               padding: 5px 14px;
+              overflow: hidden;
             }
           }
         }

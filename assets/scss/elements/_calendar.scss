@@ -329,9 +329,11 @@ $outline-color: #e6e6e6;
       }
       .event-list-description {
         padding: 0;
+        padding-top: .5rem;
         color: #767364;
         letter-spacing: 0.2px;
         white-space: pre-line;
+        line-height: 1.3;
       }
       .event-list-footer {
         padding: 2rem 0 0 0;

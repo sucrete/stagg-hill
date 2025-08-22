@@ -2507,15 +2507,14 @@ section.pro-shop-body {
                 color: rgb(97 97 97);
                 border: none;
                 transition: all 0.15s ease;
-                .fa-duotone {
-                  margin-left: 0.5rem;
-                  top: -1px;
-                  opacity: 0.3;
-                  font-size: 12px;
-                  line-height: 90%;
-                  transition: all 0.15s ease;
-                  &:after {
-                    content: "\f078";
+                .chevron {
+                  width: 12px;
+                  height: auto;
+                  transform: rotate(180deg) translateY(1.5px);
+                  transition: all .15s ease;
+                  margin-left: 3px;
+                  path {
+                    fill: rgb(172, 172, 172);
                   }
                 }
                 &[aria-expanded="true"] {
@@ -2528,8 +2527,11 @@ section.pro-shop-body {
                 }
                 &:hover {
                   color: #545454;
-                  .fa-duotone {
-                    opacity: 0.5;
+                  .chevron {
+                    transform: rotate(180deg) translateY(0px);
+                    path {
+                      fill: grey;
+                    }
                   }
                 }
               }
@@ -3948,4 +3950,3 @@ footer {
     }
   }
 }
-
