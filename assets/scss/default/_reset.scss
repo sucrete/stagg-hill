@@ -353,3 +353,94 @@ blockquote strong,
 blockquote b {
   font-weight: 700;
 }
+
+//*Chevron Reset -> Moving from fontawesome to plain svg (to purge superfluous code)
+header {
+  &.header--sticky {
+    .container {
+      .row {
+        [class*="col"] {
+          .header-wrapper-1 {
+            .nav-area {
+              ul {
+                li {
+                  //~ dropdown revealed when li is hovered over
+                  &.has-dropdown {
+                    .nav-link {
+                      .chevron {
+                        display: inline;
+                        width: 11px;
+                        height: auto;
+                        transform: rotate(180deg);
+                        transition: transform 0.15s ease-in-out;
+                        margin-left: 3px;
+                        path {
+                          fill: var(--color-primary);
+                        }
+                      }
+                    }
+                    .submenu {
+                      li {
+                        a {
+                          .chevron {
+                            width: 11px;
+                            height: auto;
+                            transform: rotate(90deg);
+                            transition: margin-right 0.15s ease-in-out;
+                            path {
+                              fill: var(--color-primary);
+                            }
+                          }
+                          &:hover {
+                            .chevron {
+                              margin-right: 2px;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  &:hover {
+                    .nav-link {
+                      .chevron {
+                        transform: rotate(0deg);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &.style-white {
+      &:not(.sticky) {
+        .container {
+          .row {
+            [class*="col"] {
+              .header-wrapper-1 {
+                .nav-area {
+                  ul {
+                    li {
+                      //~ dropdown revealed when li is hovered over
+                      &.has-dropdown {
+                        .nav-link {
+                          .chevron {
+                            path {
+                              fill: #fff;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -49,9 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
                       </div>
                     </div>
                     <hr/>
-                    <div class="event-list-description">
-                      ${seg.def.extendedProps.eventDescription}
-                    </div>
+                    <div class="event-list-description">${seg.def.extendedProps.eventDescription}</div>
                      <div class="event-list-footer d-flex flex-column flex-md-row  ${
                        seg.def.extendedProps.linkQuestion ||
                        seg.def.extendedProps.flyerQuestion || seg.def.extendedProps.linkDeets?.hasResults
@@ -101,10 +99,10 @@ document.addEventListener("DOMContentLoaded", function () {
         monthList: CustomViewConfig,
       },
     });
-    console.log(
-      `%c${JSON.stringify(data, null, 2)}`,
-      "color: red; background: black"
-    );
+    // console.log(
+    //   `%c${JSON.stringify(data, null, 2)}`,
+    //   "color: red; background: black"
+    // );
 
     //~ initialize Calendar
     var calendar = new FullCalendar.Calendar(cal, {

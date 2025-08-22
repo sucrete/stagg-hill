@@ -86,6 +86,10 @@ header .rts-btn {
     .row {
       [class*="col"] {
         .header-wrapper-1 {
+          overflow: visible;
+          & * {
+            overflow: visible;
+          }
           .logo-area {
             .logo-large {
               width: 230px;
@@ -94,6 +98,11 @@ header .rts-btn {
             .logo-small {
               display: none;
             }
+            .logo-large,
+            .logo-small {
+              overflow: visible;
+            }
+
           }
 
           .button-area-right-header {
