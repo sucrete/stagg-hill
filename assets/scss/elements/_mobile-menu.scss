@@ -62,28 +62,28 @@
     }
   }
   &.show {
-  right: 0;
-  overflow-y: auto;
-  box-shadow: -5px 0 30px 30px rgba(0, 0, 0, 0.15);
-}
-}
-
-.side-bar button {
-  width: 42px;
-  height: 42px;
-  top: 0;
-  left: 0;
-  position: absolute;
-  border: none;
-  background-color: var(--color-primary);
-  svg {
-    width: 14px;
-    @include center-it;
-    polygon {
-      fill: #fff;
+    right: 0;
+    overflow-y: auto;
+    box-shadow: -5px 0 30px 30px rgba(0, 0, 0, 0.15);
+  }
+  button {
+    width: 42px;
+    height: 42px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border: none;
+    background-color: var(--color-primary);
+    svg {
+      width: 14px;
+      @include center-it;
+      polygon {
+        fill: #fff;
+      }
     }
   }
 }
+
 // mobile menu active
 
 // mobile menu scss

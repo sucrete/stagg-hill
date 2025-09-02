@@ -21,8 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Scrub data for multiday end date here, adding a day to end date (because of weirdness with FullCalendar)
     const allEvents = data.events;
     allEvents.forEach((event, index) => {
-      console.log("%cWorking?", "color:coral");
-      console.log(event.end);
       if (event?.multidayEvent) {
         event.end = moment(event.end).add(1, "days").format("YYYY-MM-DD");
       }
