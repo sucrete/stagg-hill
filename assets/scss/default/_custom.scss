@@ -411,14 +411,21 @@ section.homepage-notices {
 
             p {
               font-size: 16px;
-              line-height: 152%;
+              line-height: 1.5;
               margin-bottom: 20px;
-              letter-spacing: 0.1px;
+              letter-spacing: -0.2px;
               color: #191919;
               .highlighted {
                 color: inherit;
                 display: unset;
                 font-family: inherit;
+              }
+              a {
+                display: inline;
+                text-decoration: underline;
+                &:hover {
+                  color: var(--color-primary);
+                }
               }
               &.deal {
                 font-family: "Oswald";
@@ -473,7 +480,7 @@ section.homepage-notices {
             align-items: center;
             font-family: "IKOB Italic";
             font-size: 21px;
-
+            letter-spacing: -0.5px;
             div {
               flex: 1;
             }
@@ -502,6 +509,7 @@ section.homepage-notices {
         }
         &:hover {
           transform: translateY(-1px);
+          color: #191919;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
             rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
         }
