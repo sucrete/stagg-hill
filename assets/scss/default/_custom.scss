@@ -472,6 +472,36 @@ section.homepage-notices {
               &.donation-row {
                 font-weight: 600;
               }
+              &.candidate-row {
+                font-weight: 600;
+                .bio-link {
+                  display: flex;
+                  flex-direction: row;
+                  // text-decoration: underline;
+                  // text-decoration-color: rgb(228, 228, 228);
+                  transition: color 0.15s ease;
+                  // color: rgb(190, 190, 190);
+                  svg {
+                    width: 14px;
+                    height: auto;
+                    margin-left: 7px;
+                    path {
+                      fill: rgb(190, 190, 190);
+                      transition: fill 0.15s ease;
+                    }
+                  }
+                  &:hover {
+                    // color: #049f83;
+                    svg {
+                      path {
+                        &:nth-of-type(1) {
+                          fill: var(--color-offset);
+                        }
+                      }
+                    }
+                  }
+                }
+              }
             }
           }
           .link-bar {
