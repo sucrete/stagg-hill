@@ -379,6 +379,15 @@ section.homepage-notices {
             min-height: 100%;
             min-width: 105%;
           }
+          &.vertical-stag {
+            img {
+              min-height: 100%;
+              min-width: 105%;
+              position: absolute;
+              top: 50%;
+              transform: translateY(-38%);
+            }
+          }
         }
         .inner-content-area {
           padding: 3.5rem;
