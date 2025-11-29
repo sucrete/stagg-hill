@@ -407,7 +407,7 @@ $outline-color: #e6e6e6;
     padding-left: 0.5rem;
     padding-bottom: 2rem;
     font-family: "IKOB";
-    font-size: 45px;
+    font-size: 55px;
     color: var(--color-primary);
     margin-bottom: 1rem;
   }
@@ -444,13 +444,7 @@ $outline-color: #e6e6e6;
     padding-left: 0.75rem;
     padding-top: 0.75rem;
     padding-right: 1rem;
-    font-family: "Sono";
-    font-weight: 475;
-    font-size: 13px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: black;
-    opacity: 0.6;
+    @include monospaced();
     &:hover {
       opacity: 1;
     }
@@ -465,7 +459,7 @@ $outline-color: #e6e6e6;
   section {
     &.hours-table {
       padding-top: 16rem;
-      padding-bottom: 10rem;
+      padding-bottom: 1.75rem;
       .container {
         .row {
           [class*="col"] {
@@ -473,6 +467,15 @@ $outline-color: #e6e6e6;
               .events-list-heading {
                 font-size: 37px;
                 text-align: center;
+              }
+            }
+          }
+        }
+        .the-table-itself {
+          .some-tables {
+            ol {
+              li {
+                font-size: 15px;
               }
             }
           }

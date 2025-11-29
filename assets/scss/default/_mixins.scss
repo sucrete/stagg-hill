@@ -8,11 +8,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-@mixin monospaced($color: black) {
-  font-family: "Sono";
-  font-weight: 475;
-  font-size: 13px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+@mixin monospaced($color: #979797) {
+  font-family: "Sackers";
+  // font-weight: 475;
+  font-size: 14px;
+  letter-spacing: .5px;
+  text-transform: lowercase;
   color: $color;
 }

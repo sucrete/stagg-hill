@@ -1,61 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-//* Inter
-// Regular
-@font-face {
-  font-family: "Inter";
-  src: url("../assets/fonts/Inter.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Inter Italic";
-  src: url("../assets/fonts/Inter-Italic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: italic;
-}
-
-// Light
-@font-face {
-  font-family: "Inter Light";
-  src: url("../assets/fonts/Inter-Light.ttf") format("truetype");
-  font-weight: lighter;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Inter Light Italic";
-  src: url("../assets/fonts/Inter-LightItalic.ttf") format("truetype");
-  font-weight: light;
-  font-style: italic;
-}
-
-// Medium
-@font-face {
-  font-family: "Inter Medium";
-  src: url("../assets/fonts/Inter-Medium.ttf") format("truetype");
-  font-weight: medium;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Inter Medium Italic";
-  src: url("../assets/fonts/Inter-MediumItalic.ttf") format("truetype");
-  font-weight: medium;
-  font-style: italic;
-}
-
-// SemiBold
-@font-face {
-  font-family: "Inter Semibold";
-  src: url("../assets/fonts/Inter-SemiBold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Inter Semibold Italic";
-  src: url("../assets/fonts/Inter-SemiBoldItalic.ttf") format("truetype");
-  font-weight: bold;
-  font-style: italic;
-}
 //* IKOB
 @font-face {
   font-family: "IKOB";
@@ -70,20 +15,33 @@
     url("../assets/fonts/ikob-italic.otf") format("opentype");
 }
 
+//* Oswald
+@font-face {
+  font-family: "Oswald";
+  src: url("../assets/fonts/Oswald-Variable.ttf") format("truetype");
+}
+
+//* Sackers Grotesk
+@font-face {
+  font-family: "Sackers";
+  src: url("../assets/fonts/sackers/sackers-med.otf") format("opentype");
+}
+@font-face {
+  font-family: "Sackers Light";
+  src: url("../assets/fonts/sackers/sackers-light.otf") format("opentype");
+}
+
+
 //~ the model
 // @font-face {
 //   font-family: "YourCustomFont";
 //   src: url("yourcustomfont.woff2") format("woff2"),
 //     url("yourcustomfont.woff") format("woff"),
 //     url("yourcustomfont.ttf") format("truetype");
-//   // /* Add other formats as needed for wider compatibility */
+// /* Add other formats as needed for wider compatibility */
 // }
 
-//* Oswald
-@font-face {
-  font-family: "Oswald";
-  src: url("../assets/fonts/Oswald-Variable.ttf") format("truetype");
-}
+
 
 * {
   box-sizing: border-box;
@@ -109,8 +67,8 @@ body {
   position: relative;
   overflow-x: hidden;
   margin: 0;
-
-  // background: var(--background-color-2);
+  text-decoration-color: var(--color-body);
+  background: #005f52;
   @media #{$lg-layout} {
     overflow: hidden;
   }
@@ -171,9 +129,9 @@ h6,
 .h5,
 .h6 {
   word-break: break-word;
-  font-family: "Inter Medium", sans-serif;
+  font-family: "Inter", sans-serif;
   line-height: 1.4074;
-  color: var(--color-heading-1);
+  color: var(--color-primary);
 }
 
 h1,
@@ -181,7 +139,7 @@ h2,
 h3,
 h4 {
   font-family: "IKOB";
-  color: var(--color-offset);
+  color: var(--color-primary);
   letter-spacing: -1px;
 }
 
@@ -195,7 +153,7 @@ h1,
 h2,
 .h2 {
   font-size: var(--h2);
-  line-height: 1.1;
+  line-height: 1;
 }
 
 h3,
@@ -336,7 +294,7 @@ h5,
 
 h6,
 .h6 {
-  font-weight: var(--s-bold);
+  font-weight: 400;
 }
 
 p {
@@ -448,6 +406,12 @@ var {
   font-family: "Syne", sans-serif;
 }
 
+b {
+  font-family: "Inter";
+  font-weight: 550;
+  color: rgb(0, 82, 73);
+}
+
 /*---------------------------
 	List Style 
 ---------------------------*/
@@ -550,6 +514,11 @@ ol {
     margin-bottom: 20px;
     color: #fff;
   }
+}
+
+.italicized {
+  font-family: "IKOB Italic";
+  letter-spacing: -1.5px;
 }
 
 h1 {

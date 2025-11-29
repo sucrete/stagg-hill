@@ -171,8 +171,8 @@ export class Footer extends LitElement {
                         />
                       </div>
                       <div class="col-5 temp my-auto text-center">
-                        <span class="hi">72</span>°F /
-                        <span class="lo">57</span>°F
+                        <span class="hi">72</span>° /
+                        <span class="lo">57</span>°
                       </div>
                     </div>
                     <!--~ Future Row 2 -->
@@ -192,8 +192,8 @@ export class Footer extends LitElement {
                         />
                       </div>
                       <div class="col-5 temp my-auto text-center">
-                        <span class="hi">72</span>°F /
-                        <span class="lo">57</span>°F
+                        <span class="hi">72</span>° /
+                        <span class="lo">57</span>°
                       </div>
                     </div>
                     <!--~ Future Row 3 -->
@@ -213,8 +213,8 @@ export class Footer extends LitElement {
                         />
                       </div>
                       <div class="col-5 temp my-auto text-center">
-                        <span class="hi">72</span>°F /
-                        <span class="lo">57</span>°F
+                        <span class="hi">72</span>° /
+                        <span class="lo">57</span>°
                       </div>
                     </div>
                   </div>

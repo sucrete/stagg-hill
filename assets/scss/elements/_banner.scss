@@ -383,7 +383,7 @@
 .banner-four-bg {
   background-image: url(../images/low-angle-action-shot.jpg);
   // background-image: url(../images/ginger-golfer.jpg);
-  height: 853px !important;
+  height: 90vh !important;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -405,31 +405,31 @@
       margin-bottom: 2.25rem;
       .cornered-box {
         width: 100%;
-        padding: 1.5rem;
+        // padding: 1.5rem;
         text-align: justify;
         font-size: 15px;
         // corners ruleset
-        --b: 1px; /* thickness of the border */
-        --c: rgb(255, 255, 255); /* color of the border */
-        --w: 10px; /* length of the lines in the corner */
-        border: var(--b) solid #0000; /* space for the border */
-        --_g: #0000 90deg, var(--c) 0;
-        --_p: var(--w) var(--w) border-box no-repeat;
+        // --b: 1px; /* thickness of the border */
+        // --c: rgb(255, 255, 255); /* color of the border */
+        // --w: 10px; /* length of the lines in the corner */
+        // border: var(--b) solid #0000; /* space for the border */
+        // --_g: #0000 90deg, var(--c) 0;
+        // --_p: var(--w) var(--w) border-box no-repeat;
 
-        background: conic-gradient(
-              from 90deg at top var(--b) left var(--b),
-              var(--_g)
-            )
-            0 0 / var(--_p),
-          conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g))
-            100% 0 / var(--_p),
-          conic-gradient(from 0deg at bottom var(--b) left var(--b), var(--_g))
-            0 100% / var(--_p),
-          conic-gradient(
-              from -90deg at bottom var(--b) right var(--b),
-              var(--_g)
-            )
-            100% 100% / var(--_p);
+        // background: conic-gradient(
+        //       from 90deg at top var(--b) left var(--b),
+        //       var(--_g)
+        //     )
+        //     0 0 / var(--_p),
+        //   conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g))
+        //     100% 0 / var(--_p),
+        //   conic-gradient(from 0deg at bottom var(--b) left var(--b), var(--_g))
+        //     0 100% / var(--_p),
+        //   conic-gradient(
+        //       from -90deg at bottom var(--b) right var(--b),
+        //       var(--_g)
+        //     )
+        //     100% 100% / var(--_p);
       }
     }
 
@@ -443,10 +443,10 @@
           .title-wrapper {
             .stag-antlers {
               width: 47px;
-              margin: 0 20px 0 30px;
+              margin: 0 20px 0 20px;
             }
             h2 {
-              font-size: 45px;
+              font-size: 32px;
               letter-spacing: -2px;
             }
           }

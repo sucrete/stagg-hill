@@ -2,26 +2,34 @@
 
     // themes color
     // --color-primary: #0b2e16;
-    --color-primary: #005b4b;
+    // --color-primary: #005b4b;
+    --color-primary: #005248;
     --color-offset: #006452;
-    --color-secondary: #d09d3a;
+    // --color-secondary: #d09d3a;
+    --color-secondary: #d09d39;
     --color-accent: #05816b;
     --light-green: #00be94;
+
+
+
+    --color-section-bg: #f0f0f0;
 
     --border-color: #005b4b21;
 
     --grey-screen: rgba(0, 0, 0, 0.108);
     --light-grey: #f4f4f4;
 
-    // body color
-    --color-body: #262626;
+    // text body color
+    --color-body: #005249e3;
 
     // title color
     --color-heading-1: #262626;
 
     --color-white: #fff;
 
-    --color-border: #DDD8F9;
+    //* offset color on dark bg
+    --color-border: #005f52;
+
     --border-width: 1px;
     --radius: 10px;
 
@@ -70,7 +78,7 @@
 
     // Font Family
     --font-primary: 'Inter', sans-serif;
-    --font-medium: 'Inter Medium', sans-serif;
+    --font-medium: 'Inter', sans-serif;
     --font-secondary: 'Inter Semibold', sans-serif;
     //Fonts Size
     --font-size-b1: 16px;

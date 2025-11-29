@@ -8,20 +8,27 @@
       }
 
       .st1 {
-        fill: #006453;
+        opacity: .2;
+      }
+
+      .st1, .st2 {
+        fill: #d1d1d1;
+        isolation: isolate;
       }
 
       .st2 {
-        fill: #b7b7b7;
-        isolation: isolate;
-        opacity: .3;
+        opacity: .4;
+      }
+
+      .st3 {
+        fill: #006453;
       }
     </style>
   </defs>
-  <path class="st2" d="M24.8,47.3H0v-23.8h24.8v24h0v-.2Z"/>
-  <path class="st1" d="M72.3,47.3h23.7v23.8c-7.9,0-15.8,0-23.7,0h0v-23.7h0Z"/>
-  <path class="st2" d="M48.5,94.7v-23.9h24v23.9h-24Z"/>
-  <path class="st1" d="M24.8,23.4V0h23.6v23.4h-23.6Z"/>
+  <path class="st3" d="M72.3,47.3h23.7v23.8h-23.7v-23.7h0Z"/>
+  <path class="st3" d="M24.8,23.4V0h23.6v23.4h-23.6Z"/>
   <path class="st0" d="M48.4,70.9h-23.6v-23.6h23.6v23.7h0Z"/>
+  <path class="st1" d="M24.8,47.3H0v-23.8h24.8v24h0v-.2Z"/>
+  <path class="st2" d="M48.5,94.7v-23.9h24v23.9h-24Z"/>
   <path class="st2" d="M48.5,47.2v-23.9h24v23.9h-24Z"/>
 </svg>

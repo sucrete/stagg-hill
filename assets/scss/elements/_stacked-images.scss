@@ -41,7 +41,7 @@
   width: 21em;
   height: 100%;
   position: relative;
-  // top: 2em;
+  left: 2rem;
   margin: 0 auto;
   max-width: calc(100vw - 6em);
 }
@@ -114,9 +114,9 @@ $zLayer: 10, 9, 8, 7, 6, 5, 4, 3, 2, 1;
 @media screen and (max-width: 576px) {
   .slyder-container {
     height: 300px;
-
+    left: 0;
     .slyde {
-      min-width: 367px;
+      min-width: 120%;
     }
   }
 }
