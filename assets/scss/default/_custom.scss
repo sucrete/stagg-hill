@@ -1882,7 +1882,7 @@ section.perks {
     }
     .table-preface {
       padding-bottom: 0rem;
-      margin-bottom: 2rem;
+      margin-bottom: 4rem;
       &.extra-padding-on-the-bottom {
         margin-bottom: 6rem;
         @media screen and (max-width: 678px) {
@@ -2024,6 +2024,7 @@ section.perks {
   @media screen and (max-width: 678px) {
     [class*="table-wrapper"] {
       .table-preface {
+        margin-bottom: 1rem;
         [class*="col"] {
           h6 {
             font-size: 25px;
