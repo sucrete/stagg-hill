@@ -372,9 +372,9 @@ export class Header extends LitElement {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <rect y="14" width="27" height="1" fill="#1F1F25"></rect>
-                    <rect y="7" width="27" height="1" fill="#1F1F25"></rect>
-                    <rect width="27" height="1" fill="#1F1F25"></rect>
+                    <rect y="14" width="27" height="1.5" fill="#1F1F25"></rect>
+                    <rect y="7" width="27" height="1.5" fill="#1F1F25"></rect>
+                    <rect width="27" height="1.5" fill="#1F1F25"></rect>
                   </svg>
                 </div>
               </div>
