@@ -62,6 +62,11 @@
   }
 }
 
+section {
+  &.booking-container {
+    background-color: white;
+  }
+}
 .page-body {
   padding-top: 17rem;
   padding-bottom: 12rem;
@@ -1047,7 +1052,7 @@ table {
           .th-wrap {
             font-size: 23px;
             line-height: 1.1;
-            margin-bottom: .5rem;
+            margin-bottom: 0.5rem;
             padding-left: 2px;
           }
           .note {
@@ -1881,13 +1886,18 @@ section.perks {
       &.extra-padding-on-the-bottom {
         margin-bottom: 6rem;
         @media screen and (max-width: 678px) {
-          margin-bottom: 3rem;
+          margin-bottom: 7rem;
         }
       }
       [class*="col"] {
         h3 {
           font-size: 40px;
           margin-bottom: 1.25rem;
+        }
+        h6 {
+          font-size: 27px;
+          font-weight: 450;
+          margin-block-end: 1rem;
         }
         p,
         .hours-wrapper {
@@ -1947,7 +1957,7 @@ section.perks {
         }
       }
       &.range {
-        margin-bottom: -2.5rem;
+        margin-bottom: 1rem;
         h3 {
           margin-bottom: 1.5rem;
         }
@@ -1956,7 +1966,7 @@ section.perks {
         margin-bottom: -1rem;
       }
       @media (max-width: 768px) {
-        padding-bottom: 3rem;
+        // padding-bottom: 3rem;
       }
       @media (max-width: 576px) {
         [class*="col"] {
@@ -2005,7 +2015,18 @@ section.perks {
         &:not(:last-of-type) {
           margin-bottom: 8rem;
           @media screen and (max-width: 678px) {
-            margin-bottom: 3rem;
+            margin-bottom: 6rem;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 678px) {
+    [class*="table-wrapper"] {
+      .table-preface {
+        [class*="col"] {
+          h6 {
+            font-size: 25px;
           }
         }
       }
@@ -3092,14 +3113,16 @@ section.pro-shop-body {
       .row {
         .sunflower-trail-wrapper {
           h3 {
-            font-size: 33px;
+            font-size: 37px;
             svg {
               display: block;
               margin-bottom: 2rem;
             }
           }
           .sft-intro {
-            font-size: 21px;
+            line-height: 1.5;
+            font-size: 15px;
+            color: var(--color-body);
           }
         }
       }
@@ -3501,11 +3524,15 @@ section.pro-shop-body {
     [class*="table-wrapper"] {
       .table-preface {
         [class*="col"] {
+          h2 {
+            font-size: 37px;
+            line-height: 1;
+          }
           h3 {
             font-size: 27px;
           }
           p {
-            line-height: 125%;
+            line-height: 1.5;
             font-size: 15px;
           }
         }
@@ -3515,7 +3542,7 @@ section.pro-shop-body {
         tbody {
           tr {
             th {
-              padding-left: 18px;
+              padding-left: 15px;
               padding-top: 18px;
               padding-bottom: 18px;
               .th-wrap {
@@ -3523,7 +3550,7 @@ section.pro-shop-body {
               }
               .note {
                 font-size: 12px;
-                padding-top: 2px;
+                padding-top: 4px;
               }
             }
             td {

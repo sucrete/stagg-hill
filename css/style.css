@@ -12165,14 +12165,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(1) {
   z-index: 10;
-  transform: rotate(-2deg) translate(-50%, -50%);
+  transform: rotate(1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(1):before {
   content: "1";
 }
 .slyde:nth-child(1).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-2deg) translate(-50%, -15rem);
+  transform: rotate(1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12187,14 +12187,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(2) {
   z-index: 9;
-  transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(-1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(2):before {
   content: "2";
 }
 .slyde:nth-child(2).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
+  transform: rotate(-1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12209,14 +12209,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(3) {
   z-index: 8;
-  transform: rotate(3deg) translate(-50%, -50%);
+  transform: rotate(-4deg) translate(-50%, -50%);
 }
 .slyde:nth-child(3):before {
   content: "3";
 }
 .slyde:nth-child(3).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(3deg) translate(-50%, -15rem);
+  transform: rotate(-4deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12231,14 +12231,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(4) {
   z-index: 7;
-  transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(4):before {
   content: "4";
 }
 .slyde:nth-child(4).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
+  transform: rotate(1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12253,14 +12253,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(5) {
   z-index: 6;
-  transform: rotate(3deg) translate(-50%, -50%);
+  transform: rotate(-4deg) translate(-50%, -50%);
 }
 .slyde:nth-child(5):before {
   content: "5";
 }
 .slyde:nth-child(5).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(3deg) translate(-50%, -15rem);
+  transform: rotate(-4deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12275,56 +12275,12 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(6) {
   z-index: 5;
-  transform: rotate(3deg) translate(-50%, -50%);
+  transform: rotate(-2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(6):before {
   content: "6";
 }
 .slyde:nth-child(6).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(3deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.active {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.active article {
-  opacity: 1;
-}
-
-.slyde:nth-child(7) {
-  z-index: 4;
-  transform: rotate(-3deg) translate(-50%, -50%);
-}
-.slyde:nth-child(7):before {
-  content: "7";
-}
-.slyde:nth-child(7).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-3deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.active {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.active article {
-  opacity: 1;
-}
-
-.slyde:nth-child(8) {
-  z-index: 3;
-  transform: rotate(-2deg) translate(-50%, -50%);
-}
-.slyde:nth-child(8):before {
-  content: "8";
-}
-.slyde:nth-child(8).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
   transform: rotate(-2deg) translate(-50%, -15rem);
   opacity: 0;
@@ -12339,16 +12295,60 @@ Copyright (c) 2015 Daniel Eden
   opacity: 1;
 }
 
+.slyde:nth-child(7) {
+  z-index: 4;
+  transform: rotate(2deg) translate(-50%, -50%);
+}
+.slyde:nth-child(7):before {
+  content: "7";
+}
+.slyde:nth-child(7).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(2deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.active {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.active article {
+  opacity: 1;
+}
+
+.slyde:nth-child(8) {
+  z-index: 3;
+  transform: rotate(-4deg) translate(-50%, -50%);
+}
+.slyde:nth-child(8):before {
+  content: "8";
+}
+.slyde:nth-child(8).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(-4deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.active {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.active article {
+  opacity: 1;
+}
+
 .slyde:nth-child(9) {
   z-index: 2;
-  transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(-3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(9):before {
   content: "9";
 }
 .slyde:nth-child(9).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
+  transform: rotate(-3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12363,14 +12363,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(10) {
   z-index: 1;
-  transform: rotate(-3deg) translate(-50%, -50%);
+  transform: rotate(0deg) translate(-50%, -50%);
 }
 .slyde:nth-child(10):before {
   content: "10";
 }
 .slyde:nth-child(10).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-3deg) translate(-50%, -15rem);
+  transform: rotate(0deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -14489,11 +14489,11 @@ li.has-dropdown:hover .submenu li a {
   transition: all 0.25s ease;
 }
 .fc-event .fc-event-title {
-  font-family: "Sono";
-  text-transform: uppercase;
-  font-size: 13px;
-  letter-spacing: 1px;
-  font-weight: 525;
+  font-family: "Sackers";
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  text-transform: lowercase;
+  color: white;
   padding-left: 8px;
   padding-right: 8px;
   text-overflow: ellipsis;
@@ -14791,11 +14791,9 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
   align-items: center;
   justify-content: center;
   height: 35px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
   border-radius: 1px;
   background-color: var(--color-secondary);
-  padding-bottom: 4.5px;
+  padding-bottom: 4px;
   padding-left: 1rem;
   padding-right: 1rem;
   transition: all 0.25s ease;
@@ -15904,7 +15902,8 @@ footer .weather-card .row.today-row .today-icon .icon-img {
   width: 45px;
 }
 footer .weather-card .row.today-row .today-temp {
-  font-size: 5.5rem;
+  font-size: 49px;
+  font-weight: 500;
   padding: 0rem;
   margin-left: -5px;
   color: white;
@@ -15920,7 +15919,7 @@ footer .weather-card .row.today-row .today-temp .the-temp:after {
   color: rgba(255, 255, 255, 0.65);
   position: absolute;
   right: -16px;
-  top: 7px;
+  top: 4px;
 }
 footer .weather-card .row.today-row .today-weather {
   display: flex;
@@ -18824,6 +18823,10 @@ header.header--sticky.style-white:not(.sticky) .container .row [class*=col] .hea
   }
 }
 
+section.booking-container {
+  background-color: white;
+}
+
 .page-body {
   padding-top: 17rem;
   padding-bottom: 12rem;
@@ -20174,12 +20177,17 @@ section.perks .container .row [class*=col] .single-solution-style-one:hover {
 }
 @media screen and (max-width: 678px) {
   .rates-page-body [class*=table-wrapper] .table-preface.extra-padding-on-the-bottom {
-    margin-bottom: 3rem;
+    margin-bottom: 7rem;
   }
 }
 .rates-page-body [class*=table-wrapper] .table-preface [class*=col] h3 {
   font-size: 40px;
   margin-bottom: 1.25rem;
+}
+.rates-page-body [class*=table-wrapper] .table-preface [class*=col] h6 {
+  font-size: 27px;
+  font-weight: 450;
+  margin-block-end: 1rem;
 }
 .rates-page-body [class*=table-wrapper] .table-preface [class*=col] p,
 .rates-page-body [class*=table-wrapper] .table-preface [class*=col] .hours-wrapper {
@@ -20239,18 +20247,13 @@ section.perks .container .row [class*=col] .single-solution-style-one:hover {
   margin-right: 10px;
 }
 .rates-page-body [class*=table-wrapper] .table-preface.range {
-  margin-bottom: -2.5rem;
+  margin-bottom: 1rem;
 }
 .rates-page-body [class*=table-wrapper] .table-preface.range h3 {
   margin-bottom: 1.5rem;
 }
 .rates-page-body [class*=table-wrapper] .table-preface.busy {
   margin-bottom: -1rem;
-}
-@media (max-width: 768px) {
-  .rates-page-body [class*=table-wrapper] .table-preface {
-    padding-bottom: 3rem;
-  }
 }
 @media (max-width: 576px) {
   .rates-page-body [class*=table-wrapper] .table-preface [class*=col] h3 {
@@ -20287,7 +20290,12 @@ section.perks .container .row [class*=col] .single-solution-style-one:hover {
 }
 @media screen and (max-width: 678px) {
   .rates-page-body .table-wrapper-basic-fees.membership-table-wrapper table:not(:last-of-type) {
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
+  }
+}
+@media screen and (max-width: 678px) {
+  .rates-page-body [class*=table-wrapper] .table-preface [class*=col] h6 {
+    font-size: 25px;
   }
 }
 
@@ -21155,14 +21163,16 @@ section.pro-shop-body.foot-joy .container .row .foot-joy-logo {
     padding-bottom: 16px;
   }
   .sunflower-trail-page-body .container .row .sunflower-trail-wrapper h3 {
-    font-size: 33px;
+    font-size: 37px;
   }
   .sunflower-trail-page-body .container .row .sunflower-trail-wrapper h3 svg {
     display: block;
     margin-bottom: 2rem;
   }
   .sunflower-trail-page-body .container .row .sunflower-trail-wrapper .sft-intro {
-    font-size: 21px;
+    line-height: 1.5;
+    font-size: 15px;
+    color: var(--color-body);
   }
   section.pro-shop-body {
     padding-top: 0rem;
@@ -21424,18 +21434,22 @@ section.pro-shop-body.foot-joy .container .row .foot-joy-logo {
   .gradient-footer-wrapper .rts-footer-area .container .row .weather-col .weather-card {
     padding: 4rem;
   }
+  .rates-page-body [class*=table-wrapper] .table-preface [class*=col] h2 {
+    font-size: 37px;
+    line-height: 1;
+  }
   .rates-page-body [class*=table-wrapper] .table-preface [class*=col] h3 {
     font-size: 27px;
   }
   .rates-page-body [class*=table-wrapper] .table-preface [class*=col] p {
-    line-height: 125%;
+    line-height: 1.5;
     font-size: 15px;
   }
   .rates-page-body [class*=table-wrapper] table {
     font-size: 15px;
   }
   .rates-page-body [class*=table-wrapper] table tbody tr th {
-    padding-left: 18px;
+    padding-left: 15px;
     padding-top: 18px;
     padding-bottom: 18px;
   }
@@ -21444,7 +21458,7 @@ section.pro-shop-body.foot-joy .container .row .foot-joy-logo {
   }
   .rates-page-body [class*=table-wrapper] table tbody tr th .note {
     font-size: 12px;
-    padding-top: 2px;
+    padding-top: 4px;
   }
   .rates-page-body [class*=table-wrapper] table tbody tr td {
     padding-top: 18px;

@@ -512,7 +512,8 @@ footer {
           }
         }
         .today-temp {
-          font-size: 5.5rem;
+          font-size: 49px;
+          font-weight: 500;
           padding: 0rem;
           margin-left: -5px;
           color: white;
@@ -526,7 +527,7 @@ footer {
               color: rgba(255, 255, 255, 0.65);
               position: absolute;
               right: -16px;
-              top: 7px;
+              top: 4px;
             }
           }
         }
@@ -541,8 +542,8 @@ footer {
             padding-right: 0rem;
             line-height: 116%;
             text-align: center;
-    font-family: 'Sackers';
-    line-height: 1;
+            font-family: "Sackers";
+            line-height: 1;
 
             .what-weather {
               color: white;

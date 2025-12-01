@@ -8,10 +8,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-@mixin monospaced($color: #979797) {
+@mixin monospaced($color: #979797, $font-size: 14px) {
   font-family: "Sackers";
   // font-weight: 475;
-  font-size: 14px;
+  font-size: $font-size;
   letter-spacing: .5px;
   text-transform: lowercase;
   color: $color;
