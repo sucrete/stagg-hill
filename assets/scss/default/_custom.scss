@@ -134,7 +134,7 @@ section {
   }
   .deal {
     font-family: "Oswald";
-    font-size: 32px;
+    font-size: 30px;
     color: var(--color-primary);
     font-weight: 600;
     letter-spacing: -1px;
@@ -506,7 +506,7 @@ section.homepage-notices {
               }
               &.deal {
                 font-family: "Oswald";
-                font-size: 32px;
+                font-size: 30px;
                 color: var(--color-primary);
                 font-weight: 600;
                 letter-spacing: -1px;
@@ -2174,6 +2174,9 @@ section.pro-shop-body {
       .note-icon {
         width: 25px;
         height: auto;
+        path {
+          fill: var(--color-secondary);
+        }
         &.trade {
           width: 19px;
         }
@@ -2198,7 +2201,7 @@ section.pro-shop-body {
       }
     }
     .product {
-     @include monospaced(grey, 15px);
+      @include monospaced(grey, 15px);
       padding-top: 7px;
       padding-left: 5px;
     }
