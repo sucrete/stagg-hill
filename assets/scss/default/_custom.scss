@@ -2390,7 +2390,10 @@ section.pro-shop-body {
         // border-top: 1.25px solid rgb(230, 230, 230);
         padding-top: 7rem;
         &.lane {
-          padding-top: 20rem
+          padding-top: 20rem;
+          @media screen and (max-width: 576px) {
+            padding-top: 10rem;
+          }
         }
       }
       [class*="col"] {
