@@ -222,6 +222,9 @@ section.sponsors-section {
               height: auto;
               transition: 0.2s all ease;
               transform: translate(-50%, -50%);
+              &.standard {
+                width: 225px;
+              }
               &.bottle-caps {
                 width: 120px;
               }
