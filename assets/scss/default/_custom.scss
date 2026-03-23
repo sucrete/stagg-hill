@@ -171,9 +171,14 @@ section {
 
 .specials {
   position: relative;
-  // padding: 3rem 3.25rem 4rem 3.5rem;
-  // background: rgb(250, 250, 250);
-  // border-radius: 21px;
+  &-on-pro-shop-page {
+    width: 100%;
+    background: #f8f8f8;
+    padding: 4rem 3.25rem 4rem 3.25rem;
+    @media (min-width: 768px) {
+      height: 416.5px;
+    }
+  }
   &.rounded-corners {
     border-radius: 21px;
   }
@@ -185,7 +190,7 @@ section {
     // letter-spacing: -0.5px;
     color: var(--color-secondary);
     font-size: 16px;
-    margin-bottom: 9px;
+    margin-bottom: 14px;
 
     svg {
       margin-top: -3px;
@@ -2189,12 +2194,17 @@ section.perks {
 section.pro-shop-body {
   background-color: white;
   padding-top: 8rem;
+  .shop-note {
+    max-width: 550px;
+    // font-size: 14px;
+    padding-top: 3rem;
+    color: #828c92;
+  }
   .band-of-brands {
     background: aliceblue;
     .container {
-      padding: 5rem 0;
+      padding-block: 8rem;
 
-      border-radius: 21px;
       .row {
         .brand {
           max-width: 125px;
@@ -2204,8 +2214,8 @@ section.pro-shop-body {
     }
   }
   & > .container {
-    padding-top: 7rem;
-    padding-bottom: 16rem;
+    padding-top: 5rem;
+    padding-bottom: 18rem;
     hr {
       height: 1.25px;
       // background-color: rgb(161 161 161);
@@ -2216,7 +2226,7 @@ section.pro-shop-body {
     .row {
       &.lined-row {
         // border-top: 1.25px solid rgb(230, 230, 230);
-        padding-top: 0rem;
+        padding-top: 7rem;
         .height-100 {
           height: inherit;
         }
@@ -2225,18 +2235,11 @@ section.pro-shop-body {
         }
       }
       [class*="col"] {
-        .shop-note {
-          font-family: "IKOB Italic";
-          font-size: 20.5px;
-          line-height: 140%;
-        }
-        .row {
-          [class*="col"] {
-            .specials {
-              padding: 4rem 3rem 5rem;
-              background: #f8f8f8;
-              border-radius: 21px;
-            }
+        [class*="col"] {
+          .specials {
+            padding: 4rem 3rem 5rem;
+            background: #f8f8f8;
+            border-radius: 21px;
           }
         }
       }
@@ -3261,6 +3264,7 @@ section.pro-shop-body {
     padding-top: 0rem;
     & > .container {
       padding-top: 1rem;
+      padding-bottom: 8rem;
       .row {
         &.lined-row {
           border-top: none;
@@ -3275,7 +3279,7 @@ section.pro-shop-body {
             }
           }
           .specials {
-            padding: 2rem;
+            padding: 3rem 2rem;
             h5 {
               font-size: 15px;
             }
@@ -3291,6 +3295,7 @@ section.pro-shop-body {
             overflow-wrap: break-word;
             line-height: 130%;
             padding: 2rem 2rem 2.5rem 2rem;
+            height: 100%;
             .note-brow {
               .note-icon {
                 &.trade {

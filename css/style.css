@@ -12120,14 +12120,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(1) {
   z-index: 10;
-  transform: rotate(3deg) translate(-50%, -50%);
+  transform: rotate(1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(1):before {
   content: "1";
 }
 .slyde:nth-child(1).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(3deg) translate(-50%, -15rem);
+  transform: rotate(1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12164,14 +12164,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(3) {
   z-index: 8;
-  transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(3):before {
   content: "3";
 }
 .slyde:nth-child(3).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
+  transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12186,14 +12186,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(4) {
   z-index: 7;
-  transform: rotate(-2deg) translate(-50%, -50%);
+  transform: rotate(3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(4):before {
   content: "4";
 }
 .slyde:nth-child(4).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-2deg) translate(-50%, -15rem);
+  transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12208,14 +12208,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(5) {
   z-index: 6;
-  transform: rotate(-1deg) translate(-50%, -50%);
+  transform: rotate(-3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(5):before {
   content: "5";
 }
 .slyde:nth-child(5).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-1deg) translate(-50%, -15rem);
+  transform: rotate(-3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12230,14 +12230,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(6) {
   z-index: 5;
-  transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(6):before {
   content: "6";
 }
 .slyde:nth-child(6).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
+  transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12252,14 +12252,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(7) {
   z-index: 4;
-  transform: rotate(2deg) translate(-50%, -50%);
+  transform: rotate(-3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(7):before {
   content: "7";
 }
 .slyde:nth-child(7).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(2deg) translate(-50%, -15rem);
+  transform: rotate(-3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12274,14 +12274,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(8) {
   z-index: 3;
-  transform: rotate(-4deg) translate(-50%, -50%);
+  transform: rotate(3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(8):before {
   content: "8";
 }
 .slyde:nth-child(8).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-4deg) translate(-50%, -15rem);
+  transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12296,14 +12296,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(9) {
   z-index: 2;
-  transform: rotate(-4deg) translate(-50%, -50%);
+  transform: rotate(-3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(9):before {
   content: "9";
 }
 .slyde:nth-child(9).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-4deg) translate(-50%, -15rem);
+  transform: rotate(-3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12318,14 +12318,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(10) {
   z-index: 1;
-  transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(10):before {
   content: "10";
 }
 .slyde:nth-child(10).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
+  transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -18869,6 +18869,16 @@ section.booking-container {
 .specials {
   position: relative;
 }
+.specials-on-pro-shop-page {
+  width: 100%;
+  background: #f8f8f8;
+  padding: 4rem 3.25rem 4rem 3.25rem;
+}
+@media (min-width: 768px) {
+  .specials-on-pro-shop-page {
+    height: 416.5px;
+  }
+}
 .specials.rounded-corners {
   border-radius: 21px;
 }
@@ -18877,7 +18887,7 @@ section.booking-container {
   font-weight: 500;
   color: var(--color-secondary);
   font-size: 16px;
-  margin-bottom: 9px;
+  margin-bottom: 14px;
 }
 .specials h5 svg {
   margin-top: -3px;
@@ -20370,20 +20380,24 @@ section.pro-shop-body {
   background-color: white;
   padding-top: 8rem;
 }
+section.pro-shop-body .shop-note {
+  max-width: 550px;
+  padding-top: 3rem;
+  color: #828c92;
+}
 section.pro-shop-body .band-of-brands {
   background: aliceblue;
 }
 section.pro-shop-body .band-of-brands .container {
-  padding: 5rem 0;
-  border-radius: 21px;
+  padding-block: 8rem;
 }
 section.pro-shop-body .band-of-brands .container .row .brand {
   max-width: 125px;
   height: auto;
 }
 section.pro-shop-body > .container {
-  padding-top: 7rem;
-  padding-bottom: 16rem;
+  padding-top: 5rem;
+  padding-bottom: 18rem;
 }
 section.pro-shop-body > .container hr {
   height: 1.25px;
@@ -20392,7 +20406,7 @@ section.pro-shop-body > .container hr.fj-hr {
   background-color: #9c9c9c;
 }
 section.pro-shop-body > .container .row.lined-row {
-  padding-top: 0rem;
+  padding-top: 7rem;
 }
 section.pro-shop-body > .container .row.lined-row .height-100 {
   height: inherit;
@@ -20400,12 +20414,7 @@ section.pro-shop-body > .container .row.lined-row .height-100 {
 section.pro-shop-body > .container .row.lined-row.lane {
   padding-top: 20rem;
 }
-section.pro-shop-body > .container .row [class*=col] .shop-note {
-  font-family: "IKOB Italic";
-  font-size: 20.5px;
-  line-height: 140%;
-}
-section.pro-shop-body > .container .row [class*=col] .row [class*=col] .specials {
+section.pro-shop-body > .container .row [class*=col] [class*=col] .specials {
   padding: 4rem 3rem 5rem;
   background: #f8f8f8;
   border-radius: 21px;
@@ -21234,6 +21243,7 @@ section.pro-shop-body.foot-joy .container .row .foot-joy-logo {
   }
   section.pro-shop-body > .container {
     padding-top: 1rem;
+    padding-bottom: 8rem;
   }
   section.pro-shop-body > .container .row.lined-row {
     border-top: none;
@@ -21247,7 +21257,7 @@ section.pro-shop-body.foot-joy .container .row .foot-joy-logo {
     font-size: 19px;
   }
   section.pro-shop-body > .container .row [class*=col] .specials {
-    padding: 2rem;
+    padding: 3rem 2rem;
   }
   section.pro-shop-body > .container .row [class*=col] .specials h5 {
     font-size: 15px;
@@ -21263,6 +21273,7 @@ section.pro-shop-body.foot-joy .container .row .foot-joy-logo {
     overflow-wrap: break-word;
     line-height: 130%;
     padding: 2rem 2rem 2.5rem 2rem;
+    height: 100%;
   }
   section.pro-shop-body > .container .row [class*=col] .note-box .note-brow .note-icon.trade {
     width: 18px;
