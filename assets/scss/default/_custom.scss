@@ -101,12 +101,14 @@
     }
   }
   @media screen and (max-width: 576px) {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
     .shape-top-right {
       display: none;
     }
     .container {
       .row {
-        gap: 5rem;
+        gap: 2rem;
         .flyer-column {
           a {
             width: 100%;
@@ -118,6 +120,11 @@
               font-size: 37px;
               line-height: 110%;
               margin-bottom: 15px;
+            }
+            p {
+              font-size: 15px;
+              line-height: 1.5;
+              margin-bottom: 3rem;
             }
           }
         }
@@ -827,39 +834,28 @@ section.homepage-notices {
     line-height: 140%;
     position: relative;
     z-index: 6;
+    .manhattans-finest-mobile {
+      display: none;
+    }
     .manhattans-finest {
       width: auto;
       height: 70px;
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
     }
     p {
       color: white;
       // padding-left: 7rem;
     }
-    // corners ruleset
-    // --b: 1px; /* thickness of the border */
-    // --c: rgb(255, 255, 255); /* color of the border */
-    // --w: 14px; /* length of the lines in the corner */
-    // border: var(--b) solid #0000; /* space for the border */
-    // --_g: #0000 90deg, var(--c) 0;
-    // --_p: var(--w) var(--w) border-box no-repeat;
-
-    // background: conic-gradient(
-    //       from 90deg at top var(--b) left var(--b),
-    //       var(--_g)
-    //     )
-    //     0 0 / var(--_p),
-    //   conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) 100% 0 /
-    //     var(--_p),
-    //   conic-gradient(from 0deg at bottom var(--b) left var(--b), var(--_g)) 0 100% /
-    //     var(--_p),
-    //   conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g))
-    //     100% 100% / var(--_p);
   }
   @media (max-width: 568px) {
     .cornered-box {
       .manhattans-finest {
-        height: 56px;
+        display: none;
+      }
+      .manhattans-finest-mobile {
+        display: unset;
+        height: 18px;
+        margin-bottom: 1rem;
       }
       p {
         font-size: 15px;
@@ -2907,7 +2903,7 @@ section.pro-shop-body {
   .container {
     .row {
       border-top: 1.5px solid lighten($accent, 7%);
-      padding-top: 1rem;
+      padding-top: 3rem;
       h3 {
         font-family: "IKOB";
         font-size: 42px;
@@ -2939,9 +2935,37 @@ section.pro-shop-body {
       p {
         margin-bottom: 2rem;
       }
+      .league-col {
+        a {
+          display: block;
+          width: 90%;
+          margin-left: auto;
+          transition: all 0.35s ease;
+          box-shadow:
+            rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+            rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+          &:hover {
+            transform: translateY(-1px);
+            box-shadow:
+              rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+              rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+          }
+        }
+      }
     }
     &.chair-container {
       margin-top: 14rem;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .container {
+      .row {
+        .league-col {
+          a {
+            width: 100%;
+          }
+        }
+      }
     }
   }
 }
