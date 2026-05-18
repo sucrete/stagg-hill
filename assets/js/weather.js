@@ -1,8 +1,12 @@
 //~ Standard Variables
-// API URL
-const latLong = "39.152,-96.636";
+const lat = 39.152;
+const lon = -96.636;
 const apiUrl =
-  `https://api.pirateweather.net/forecast/EqRw5datS5zL99ze3FwQ8Q7PJEtJAC0i/${latLong}?exclude=minutely,hourly,alerts,flags`;
+  `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}` +
+  `&current=temperature_2m,wind_speed_10m,weather_code,is_day` +
+  `&daily=weather_code,temperature_2m_max,temperature_2m_min` +
+  `&temperature_unit=fahrenheit&wind_speed_unit=mph` +
+  `&timezone=America%2FChicago&forecast_days=4`;
 
 // Days of the week
 const days = [
@@ -17,7 +21,7 @@ const days = [
 
 var weatherData;
 
-//~ First call Pirate Weather API
+//~ Fetch Open-Meteo API
 async function getWeather() {
   await fetch(apiUrl, { cache: "no-store" })
     .then((response) => {
@@ -27,10 +31,9 @@ async function getWeather() {
       return response.json();
     })
     .then((data) => {
-      // console.log(JSON.stringify(data, null, 2));
-      // code below gets day of the week
+      const [year, month, day] = data.current.time.split("T")[0].split("-");
       console.log(
-        `%c${days[new Date(data.currently.time * 1000).getDay()]}`,
+        `%c${days[new Date(year, month - 1, day).getDay()]}`,
         "color:green"
       );
       weatherData = data;
@@ -41,10 +44,9 @@ async function getWeather() {
     });
 }
 
-//~ Begin DOM manipulation - fired when fetch to API is finished - receives data object
+//~ Begin DOM manipulation - fired when fetch to API is finished
 async function populateDOM() {
   await getWeather();
-  // now you can directly use jsonData
 
   //~ grab all DOM elements
   // today
@@ -92,71 +94,70 @@ async function populateDOM() {
     .getElementsByClassName("lo")[0];
 
   //~ Set Today's Weather
-  // console.log(weatherData.currently.icon);
-  const today = weatherData.currently;
-  // set today's icon
-  const iconPath = assignIcon(today.icon);
-  weatherIcon.src = `./assets/images/icons/${iconPath}.png`;
+  const current = weatherData.current;
+  const isDay = current.is_day === 1;
+  weatherIcon.src = `./assets/images/icons/${assignIcon(current.weather_code, isDay)}.png`;
+  theTemp.innerHTML = Math.ceil(current.temperature_2m);
+  weather.innerHTML = weatherCodeToSummary(current.weather_code);
+  windSpeed.innerHTML = Math.ceil(current.wind_speed_10m);
 
-  // set today's temperature readable
-  theTemp.innerHTML = Math.ceil(today.temperature);
+  //~ Set future days
+  const setFutureDay = (index, dayEl, iconEl, hiEl, loEl) => {
+    const [y, m, d] = weatherData.daily.time[index].split("-");
+    dayEl.innerHTML = days[new Date(y, m - 1, d).getDay()];
+    iconEl.src = `./assets/images/icons/${assignIcon(weatherData.daily.weather_code[index], true)}.svg`;
+    hiEl.innerHTML = Math.ceil(weatherData.daily.temperature_2m_max[index]);
+    loEl.innerHTML = Math.ceil(weatherData.daily.temperature_2m_min[index]);
+  };
 
-  // set today's weather readable
-  weather.innerHTML = today.summary;
-
-  // set today's wind speed
-  windSpeed.innerHTML = Math.ceil(today.windSpeed);
-
-  //~ set tomorrow's Weather
-  const tomorrow = weatherData.daily.data[2];
-  tomorrowDay.innerHTML = days[new Date(tomorrow.time * 1000).getDay()];
-  tomorrowWeatherIcon.src = `./assets/images/icons/${assignIcon(
-    tomorrow.icon
-  )}.svg`;
-  tomorrowHi.innerHTML = Math.ceil(tomorrow.temperatureHigh);
-  tomorrowLo.innerHTML = Math.ceil(tomorrow.temperatureLow);
-
-  //~ set day after tomorrow's Weather
-  const DAT = weatherData.daily.data[3];
-  dayAfterTomorrowDay.innerHTML = days[new Date(DAT.time * 1000).getDay()];
-  dayAfterTomorrowIcon.src = `./assets/images/icons/${assignIcon(
-    DAT.icon
-  )}.svg`;
-  dayAfterTomorrowHi.innerHTML = Math.ceil(DAT.temperatureHigh);
-  dayAfterTomorrowLo.innerHTML = Math.ceil(DAT.temperatureLow);
-
-  //~ set three days from today's Weather
-  const thirdOut = weatherData.daily.data[4];
-  threeDaysFromTodayDay.innerHTML =
-    days[new Date(thirdOut.time * 1000).getDay()];
-  threeDaysFromTodayIcon.src = `./assets/images/icons/${assignIcon(
-    thirdOut.icon
-  )}.svg`;
-  threeDaysFromTodayHi.innerHTML = Math.ceil(thirdOut.temperatureHigh);
-  threeDaysFromTodayLo.innerHTML = Math.ceil(thirdOut.temperatureLow);
+  setFutureDay(1, tomorrowDay, tomorrowWeatherIcon, tomorrowHi, tomorrowLo);
+  setFutureDay(2, dayAfterTomorrowDay, dayAfterTomorrowIcon, dayAfterTomorrowHi, dayAfterTomorrowLo);
+  setFutureDay(3, threeDaysFromTodayDay, threeDaysFromTodayIcon, threeDaysFromTodayHi, threeDaysFromTodayLo);
 }
 
 getWeather();
 populateDOM();
 
-const assignIcon = function (icon) {
-  // console.log(`%c${icon}`, "color: orange");
-  let iconSrc;
-  if (icon == "clear-day" || icon == "clear-night") {
-    iconSrc = "sun";
-  } else if (icon == "rain") {
-    iconSrc = "rain";
-  } else if (icon == "snow" || icon == "sleet") {
-    iconSrc = "snow";
-  } else if (icon == "wind") {
-    iconSrc = "wind";
-  } else if (icon == "fog") {
-    iconSrc = "foggy";
-  } else if (icon == "cloudy") {
-    iconSrc = "cloudy";
-  } else if (icon == "partly-cloudy-day" || icon == "partly-cloudy-night") {
-    iconSrc = "part-cloud";
+// Maps WMO weather codes to local icon filenames
+const assignIcon = function (code, isDay = true) {
+  if (code === 0) {
+    return "sun";
+  } else if (code <= 2) {
+    return "part-cloud";
+  } else if (code === 3) {
+    return "cloudy";
+  } else if (code === 45 || code === 48) {
+    return "foggy";
+  } else if (code >= 51 && code <= 67) {
+    return "rain";
+  } else if (code >= 71 && code <= 77) {
+    return "snow";
+  } else if (code >= 80 && code <= 82) {
+    return "rain";
+  } else if (code >= 85 && code <= 86) {
+    return "snow";
+  } else if (code >= 95) {
+    return "rain";
   }
-  // console.log(`%c${iconSrc}`, "color: yellow");
-  return iconSrc;
+  return "part-cloud";
+};
+
+// Maps WMO weather codes to human-readable summaries
+const weatherCodeToSummary = function (code) {
+  if (code === 0) return "Clear";
+  if (code === 1) return "Mostly Clear";
+  if (code === 2) return "Partly Cloudy";
+  if (code === 3) return "Overcast";
+  if (code === 45 || code === 48) return "Foggy";
+  if (code >= 51 && code <= 55) return "Drizzle";
+  if (code >= 56 && code <= 57) return "Freezing Drizzle";
+  if (code >= 61 && code <= 65) return "Rain";
+  if (code >= 66 && code <= 67) return "Freezing Rain";
+  if (code >= 71 && code <= 75) return "Snow";
+  if (code === 77) return "Snow Grains";
+  if (code >= 80 && code <= 82) return "Rain Showers";
+  if (code >= 85 && code <= 86) return "Snow Showers";
+  if (code === 95) return "Thunderstorm";
+  if (code >= 96) return "Thunderstorm w/ Hail";
+  return "Unknown";
 };
