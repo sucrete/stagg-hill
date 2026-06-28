@@ -62,12 +62,14 @@
   }
 }
 
-.junior-golfer-section {
-  padding-block: 15rem;
-  background-color: #efefea;
+.junior-golfer-section,
+.bud-open-section {
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+  background-color: #ffffff;
   background-image: url("/assets/images/service/grunge-bg.png");
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
   background-position: left center;
   .container {
     .row {
@@ -133,6 +135,62 @@
   }
 }
 
+.bud-open-section {
+  background-image: url("/assets/images/service/grunge-bg.png");
+  padding-top: 14rem;
+  padding-bottom: 19rem;
+  background-color: white;
+  background-size: cover;
+  .container {
+    .bud-logo {
+      height: 65px;
+      width: auto;
+    }
+    h3 {
+      padding-top: 2rem;
+      padding-bottom: 4rem;
+      font-size: 4rem;
+    }
+    .images-row {
+      gap: 10rem;
+      position: relative;
+      .divider-line {
+        background: rgb(209, 209, 207);
+        width: 1.5px;
+        border-radius: 99px;
+        height: 100%;
+        @include center-it;
+        padding: 0;
+        top: 55%;
+      }
+    }
+    .row {
+      p {
+        color: rgb(64, 64, 64);
+        margin-bottom: 2rem;
+        &.monospaced {
+          padding-top: 1rem;
+          @include monospaced();
+        }
+      }
+      [class*="col"] {
+        .grouping-image-container {
+          cursor: pointer;
+          transition: all 0.35s ease;
+          box-shadow:
+            rgba(83, 83, 83, 0.25) 0px 6px 12px -2px,
+            rgba(0, 0, 0, 0.26) 0px 3px 7px -3px;
+          &:hover {
+            transform: translateY(-1px);
+            box-shadow:
+              rgba(90, 90, 90, 0.35) 0px 13px 27px -5px,
+              rgba(0, 0, 0, 0.36) 0px 8px 16px -8px;
+          }
+        }
+      }
+    }
+  }
+}
 section {
   &.booking-container {
     background-color: white;
