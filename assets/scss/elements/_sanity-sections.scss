@@ -1,0 +1,116 @@
+/* sanity-sections.css
+ * Styles for the Layout Editor sections (rendered by assets/js/sectionsBuilder.js)
+ * and the shared .expired treatment for the event timelines (assets/js/timelineBuilder.js).
+ * Hand-maintained — not part of the compiled css/style.css build.
+ */
+
+/* --- Homepage layout-editor sections --- */
+#page-sections {
+  padding-block: 14rem;
+}
+.page-section {
+  padding: 3rem 0;
+}
+.page-section .ps-grid {
+  display: grid;
+  gap: 2rem;
+  align-items: start;
+}
+/* Let columns shrink to their track (default min-width:auto lets long unbreakable
+   strings blow a track out and push siblings off-screen). */
+.page-section .ps-grid > * {
+  min-width: 0;
+}
+.tinymce-content {
+  overflow-wrap: break-word;
+}
+.ps-1 {
+  grid-template-columns: 1fr;
+}
+.ps-2 {
+  grid-template-columns: 1fr 1fr;
+}
+.ps-3366 {
+  grid-template-columns: 1fr 2fr;
+}
+.ps-6633 {
+  grid-template-columns: 2fr 1fr;
+}
+.ps-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.ps-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 767px) {
+  .page-section .ps-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Column content authored in TinyMCE. Inherits site typography; just guard media. */
+.tinymce-content img {
+  max-width: 100%;
+  height: auto;
+}
+.tinymce-content > :first-child {
+  margin-top: 0;
+}
+.tinymce-content > :last-child {
+  margin-bottom: 0;
+}
+.tinymce-content p {
+  margin-bottom: 32px;
+}
+.tinymce-content h2,
+.tinymce-content h3 {
+  line-height: 1.2;
+}
+/* Inline so the editor's align (text-align) can left/center/right the button;
+   the site default display:flex is block-level and ignores text-align. */
+.tinymce-content .rts-btn {
+  display: inline-flex;
+}
+.tinymce-content hr {
+  background-size: 4px 4px;
+  border: 0;
+  height: 1px;
+  margin: 0 0 24px;
+  opacity: 0.15;
+  background-color: #005249e3;
+}
+
+/* Tables authored in the editor: no outer border, stripe from the 2nd row, and
+   round the left edge of each row's first cell. */
+.tinymce-content table {
+  border: 0;
+}
+.tinymce-content table tbody tr:nth-child(odd) td,
+.tinymce-content table tbody tr:nth-child(odd) th {
+  background: transparent;
+}
+.tinymce-content table tbody tr:nth-child(even) td,
+.tinymce-content table tbody tr:nth-child(even) th {
+  background: rgb(235, 235, 235);
+}
+.tinymce-content table td:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-align: left;
+  font-weight: 550;
+  padding-left: 23px;
+}
+.tinymce-content table tbody tr:first-child td,
+.tinymce-content table tbody tr:first-child th {
+  font-weight: 550;
+}
+.tinymce-content table tbody tr:nth-child(even) td:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* --- Expired timeline items (league pages; open-tournaments already has its own) --- */
+.consulting-step .single-consulting-one.expired .right-area h4,
+.consulting-step .single-consulting-one.expired .right-area p {
+  opacity: 0.7;
+}
