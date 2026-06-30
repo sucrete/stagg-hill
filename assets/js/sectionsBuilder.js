@@ -42,7 +42,10 @@
 
     fetchData(url).then((data) => {
       const sections = (data && data.sections) || [];
-      mount.innerHTML = sections.map(renderSection).join("");
+      const html = sections.map(renderSection).join("");
+      mount.innerHTML = html;
+      // Hide the whole section (incl. its padding) when there's nothing to show.
+      mount.style.display = html ? "" : "none";
     });
   }
 
