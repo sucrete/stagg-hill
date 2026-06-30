@@ -38,7 +38,7 @@
 .page-section .ps-grid {
   display: grid;
   gap: 2rem;
-  align-items: start;
+  align-items: stretch;
 }
 /* Let columns shrink to their track (default min-width:auto lets long unbreakable
    strings blow a track out and push siblings off-screen). */
@@ -70,6 +70,13 @@
   .page-section .ps-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* Each column centers its content vertically within the grid row. */
+.ps-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Column content authored in TinyMCE. Inherits site typography; just guard media. */

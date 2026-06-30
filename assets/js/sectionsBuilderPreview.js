@@ -25,13 +25,22 @@
     sectionFourColumn: { cols: ["col1", "col2", "col3", "col4"], cls: "ps-4" },
   };
 
+  // Drop TinyMCE editing-only artifacts (image resize handles / bogus nodes) that can
+  // get saved into the column HTML — otherwise they become the column's :last-child.
+  function cleanHtml(html) {
+    if (!html) return "";
+    const doc = new DOMParser().parseFromString(html, "text/html");
+    doc.querySelectorAll("[data-mce-bogus]").forEach((el) => el.remove());
+    return doc.body.innerHTML;
+  }
+
   function renderSection(section) {
     const layout = LAYOUTS[section._type];
     if (!layout) return "";
     const hasContent = layout.cols.some((c) => section[c] && section[c].trim());
     if (!hasContent) return "";
     const cols = layout.cols
-      .map((c) => `<div class="ps-col tinymce-content">${section[c] || ""}</div>`)
+      .map((c) => `<div class="ps-col tinymce-content">${cleanHtml(section[c])}</div>`)
       .join("");
     return `<section class="page-section"><div class="container"><div class="ps-grid ${layout.cls}">${cols}</div></div></section>`;
   }
