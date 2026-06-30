@@ -1,5 +1,5 @@
 // sectionsBuilderPreview.js
-// Same as sectionsBuilder.js, but for the hidden /test-bed page: it renders the
+// Same as sectionsBuilder.js, but for the hidden /preview page: it renders the
 // DRAFT (unpublished) Layout Editor content so you can preview homepage changes
 // before publishing. Uses the Sanity "drafts" perspective, which requires a token.
 //
