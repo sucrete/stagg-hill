@@ -90,8 +90,53 @@ export class Header extends LitElement {
                       </ul>
                     </li>
 
-                    <li>
-                      <a class="nav-link" href="course.html">Course</a>
+                    <li class="has-dropdown ">
+                      <a class="nav-link" href="#">
+                        Course
+                        <svg
+                          class="chevron chevron-down"
+                          id="Layer_1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          version="1.1"
+                          viewBox="0 0 294 294"
+                        >
+                          <path
+                            d="M259.9,215.4l-112.9-112.9-112.9,112.9-30.2-30.2,112.9-112.9c16.7-16.7,43.7-16.7,60.3,0l112.9,112.9-30.2,30.2Z"
+                          />
+                        </svg>
+                      </a>
+                      <ul class="submenu parent-nav with-border">
+                        <li>
+                          <a href="course.html"
+                            ><svg
+                          class="chevron chevron-down"
+                          id="Layer_1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          version="1.1"
+                          viewBox="0 0 294 294"
+                        >
+                          <path
+                            d="M259.9,215.4l-112.9-112.9-112.9,112.9-30.2-30.2,112.9-112.9c16.7-16.7,43.7-16.7,60.3,0l112.9,112.9-30.2,30.2Z"
+                          />
+                        </svg>Course Flythrough</a
+                          >
+                        </li>
+                        <li>
+                          <a href="scorecard.html"
+                            ><svg
+                          class="chevron chevron-down"
+                          id="Layer_1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          version="1.1"
+                          viewBox="0 0 294 294"
+                        >
+                          <path
+                            d="M259.9,215.4l-112.9-112.9-112.9,112.9-30.2-30.2,112.9-112.9c16.7-16.7,43.7-16.7,60.3,0l112.9,112.9-30.2,30.2Z"
+                          />
+                        </svg>Scorecard</a
+                          >
+                        </li>
+                      </ul>
                     </li>
 
                     <li>
@@ -281,21 +326,6 @@ export class Header extends LitElement {
                             </svg>
                             Contact
                           </a>
-                        </li>
-                        <li>
-                          <a href="scorecard.html">
-                            <svg
-                              class="chevron chevron-down"
-                              id="Layer_1"
-                              xmlns="http://www.w3.org/2000/svg"
-                              version="1.1"
-                              viewBox="0 0 294 294"
-                            >
-                              <path
-                                d="M259.9,215.4l-112.9-112.9-112.9,112.9-30.2-30.2,112.9-112.9c16.7-16.7,43.7-16.7,60.3,0l112.9,112.9-30.2,30.2Z"
-                              />
-                              </svg>Scorecard</a
-                          >
                         </li>
                         <li>
                           <a href="meet-the-staff.html">
