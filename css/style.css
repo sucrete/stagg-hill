@@ -8202,8 +8202,8 @@ Background Image
 Custom Row
 ======================*/
 .row--0 {
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-left: -0px;
+  margin-right: -0px;
 }
 .row--0 > [class*=col] {
   padding-left: 0px;
@@ -12120,14 +12120,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(1) {
   z-index: 10;
-  transform: rotate(-4deg) translate(-50%, -50%);
+  transform: rotate(-3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(1):before {
   content: "1";
 }
 .slyde:nth-child(1).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-4deg) translate(-50%, -15rem);
+  transform: rotate(-3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12142,14 +12142,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(2) {
   z-index: 9;
-  transform: rotate(-1deg) translate(-50%, -50%);
+  transform: rotate(2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(2):before {
   content: "2";
 }
 .slyde:nth-child(2).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-1deg) translate(-50%, -15rem);
+  transform: rotate(2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12164,14 +12164,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(3) {
   z-index: 8;
-  transform: rotate(2deg) translate(-50%, -50%);
+  transform: rotate(1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(3):before {
   content: "3";
 }
 .slyde:nth-child(3).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(2deg) translate(-50%, -15rem);
+  transform: rotate(1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12186,14 +12186,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(4) {
   z-index: 7;
-  transform: rotate(-2deg) translate(-50%, -50%);
+  transform: rotate(-4deg) translate(-50%, -50%);
 }
 .slyde:nth-child(4):before {
   content: "4";
 }
 .slyde:nth-child(4).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-2deg) translate(-50%, -15rem);
+  transform: rotate(-4deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12208,14 +12208,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(5) {
   z-index: 6;
-  transform: rotate(2deg) translate(-50%, -50%);
+  transform: rotate(0deg) translate(-50%, -50%);
 }
 .slyde:nth-child(5):before {
   content: "5";
 }
 .slyde:nth-child(5).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(2deg) translate(-50%, -15rem);
+  transform: rotate(0deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12230,14 +12230,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(6) {
   z-index: 5;
-  transform: rotate(-3deg) translate(-50%, -50%);
+  transform: rotate(-2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(6):before {
   content: "6";
 }
 .slyde:nth-child(6).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-3deg) translate(-50%, -15rem);
+  transform: rotate(-2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12274,14 +12274,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(8) {
   z-index: 3;
-  transform: rotate(2deg) translate(-50%, -50%);
+  transform: rotate(-4deg) translate(-50%, -50%);
 }
 .slyde:nth-child(8):before {
   content: "8";
 }
 .slyde:nth-child(8).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(2deg) translate(-50%, -15rem);
+  transform: rotate(-4deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12296,14 +12296,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(9) {
   z-index: 2;
-  transform: rotate(-1deg) translate(-50%, -50%);
+  transform: rotate(3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(9):before {
   content: "9";
 }
 .slyde:nth-child(9).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-1deg) translate(-50%, -15rem);
+  transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12318,14 +12318,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(10) {
   z-index: 1;
-  transform: rotate(1deg) translate(-50%, -50%);
+  transform: rotate(3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(10):before {
   content: "10";
 }
 .slyde:nth-child(10).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(1deg) translate(-50%, -15rem);
+  transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -13415,7 +13415,7 @@ li.has-dropdown:hover .submenu li a {
   -webkit-text-stroke: 0.3px;
 }
 .rts-btn.header-btn::after {
-  background-color: rgb(241.7530120482, 162.813253012, 3.9469879518);
+  background-color: rgb(94.805102764%, 63.8483345145%, 1.5478384125%);
 }
 
 .arrow-btn img {
@@ -13817,7 +13817,7 @@ li.has-dropdown:hover .submenu li a {
 }
 
 .banner-four-bg {
-  background-image: url(../images/low-angle-action-shot.jpg);
+  background-image: url(../images/low-angle-action-shot.webp);
   height: 95vh !important;
   background-repeat: no-repeat;
   background-position: center;
@@ -13932,7 +13932,7 @@ li.has-dropdown:hover .submenu li a {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.29) 0%, hsla(0, 0%, 0%, 0.288) 8.1%, hsla(0, 0%, 0%, 0.283) 15.5%, hsla(0, 0%, 0%, 0.274) 22.5%, hsla(0, 0%, 0%, 0.264) 29%, hsla(0, 0%, 0%, 0.251) 35.3%, hsla(0, 0%, 0%, 0.237) 41.2%, hsla(0, 0%, 0%, 0.222) 47.1%, hsla(0, 0%, 0%, 0.208) 52.9%, hsla(0, 0%, 0%, 0.193) 58.8%, hsla(0, 0%, 0%, 0.179) 64.7%, hsla(0, 0%, 0%, 0.166) 71%, hsla(0, 0%, 0%, 0.156) 77.5%, hsla(0, 0%, 0%, 0.147) 84.5%, hsla(0, 0%, 0%, 0.142) 91.9%, hsla(0, 0%, 0%, 0.14) 100%);
 }
 .banner-subpage.book-tee-time-banner {
-  background-image: url(../images/player-in-view.jpg);
+  background-image: url(../images/player-in-view.webp);
 }
 .banner-subpage.book-tee-time-banner .overlay {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.72) 0%, hsla(0, 0%, 0%, 0.585) 4.2%, hsla(0, 0%, 0%, 0.469) 7.4%, hsla(0, 0%, 0%, 0.369) 10%, hsla(0, 0%, 0%, 0.284) 12.2%, hsla(0, 0%, 0%, 0.213) 14.4%, hsla(0, 0%, 0%, 0.156) 16.8%, hsla(0, 0%, 0%, 0.109) 19.7%, hsla(0, 0%, 0%, 0.073) 23.5%, hsla(0, 0%, 0%, 0.046) 28.5%, hsla(0, 0%, 0%, 0.027) 35%, hsla(0, 0%, 0%, 0.014) 43.2%, hsla(0, 0%, 0%, 0.006) 53.5%, hsla(0, 0%, 0%, 0.002) 66.2%, hsla(0, 0%, 0%, 0) 81.6%, hsla(0, 0%, 0%, 0) 100%);
@@ -13959,7 +13959,7 @@ li.has-dropdown:hover .submenu li a {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
 }
 .banner-subpage.membership-banner {
-  background-image: url(../images/young-man-in-trap.jpg);
+  background-image: url(../images/young-man-in-trap.webp);
 }
 .banner-subpage.membership-banner .overlay {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
@@ -13968,7 +13968,7 @@ li.has-dropdown:hover .submenu li a {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
 }
 .banner-subpage.rates-banner {
-  background-image: url(../images/golf-bag-in-foreground.jpg);
+  background-image: url(../images/golf-bag-in-foreground.webp);
 }
 .banner-subpage.rates-banner .overlay {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
@@ -13977,7 +13977,7 @@ li.has-dropdown:hover .submenu li a {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
 }
 .banner-subpage.pro-shop-banner {
-  background-image: url(../images/stagg-pro-shop.jpg);
+  background-image: url(../images/stagg-pro-shop.webp);
 }
 .banner-subpage.pro-shop-banner .overlay {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
@@ -13986,7 +13986,7 @@ li.has-dropdown:hover .submenu li a {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
 }
 .banner-subpage.mens-league-banner {
-  background-image: url(../images/bunch-of-gents.jpg);
+  background-image: url(../images/bunch-of-gents.webp);
 }
 .banner-subpage.mens-league-banner .overlay {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
@@ -13996,7 +13996,7 @@ li.has-dropdown:hover .submenu li a {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
 }
 .banner-subpage.womens-league-banner {
-  background-image: url(../images/womens-league.jpg);
+  background-image: url(../images/womens-league.webp);
 }
 .banner-subpage.womens-league-banner .overlay {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
@@ -14006,7 +14006,7 @@ li.has-dropdown:hover .submenu li a {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
 }
 .banner-subpage.ladies-evening-league-banner {
-  background-image: url(../images/womens-league.jpg);
+  background-image: url(../images/womens-league.webp);
 }
 .banner-subpage.ladies-evening-league-banner .overlay {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
@@ -14016,7 +14016,7 @@ li.has-dropdown:hover .submenu li a {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
 }
 .banner-subpage.couples-league-banner {
-  background-image: url(../images/couple-2.jpg);
+  background-image: url(../images/couple-2.webp);
 }
 .banner-subpage.couples-league-banner .overlay {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
@@ -14026,7 +14026,7 @@ li.has-dropdown:hover .submenu li a {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
 }
 .banner-subpage.calendar-banner {
-  background-image: url(../images/caravan-of-carts.jpg);
+  background-image: url(../images/caravan-of-carts.webp);
 }
 .banner-subpage.calendar-banner .overlay {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
@@ -14035,7 +14035,7 @@ li.has-dropdown:hover .submenu li a {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
 }
 .banner-subpage.open-tournaments-banner {
-  background-image: url(../images/train-of-golfers.jpg);
+  background-image: url(../images/train-of-golfers.webp);
 }
 .banner-subpage.open-tournaments-banner .overlay {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
@@ -14044,7 +14044,7 @@ li.has-dropdown:hover .submenu li a {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
 }
 .banner-subpage.members-only-events-banner {
-  background-image: url(../images/group-of-friends.jpg);
+  background-image: url(../images/group-of-friends.webp);
 }
 .banner-subpage.members-only-events-banner .overlay {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
@@ -14053,7 +14053,7 @@ li.has-dropdown:hover .submenu li a {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
 }
 .banner-subpage.instruction-banner {
-  background-image: url(../images/golf-instructor.jpg);
+  background-image: url(../images/golf-instructor.webp);
 }
 .banner-subpage.instruction-banner .overlay {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
@@ -14062,7 +14062,7 @@ li.has-dropdown:hover .submenu li a {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
 }
 .banner-subpage.scorecard-banner {
-  background-image: url(../images/scorecard-banner.jpg);
+  background-image: url(../images/scorecard-banner.webp);
 }
 .banner-subpage.scorecard-banner .overlay {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
@@ -14071,7 +14071,7 @@ li.has-dropdown:hover .submenu li a {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
 }
 .banner-subpage.contact-banner {
-  background-image: url(../images/player-in-view.jpg);
+  background-image: url(../images/player-in-view.webp);
 }
 .banner-subpage.contact-banner .overlay {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
@@ -14080,7 +14080,7 @@ li.has-dropdown:hover .submenu li a {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
 }
 .banner-subpage.meet-the-staff-banner {
-  background-image: url(../images/golfer-with-perspective.jpg);
+  background-image: url(../images/golfer-with-perspective.webp);
 }
 .banner-subpage.meet-the-staff-banner .overlay {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
@@ -14089,7 +14089,7 @@ li.has-dropdown:hover .submenu li a {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
 }
 .banner-subpage.course-banner {
-  background-image: url(../images/bunch-of-gents.jpg);
+  background-image: url(../images/bunch-of-gents.webp);
 }
 .banner-subpage.course-banner .overlay {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
@@ -14957,6 +14957,7 @@ section.course-page-body {
 .embla__slide__wrapper mux-player {
   height: 100%;
   width: 100%;
+  --media-accent-color: #d09d39;
 }
 
 .video-slot {
@@ -21427,7 +21428,7 @@ section.pro-shop-body.foot-joy .container .row .foot-joy-logo {
   padding-bottom: 17rem;
 }
 .board .container .row {
-  border-top: 1.5px solid rgb(235.85, 235.85, 235.85);
+  border-top: 1.5px solid rgb(92.4901960784%, 92.4901960784%, 92.4901960784%);
   padding-top: 3rem;
 }
 .board .container .row h3 {
@@ -22175,4 +22176,4 @@ section.pro-shop-body.foot-joy .container .row .foot-joy-logo {
   footer .rts-copyright-area-one .row [class*=col] .copyright-wrapper .teequest-link {
     font-size: 15px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
