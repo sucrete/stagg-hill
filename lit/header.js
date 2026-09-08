@@ -91,6 +91,10 @@ export class Header extends LitElement {
                     </li>
 
                     <li>
+                      <a class="nav-link" href="course.html">Course</a>
+                    </li>
+
+                    <li>
                       <a class="nav-link" href="pro-shop.html">Pro Shop</a>
                     </li>
 

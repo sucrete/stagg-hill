@@ -1,0 +1,203 @@
+/* Course page (hole-by-hole video flythrough) */
+section.course-page-body {
+  padding: 10rem 0;
+  background-color: #f4f4f4;
+}
+
+.embla {
+  min-width: 70%;
+  max-width: 950px;
+  margin: auto;
+  --slide-height: 19rem;
+  --slide-spacing: 1rem;
+  --slide-size: 100%;
+
+  &__viewport {
+    overflow: hidden;
+  }
+
+  &__container {
+    display: flex;
+    touch-action: pan-y pinch-zoom;
+    width: 100%;
+    margin-left: calc(var(--slide-spacing) * -1);
+  }
+
+  &__slide {
+    transform: translate3d(0, 0, 0);
+    flex: 0 0 var(--slide-size);
+    min-width: 0;
+    padding-left: var(--slide-spacing);
+
+    &__wrapper {
+      border-radius: 1.8rem;
+      font-weight: 600;
+      background: var(--color-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 528.75px;
+      user-select: none;
+      overflow: hidden;
+      width: 100%;
+
+      mux-player {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.video-slot {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-placeholder,
+.video-processing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  text-align: center;
+
+  .placeholder-note {
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+}
+
+.video-placeholder .placeholder-hole {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.video-processing .processing-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+  animation: video-processing-pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes video-processing-pulse {
+  0%,
+  100% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.embla-thumbs {
+  --thumbs-slide-spacing: 0.8rem;
+  --thumbs-slide-height: 6rem;
+  margin-top: 2rem;
+
+  &__viewport {
+    overflow: hidden;
+    padding: 0 2rem;
+    margin-right: -1.35rem;
+    margin-left: -2.2rem;
+    position: relative;
+
+    &:before,
+    &:after {
+      content: "";
+      width: 3rem;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      background-image: linear-gradient(
+        to right,
+        hsl(0, 0%, 96%) 0%,
+        hsla(0, 0%, 96%, 0.987) 8.1%,
+        hsla(0, 0%, 96%, 0.951) 15.5%,
+        hsla(0, 0%, 96%, 0.896) 22.5%,
+        hsla(0, 0%, 96%, 0.825) 29%,
+        hsla(0, 0%, 96%, 0.741) 35.3%,
+        hsla(0, 0%, 96%, 0.648) 41.2%,
+        hsla(0, 0%, 96%, 0.55) 47.1%,
+        hsla(0, 0%, 96%, 0.45) 52.9%,
+        hsla(0, 0%, 96%, 0.352) 58.8%,
+        hsla(0, 0%, 96%, 0.259) 64.7%,
+        hsla(0, 0%, 96%, 0.175) 71%,
+        hsla(0, 0%, 96%, 0.104) 77.5%,
+        hsla(0, 0%, 96%, 0.049) 84.5%,
+        hsla(0, 0%, 96%, 0.013) 91.9%,
+        hsla(0, 0%, 96%, 0) 100%
+      );
+    }
+    &:before {
+      left: 0;
+      z-index: 77;
+    }
+    &:after {
+      right: 0;
+      transform: rotate(180deg);
+      z-index: 78;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    margin-left: calc(var(--thumbs-slide-spacing) * -1);
+  }
+
+  &__slide {
+    flex: 0 0 22%;
+    min-width: 0;
+    padding-left: var(--thumbs-slide-spacing);
+
+    @media (min-width: 576px) {
+      flex: 0 0 15%;
+    }
+
+    &__number {
+      border-radius: 1.8rem;
+      -webkit-appearance: none;
+      appearance: none;
+      background-color: #e9e9e9;
+      touch-action: manipulation;
+      display: flex;
+      text-decoration: none;
+      cursor: pointer;
+      border: 0;
+      padding: 0;
+      margin: 0;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: rgb(104, 104, 104);
+      letter-spacing: 0.2px;
+      align-items: center;
+      justify-content: center;
+      height: var(--thumbs-slide-height);
+      width: 100%;
+    }
+
+    &--selected &__number {
+      background: var(--color-primary);
+      color: white;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .embla-thumbs__slide .embla-thumbs__slide__number {
+    font-size: 13px;
+  }
+  .embla-thumbs {
+    --thumbs-slide-height: 4rem;
+  }
+  section.course-page-body .container .embla .embla__slide__wrapper {
+    height: 219px;
+  }
+}
