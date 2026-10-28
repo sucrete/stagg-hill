@@ -357,7 +357,7 @@ export class Header extends LitElement {
                         </li>
                         <li>
                           <a href="contact.html#donation-request">
-                            <svg
+                            <svg 
                               class="chevron chevron-down"
                               id="Layer_1"
                               xmlns="http://www.w3.org/2000/svg"
@@ -370,7 +370,10 @@ export class Header extends LitElement {
                           >
                         </li>
                       </ul>
-                    </li>
+                    <!-- </li>
+                      <li>
+                      <a class="nav-link" href="pro-shop.html">Member Login</a>
+                    </li> -->
                   </ul>
                 </nav>
               </div>

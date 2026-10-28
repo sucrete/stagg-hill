@@ -49,7 +49,7 @@
   --font-medium: 'Inter', sans-serif;
   --font-secondary: 'Inter Semibold', sans-serif;
   --font-size-b1: 16px;
-  --font-size-b2: 16px;
+  --font-size-b2: 15px;
   --font-size-b3: 22px;
   --line-height-b1: 22px;
   --line-height-b2: 26px;
@@ -91,14 +91,13 @@
 html {
   margin: 0;
   padding: 0;
-  font-size: 10px;
+  font-size: 14px;
   overflow: hidden;
   overflow-y: auto;
   scroll-behavior: auto !important;
 }
 
 body {
-  font-size: var(--font-size-b1);
   line-height: var(--line-height-b1);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -324,7 +323,7 @@ h6,
 
 p {
   font-size: var(--font-size-b2);
-  line-height: var(--line-height-b2);
+  line-height: 150%;
   font-weight: var(--p-regular);
   color: var(--color-body);
   margin: 0 0 40px;
@@ -467,7 +466,7 @@ ul.liststyle.bullet li + li {
   margin-top: 8px;
 }
 ul li {
-  font-size: var(--font-size-b1);
+  font-size: 15px;
   line-height: var(--line-height-b1);
   margin-top: 10px;
   margin-bottom: 10px;
@@ -8202,8 +8201,8 @@ Background Image
 Custom Row
 ======================*/
 .row--0 {
-  margin-left: -0px;
-  margin-right: -0px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 .row--0 > [class*=col] {
   padding-left: 0px;
@@ -12120,14 +12119,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(1) {
   z-index: 10;
-  transform: rotate(-3deg) translate(-50%, -50%);
+  transform: rotate(3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(1):before {
   content: "1";
 }
 .slyde:nth-child(1).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-3deg) translate(-50%, -15rem);
+  transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12142,14 +12141,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(2) {
   z-index: 9;
-  transform: rotate(2deg) translate(-50%, -50%);
+  transform: rotate(3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(2):before {
   content: "2";
 }
 .slyde:nth-child(2).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(2deg) translate(-50%, -15rem);
+  transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12186,14 +12185,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(4) {
   z-index: 7;
-  transform: rotate(-4deg) translate(-50%, -50%);
+  transform: rotate(3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(4):before {
   content: "4";
 }
 .slyde:nth-child(4).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-4deg) translate(-50%, -15rem);
+  transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12208,14 +12207,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(5) {
   z-index: 6;
-  transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(5):before {
   content: "5";
 }
 .slyde:nth-child(5).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
+  transform: rotate(1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12230,14 +12229,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(6) {
   z-index: 5;
-  transform: rotate(-2deg) translate(-50%, -50%);
+  transform: rotate(-4deg) translate(-50%, -50%);
 }
 .slyde:nth-child(6):before {
   content: "6";
 }
 .slyde:nth-child(6).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-2deg) translate(-50%, -15rem);
+  transform: rotate(-4deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12252,14 +12251,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(7) {
   z-index: 4;
-  transform: rotate(-3deg) translate(-50%, -50%);
+  transform: rotate(1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(7):before {
   content: "7";
 }
 .slyde:nth-child(7).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-3deg) translate(-50%, -15rem);
+  transform: rotate(1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12296,14 +12295,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(9) {
   z-index: 2;
-  transform: rotate(3deg) translate(-50%, -50%);
+  transform: rotate(-1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(9):before {
   content: "9";
 }
 .slyde:nth-child(9).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(3deg) translate(-50%, -15rem);
+  transform: rotate(-1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12318,14 +12317,14 @@ Copyright (c) 2015 Daniel Eden
 
 .slyde:nth-child(10) {
   z-index: 1;
-  transform: rotate(3deg) translate(-50%, -50%);
+  transform: rotate(2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(10):before {
   content: "10";
 }
 .slyde:nth-child(10).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(3deg) translate(-50%, -15rem);
+  transform: rotate(2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -12685,7 +12684,7 @@ Copyright (c) 2015 Daniel Eden
   overflow: visible;
 }
 .header-style-one.header--sticky .container .row [class*=col] .header-wrapper-1 .logo-area .logo-large {
-  width: 230px;
+  width: 200px;
   height: auto;
 }
 .header-style-one.header--sticky .container .row [class*=col] .header-wrapper-1 .logo-area .logo-small {
@@ -12712,7 +12711,7 @@ Copyright (c) 2015 Daniel Eden
   display: none;
   width: 100%;
   z-index: 1;
-  top: 60px;
+  top: 69px;
   left: 0px;
   height: 45px;
   pointer-events: none;
@@ -12730,7 +12729,7 @@ Copyright (c) 2015 Daniel Eden
 
 .header-style-one.header--sticky.sticky {
   display: block;
-  height: 60px;
+  height: 69px;
 }
 .header-style-one.header--sticky.sticky .container .row [class*=col] .header-wrapper-1 .logo-area .logo-large {
   display: none;
@@ -12981,17 +12980,16 @@ Copyright (c) 2015 Daniel Eden
   margin: 0;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 14px;
 }
 .nav-area ul li {
   margin: 0;
   padding: 0;
 }
 .nav-area ul li a {
-  padding: 38px 0;
+  padding: 42px 0;
   display: block;
   color: var(--color-primary);
-  font-size: 16px;
   font-family: "Inter";
   font-weight: 500;
   letter-spacing: -0.2px;
@@ -13004,7 +13002,7 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .header--sticky.sticky .nav-area ul li > a.nav-link {
-  padding: 20px 0;
+  padding: 27px 0;
 }
 
 .has-dropdown a {
@@ -13057,7 +13055,7 @@ li.has-dropdown .submenu li {
 li.has-dropdown .submenu li a {
   padding: 9px 16px 9px 14px !important;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   transition: opacity 0.1s ease-out;
   transition-delay: 0s;
   border-radius: 0;
@@ -13226,7 +13224,7 @@ li.has-dropdown:hover .submenu li a {
 .mega-menu-item li a .info p {
   margin-bottom: 2px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 26px;
   color: #083a5e;
 }
@@ -13310,7 +13308,8 @@ li.has-dropdown:hover .submenu li a {
   height: 48px;
 }
 .rts-btn.btn-border {
-  gap: 32px;
+  font-size: 15px;
+  gap: 22px;
   color: #ffffff;
   font-weight: 400;
   position: relative;
@@ -13415,7 +13414,7 @@ li.has-dropdown:hover .submenu li a {
   -webkit-text-stroke: 0.3px;
 }
 .rts-btn.header-btn::after {
-  background-color: rgb(94.805102764%, 63.8483345145%, 1.5478384125%);
+  background-color: rgb(241.7530120482, 162.813253012, 3.9469879518);
 }
 
 .arrow-btn img {
@@ -13818,7 +13817,7 @@ li.has-dropdown:hover .submenu li a {
 
 .banner-four-bg {
   background-image: url(../images/low-angle-action-shot.webp);
-  height: 95vh !important;
+  height: 100vh !important;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -14648,7 +14647,7 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
 }
 .modal .modal-dialog .modal-content .modal-footer .btn {
   font-family: "Sackers";
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 0.5px;
   text-transform: lowercase;
   color: white;
@@ -14798,7 +14797,7 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: "Sackers";
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 0.5px;
   text-transform: lowercase;
   color: rgb(184, 184, 184);
@@ -14845,10 +14844,10 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
   padding-top: 0.75rem;
   padding-right: 1rem;
   font-family: "Sackers";
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 0.5px;
   text-transform: lowercase;
-  color: #979797;
+  color: rgba(84, 107, 105, 0.568627451);
 }
 .events-list-container .all-events-link:hover {
   opacity: 1;
@@ -15989,7 +15988,7 @@ footer .weather-card {
 footer .weather-card .weather-heading {
   color: white;
   font-family: "IKOB";
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
   justify-content: center;
   padding-bottom: 3rem;
@@ -16014,7 +16013,7 @@ footer .weather-card .row {
   padding: 10px 0;
   padding-bottom: 5px;
   font-family: "Sackers";
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 0.5px;
   text-transform: lowercase;
   color: rgba(255, 255, 255, 0.65);
@@ -18101,7 +18100,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 }
 
 .page-section {
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 
 .page-section .ps-grid {
@@ -18171,7 +18170,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 }
 
 .tinymce-content p {
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 
 .tinymce-content h2,
@@ -19072,10 +19071,10 @@ header.header--sticky.style-white:not(.sticky) .container .row [class*=col] .hea
 }
 .newsletter-signup-wrapper p {
   font-family: "Sackers";
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 0.5px;
   text-transform: lowercase;
-  color: #979797;
+  color: rgba(84, 107, 105, 0.568627451);
   margin-bottom: 2rem;
 }
 .newsletter-signup-wrapper .row {
@@ -19232,10 +19231,10 @@ header.header--sticky.style-white:not(.sticky) .container .row [class*=col] .hea
 .bud-open-section .container .row p.monospaced {
   padding-top: 1rem;
   font-family: "Sackers";
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 0.5px;
   text-transform: lowercase;
-  color: #979797;
+  color: rgba(84, 107, 105, 0.568627451);
 }
 .bud-open-section .container .row [class*=col] .grouping-image-container {
   cursor: pointer;
@@ -19627,7 +19626,6 @@ section.homepage-notices .container .row .single-blog-area-start .inner-content-
   fill: rgb(185, 185, 185);
 }
 section.homepage-notices .container .row .single-blog-area-start .inner-content-area .top-area p {
-  font-size: 16px;
   line-height: 1.5;
   margin-bottom: 5px;
   letter-spacing: -0.2px;
@@ -19836,8 +19834,6 @@ section.homepage-notices .container .row .single-blog-area-start:hover {
 .cornered-container .cornered-box {
   color: white;
   max-width: 500px;
-  font-size: 16px;
-  line-height: 140%;
   position: relative;
   z-index: 6;
 }
@@ -19851,6 +19847,7 @@ section.homepage-notices .container .row .single-blog-area-start:hover {
 }
 .cornered-container .cornered-box p {
   color: white;
+  line-height: 140%;
 }
 @media (max-width: 568px) {
   .cornered-container .cornered-box .manhattans-finest {
@@ -20095,10 +20092,10 @@ table tbody tr th .th-wrap {
 }
 table tbody tr th .note {
   font-family: "Sackers";
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 0.5px;
   text-transform: lowercase;
-  color: #979797;
+  color: rgba(84, 107, 105, 0.568627451);
   line-height: 1;
   margin-left: 1px;
   padding: 3px 0;
@@ -20150,11 +20147,9 @@ table.de-emphasize {
   margin-top: 0rem;
 }
 .introduction-section .introduction-column .title {
-  font-size: 55px;
   margin-bottom: 32px;
 }
 .introduction-section .introduction-column p {
-  font-size: 16px;
   line-height: 150%;
   margin-bottom: 20px;
   padding-left: 2px;
@@ -20642,7 +20637,7 @@ section.perks .container .row [class*=col] .single-solution-style-one:hover {
 }
 .rates-page-body [class*=table-wrapper] .table-preface [class*=col] p,
 .rates-page-body [class*=table-wrapper] .table-preface [class*=col] .hours-wrapper {
-  font-size: 18px;
+  font-size: 15px;
   padding-left: 3px;
   color: var(--color-body);
 }
@@ -21022,7 +21017,7 @@ section.pro-shop-body.foot-joy .container .row .foot-joy-logo {
 
 .schedule-note {
   font-family: "Sackers";
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 0.5px;
   text-transform: lowercase;
   color: #979797;
@@ -21428,7 +21423,7 @@ section.pro-shop-body.foot-joy .container .row .foot-joy-logo {
   padding-bottom: 17rem;
 }
 .board .container .row {
-  border-top: 1.5px solid rgb(92.4901960784%, 92.4901960784%, 92.4901960784%);
+  border-top: 1.5px solid rgb(235.85, 235.85, 235.85);
   padding-top: 3rem;
 }
 .board .container .row h3 {
@@ -22158,8 +22153,8 @@ section.pro-shop-body.foot-joy .container .row .foot-joy-logo {
     width: 100%;
   }
   footer .gradient-footer-wrapper .rts-footer-area .container > .row .weather-col .weather-card .card-body .weather-heading {
-    font-size: 2.75rem;
-    line-height: 115%;
+    font-size: 2rem;
+    line-height: 135%;
   }
   footer .gradient-footer-wrapper .rts-footer-area .container > .row .weather-col .weather-card .today-row .today-temp .the-temp {
     font-size: 4.5rem;
@@ -22176,4 +22171,4 @@ section.pro-shop-body.foot-joy .container .row .foot-joy-logo {
   footer .rts-copyright-area-one .row [class*=col] .copyright-wrapper .teequest-link {
     font-size: 15px;
   }
-}
+}/*# sourceMappingURL=style.css.map */

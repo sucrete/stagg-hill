@@ -632,7 +632,6 @@ section.homepage-notices {
             }
 
             p {
-              font-size: 16px;
               line-height: 1.5;
               margin-bottom: 5px;
               letter-spacing: -0.2px;
@@ -888,8 +887,6 @@ section.homepage-notices {
   .cornered-box {
     color: white;
     max-width: 500px;
-    font-size: 16px;
-    line-height: 140%;
     position: relative;
     z-index: 6;
     .manhattans-finest-mobile {
@@ -902,7 +899,7 @@ section.homepage-notices {
     }
     p {
       color: white;
-      // padding-left: 7rem;
+      line-height: 140%;
     }
   }
   @media (max-width: 568px) {
@@ -1298,11 +1295,11 @@ table {
     justify-content: center;
     margin-top: 0rem;
     .title {
-      font-size: 55px;
+      // font-size: 55px;
       margin-bottom: 32px;
     }
     p {
-      font-size: 16px;
+      // font-size: 15px;
       line-height: 150%;
       margin-bottom: 20px;
       padding-left: 2px;
@@ -2051,7 +2048,7 @@ section.perks {
         }
         p,
         .hours-wrapper {
-          font-size: 18px;
+          font-size: 15px;
           padding-left: 3px;
           color: var(--color-body);
           &.pull-it-back {
@@ -4062,8 +4059,8 @@ section.pro-shop-body {
                 width: 100%;
                 .card-body {
                   .weather-heading {
-                    font-size: 2.75rem;
-                    line-height: 115%;
+                    font-size: 2rem;
+                    line-height: 135%;
                   }
                 }
                 .today-row {

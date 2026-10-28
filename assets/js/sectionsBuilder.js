@@ -1,6 +1,8 @@
 // sectionsBuilder.js
-// Renders the homepage "Layout Editor" sections (authored in the Sanity Studio via the
-// columnar layout picker) into #page-sections, just below the hero. Depends on fetchData.js.
+// Renders "Layout Editor" sections (authored in the Sanity Studio via the columnar
+// layout picker) into #page-sections. Depends on fetchData.js. Defaults to the
+// homepage's sections; set data-doc-type="membersSection" (or any other singleton
+// document with a `sections` field) on #page-sections to render a different one.
 
 (function () {
   const SANITY_QUERY_BASE =
@@ -44,7 +46,8 @@
     const mount = document.getElementById("page-sections");
     if (!mount) return;
 
-    const groq = `*[_type == "homePage"][0]{ sections }`;
+    const docType = mount.dataset.docType || "homePage";
+    const groq = `*[_type == "${docType}"][0]{ sections }`;
     const url = `${SANITY_QUERY_BASE}?query=${encodeURIComponent(
       groq
     )}&perspective=published`;

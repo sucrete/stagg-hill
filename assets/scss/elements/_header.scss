@@ -92,7 +92,7 @@ header .rts-btn {
           }
           .logo-area {
             .logo-large {
-              width: 230px;
+              width: 200px;
               height: auto;
             }
             .logo-small {
@@ -130,7 +130,7 @@ header .rts-btn {
     display: none;
     width: 100%;
     z-index: 1;
-    top: 60px;
+    top: 69px;
     left: 0px;
     height: 45px;
     pointer-events: none;
@@ -194,7 +194,7 @@ header .rts-btn {
 // header style one after scrolling
 .header-style-one.header--sticky.sticky {
   display: block;
-  height: 60px;
+  height: 69px;
   .container {
     .row {
       [class*="col"] {
