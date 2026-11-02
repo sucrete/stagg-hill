@@ -2245,7 +2245,7 @@ section.perks {
 //~ Pro Shop
 section.pro-shop-body {
   background-color: white;
-  padding-top: 8rem;
+  padding-top: 0rem;
   .shop-note {
     max-width: 550px;
     // font-size: 14px;
@@ -2255,7 +2255,7 @@ section.pro-shop-body {
   .band-of-brands {
     background: aliceblue;
     .container {
-      padding-block: 8rem;
+      padding-block: 3rem;
 
       .row {
         .brand {

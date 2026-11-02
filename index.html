@@ -409,7 +409,7 @@
         ></script>
       </div>
       <div class="container">
-        <div class="row g-5" data-masonry='{"percentPosition": true }'>
+        <div class="row g-5" id="notices-masonry">
           <div class="col-md-6 col-sm-12">
             <div class="single-blog-area-start">
               <a href="pro-shop.html" class="thumbnail">
@@ -1164,10 +1164,11 @@
 
     <!-- Bootstrap masonry script -->
     <script
-      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js?version=1?random=<?php echo uniqid(); ?>"
+      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js?version=1"
       integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
       crossorigin="anonymous"
       defer
     ></script>
+    <script defer src="assets/js/noticesMasonry.js"></script>
   </body>
 </html>
