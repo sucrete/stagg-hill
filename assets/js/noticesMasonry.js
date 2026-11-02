@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   var grid = document.getElementById("notices-masonry");
-  if (!grid || typeof imagesLoaded === "undefined" || typeof Masonry === "undefined") {
+  if (!grid || typeof Masonry === "undefined") {
     return;
   }
 
@@ -15,7 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // bricks only correct themselves on the next resize or reload once the
   // images are cached. Re-laying out as each image finishes fixes it on the
   // very first load.
-  imagesLoaded(grid).on("progress", function () {
-    msnry.layout();
-  });
+  if (typeof imagesLoaded !== "undefined") {
+    imagesLoaded(grid).on("progress", function () {
+      msnry.layout();
+    });
+  }
 });
