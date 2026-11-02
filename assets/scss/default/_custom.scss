@@ -1,3 +1,7 @@
+.all-red {
+  color: #da2723;
+}
+
 .newsletter-signup-wrapper {
   text-align: center;
   padding-bottom: 5rem;
@@ -240,9 +244,6 @@ section {
     width: 100%;
     background: #f8f8f8;
     padding: 4rem 3.25rem 4rem 3.25rem;
-    @media (min-width: 768px) {
-      height: 416.5px;
-    }
   }
   &.rounded-corners {
     border-radius: 21px;
@@ -269,17 +270,17 @@ section {
   }
   .deal {
     font-family: "Oswald";
-    font-size: 30px;
+    font-size: 22px;
     color: var(--color-primary);
     font-weight: 600;
     letter-spacing: -1px;
     text-transform: uppercase;
-    line-height: 1;
+    line-height: 1.2;
     // background: url(../assets/images/service/shiny-2.gif) no-repeat;
     // background-size: 120%;
     // -webkit-background-clip: text;
     // -webkit-text-fill-color: transparent;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     &:last-of-type {
       margin-bottom: 0;
     }
@@ -636,7 +637,7 @@ section.homepage-notices {
               margin-bottom: 5px;
               letter-spacing: -0.2px;
               // color: #191919;
-              color: var(--color-body);
+              // color: var(--color-body);
               .highlighted {
                 color: inherit;
                 display: unset;
@@ -651,17 +652,17 @@ section.homepage-notices {
               }
               &.deal {
                 font-family: "Oswald";
-                font-size: 30px;
+                font-size: 22px;
                 color: var(--color-primary);
                 font-weight: 600;
                 letter-spacing: -1px;
                 text-transform: uppercase;
-                line-height: 1;
+                line-height: 1.2;
                 // background: url(../assets/images/service/shiny-2.gif) no-repeat;
                 // background-size: 120%;
                 // -webkit-background-clip: text;
                 // -webkit-text-fill-color: transparent;
-                margin-bottom: 0.5rem;
+                margin-bottom: 1rem;
                 &:last-of-type {
                   margin-bottom: 0;
                 }
@@ -2277,7 +2278,7 @@ section.pro-shop-body {
     .row {
       &.lined-row {
         // border-top: 1.25px solid rgb(230, 230, 230);
-        padding-top: 7rem;
+        padding-top: 1rem;
         .height-100 {
           height: inherit;
         }
@@ -2315,6 +2316,7 @@ section.pro-shop-body {
       padding: 3rem;
       padding-top: 2.5rem;
       padding-bottom: 3.25rem;
+      height: 100%;
     }
     .note-brow {
       padding-top: 10px;
@@ -2357,7 +2359,7 @@ section.pro-shop-body {
   &.foot-joy {
     background: rgb(248, 248, 248);
     .container {
-      padding-top: 11rem;
+      padding-top: 7rem;
       padding-bottom: 16rem;
       .row {
         .foot-joy-logo {
@@ -3954,8 +3956,7 @@ section.pro-shop-body {
                       margin-bottom: 14px;
                     }
                     .specials {
-                      h5 {
-                      }
+                  
                       .deal {
                         font-size: 24px;
                         line-height: 1;
