@@ -12,7 +12,7 @@
       type="image/x-icon"
       href="assets/images/fav.png"
     />
-    <title>Members</title>
+    <title>Members Only Area</title>
     <link
       rel="stylesheet preload"
       href="assets/css/vendor/bootstrap.min.css"
@@ -74,8 +74,11 @@
                 data-wow-offset="120"
                 data-wow-delay=".7s"
               >
-                Members
+                Members Only Area
               </h1>
+              <button id="member-logout-btn" class="logout-btn" type="button">
+                Log Out
+              </button>
             </div>
           </div>
         </div>
@@ -269,6 +272,9 @@
                 <li>
                   <a href="contact.html#donation-requests">Donation Requests</a>
                 </li>
+                <li>
+                  <a href="member-login.html">Members Only Area</a>
+                </li>
               </ul>
             </li>
             <li>
@@ -313,5 +319,6 @@
 
     <script defer src="assets/js/sectionsBuilder.js"></script>
     <script type="module" src="assets/js/membersGate.js"></script>
+    <script type="module" src="assets/js/memberLogout.js"></script>
   </body>
 </html>

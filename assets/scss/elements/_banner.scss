@@ -592,11 +592,31 @@ $subpage-height: 550px;
   }
   .banner-four-wrapper {
     justify-content: center;
+    flex-direction: column;
     .title {
       // text-align: center;
-      font-size: 70px;
+      font-size: 46px;
       margin-bottom: 0;
       text-shadow: 0 0 10px rgba(0, 0, 0, 0.455);
+    }
+    .logout-btn {
+      display: inline-block;
+      width: auto;
+      margin-top: 1rem;
+      padding: 0.5rem 1.5rem;
+      font-size: 14px;
+      font-weight: 500;
+      color: #fff;
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      border-radius: 0;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.15);
+        border-color: #fff;
+      }
     }
   }
   .overlay {

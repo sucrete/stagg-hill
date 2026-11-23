@@ -1,7 +1,10 @@
 // sectionsBuilderPreview.js
-// Same as sectionsBuilder.js, but for the hidden /preview page: it renders the
-// DRAFT (unpublished) Layout Editor content so you can preview homepage changes
-// before publishing. Uses the Sanity "drafts" perspective, which requires a token.
+// Same as sectionsBuilder.js, but for hidden preview pages: it renders the
+// DRAFT (unpublished) Layout Editor content so you can preview changes before
+// publishing. Uses the Sanity "drafts" perspective, which requires a token.
+// Defaults to the homepage's sections; set data-doc-type="membersSection" (or
+// any other singleton document with a `sections` field) on #page-sections to
+// preview a different one.
 //
 // ⚠️  SETUP: paste a Sanity *Viewer* (read-only) token below.
 //     Create one at https://www.sanity.io/manage → project orv2fvsx → API → Tokens
@@ -23,6 +26,15 @@
     sectionTwoThirdsOneThird: { cols: ["col1", "col2"], cls: "ps-6633" },
     sectionThreeColumn: { cols: ["col1", "col2", "col3"], cls: "ps-3" },
     sectionFourColumn: { cols: ["col1", "col2", "col3", "col4"], cls: "ps-4" },
+  };
+
+  // Shown instead of hiding #page-sections when a doc type has no Layout
+  // Editor content yet — keyed by data-doc-type.
+  const EMPTY_FALLBACKS = {
+    membersSection: `<section class="page-section"><div class="container"><div class="ps-grid ps-2">
+      <div class="ps-col tinymce-content"><img src="https://cdn.sanity.io/images/orv2fvsx/production/015b7f1e593930fc6fbc91f6eb5aad24dfc9a61a-653x960.jpg" alt="" /></div>
+      <div class="ps-col tinymce-content"><h2>Nothing to see here</h2><p>Member's only information will be added here once it becomes available. Thank you!</p></div>
+    </div></div></section>`,
   };
 
   // Drop TinyMCE editing-only artifacts (image resize handles / bogus nodes) that can
@@ -49,7 +61,8 @@
     const mount = document.getElementById("page-sections");
     if (!mount) return;
 
-    const groq = `*[_type == "homePage"][0]{ sections }`;
+    const docType = mount.dataset.docType || "homePage";
+    const groq = `*[_type == "${docType}"][0]{ sections }`;
     // perspective=drafts → draft version overlaid on published (i.e. live preview)
     const url = `${SANITY_QUERY_BASE}?query=${encodeURIComponent(
       groq
@@ -59,7 +72,7 @@
       .then((r) => r.json())
       .then((data) => {
         const sections = (data && data.result && data.result.sections) || [];
-        const html = sections.map(renderSection).join("");
+        const html = sections.map(renderSection).join("") || EMPTY_FALLBACKS[docType] || "";
         mount.innerHTML = html;
         mount.style.display = html ? "" : "none";
       })
