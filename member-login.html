@@ -62,6 +62,10 @@
       .member-login-message.is-error {
         color: #c0392b;
       }
+      .member-login-card .rts-btn {
+        width: 100%;
+        max-width: 100%;
+      }
     </style>
 
     <script src="assets/js/fetchData.js"></script>
@@ -125,7 +129,7 @@
         </form>
         <p
           id="request-link-toggle"
-          style="margin-top: 16px; font-size: 13px; text-align: center"
+          style="margin-top: 16px; font-size: 13px; text-align: center; margin-bottom: 1rem;"
         >
           <a href="#" id="show-request-link"
             >Forgot your password, or logging in for the first time?</a
@@ -261,5 +265,6 @@
     </div>
 
     <script type="module" src="assets/js/memberLogin.js"></script>
+    <script defer src="assets/js/rippleEffect.js"></script>
   </body>
 </html>
