@@ -465,7 +465,7 @@ footer {
       font-size: 2rem;
       text-align: center;
       justify-content: center;
-      padding-bottom: 3rem;
+      padding-bottom: 2.15rem;
       .grey-text {
         color: rgba(255, 255, 255, 0.65);
         .hyphen {
@@ -569,6 +569,9 @@ footer {
         font-size: 15px;
         [class*="col"] {
           flex: 1;
+        }
+        .temp {
+          text-wrap: nowrap;
         }
         .icon {
           text-align: center;
