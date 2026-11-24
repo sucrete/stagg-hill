@@ -18,6 +18,14 @@
     sectionFourColumn: { cols: ["col1", "col2", "col3", "col4"], cls: "ps-4" },
   };
 
+  // Shown instead of hiding #page-sections when a doc type has no published
+  // content yet — keyed by data-doc-type.
+  const EMPTY_FALLBACKS = {
+    membersSection: `<section class="page-section"><div class="container"><div class="ps-grid ps-1">
+      <div class="ps-col tinymce-content" style="text-align: center;"><p style="opacity: 0.5;">Currently no content</p></div>
+    </div></div></section>`,
+  };
+
   // Drop TinyMCE editing-only artifacts (image resize handles / bogus nodes) that can
   // get saved into the column HTML — otherwise they become the column's :last-child.
   function cleanHtml(html) {
@@ -54,7 +62,7 @@
 
     fetchData(url).then((data) => {
       const sections = (data && data.sections) || [];
-      const html = sections.map(renderSection).join("");
+      const html = sections.map(renderSection).join("") || EMPTY_FALLBACKS[docType] || "";
       mount.innerHTML = html;
       // Hide the whole section (incl. its padding) when there's nothing to show.
       mount.style.display = html ? "" : "none";

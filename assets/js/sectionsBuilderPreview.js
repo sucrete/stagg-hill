@@ -28,12 +28,20 @@
     sectionFourColumn: { cols: ["col1", "col2", "col3", "col4"], cls: "ps-4" },
   };
 
-  // Shown instead of hiding #page-sections when a doc type has no Layout
-  // Editor content yet — keyed by data-doc-type.
-  const EMPTY_FALLBACKS = {
+  // Shown instead of hiding #page-sections when there's a draft in progress
+  // but it currently renders nothing — keyed by data-doc-type.
+  const DRAFT_EMPTY_FALLBACKS = {
     membersSection: `<section class="page-section"><div class="container"><div class="ps-grid ps-2">
       <div class="ps-col tinymce-content"><img src="https://cdn.sanity.io/images/orv2fvsx/production/015b7f1e593930fc6fbc91f6eb5aad24dfc9a61a-653x960.jpg" alt="" /></div>
       <div class="ps-col tinymce-content"><h2>Nothing to see here</h2><p>Member's only information will be added here once it becomes available. Thank you!</p></div>
+    </div></div></section>`,
+  };
+
+  // Shown when there's no draft in progress and nothing published either —
+  // keyed by data-doc-type.
+  const PUBLISHED_EMPTY_FALLBACKS = {
+    membersSection: `<section class="page-section"><div class="container"><div class="ps-grid ps-1">
+      <div class="ps-col tinymce-content" style="text-align: center;"><p style="opacity: 0.5;">Currently no content</p></div>
     </div></div></section>`,
   };
 
@@ -62,19 +70,31 @@
     if (!mount) return;
 
     const docType = mount.dataset.docType || "homePage";
-    const groq = `*[_type == "${docType}"][0]{ sections }`;
-    // perspective=drafts → draft version overlaid on published (i.e. live preview)
+    // Looked up by _id (not _type) so we can tell a real in-progress draft
+    // (id "drafts.<docType>") apart from the published doc (id "<docType>") —
+    // the "Preview page" toast should only show when a draft actually exists.
+    const groq = `{
+      "published": *[_id == "${docType}"][0]{ sections },
+      "draft": *[_id == "drafts.${docType}"][0]{ sections }
+    }`;
+    // perspective=raw → exact documents by _id, no draft/published overlay
     const url = `${SANITY_QUERY_BASE}?query=${encodeURIComponent(
       groq
-    )}&perspective=drafts`;
+    )}&perspective=raw`;
 
     fetch(url, { headers: { Authorization: `Bearer ${SANITY_PREVIEW_TOKEN}` } })
       .then((r) => r.json())
       .then((data) => {
-        const sections = (data && data.result && data.result.sections) || [];
-        const html = sections.map(renderSection).join("") || EMPTY_FALLBACKS[docType] || "";
+        const result = (data && data.result) || {};
+        const hasDraft = Boolean(result.draft);
+        const sections = ((hasDraft ? result.draft : result.published) || {}).sections || [];
+        const fallbacks = hasDraft ? DRAFT_EMPTY_FALLBACKS : PUBLISHED_EMPTY_FALLBACKS;
+        const html = sections.map(renderSection).join("") || fallbacks[docType] || "";
         mount.innerHTML = html;
         mount.style.display = html ? "" : "none";
+
+        const notice = document.querySelector(".preview-notice");
+        if (notice) notice.style.display = hasDraft ? "" : "none";
       })
       .catch((err) => console.error("Preview sections fetch failed:", err));
   }
